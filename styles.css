@@ -1,0 +1,19 @@
+/* css/styles.css */
+
+#main-menu {
+    position: fixed;
+    z-index: 999;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#main-menu button {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.step img {
+    max-width: 90%;
+    height: auto;
+}
