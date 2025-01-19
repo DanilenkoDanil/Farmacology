@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.main-buttons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 кнопки в строке */
+    gap: 50px; /* Расстояние между кнопками */
+    justify-items: center; /* Центровка кнопок по горизонтали */
+
+}
+
+.main-buttons-container button {
+    width: 200px;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-buttons-container button:hover {
+    background-color: #0056b3; /* Темнее при наведении */
+    transform: scale(1.1); /* Увеличение кнопки */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Тень */
+}
+
+.main-buttons-container button:active {
+    transform: scale(1.05); /* Лёгкое уменьшение при нажатии */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Слабее тень */
+}
+
+.invisible-button {
+    position: absolute;
+    top: 10px; /* Расположение в левом верхнем углу */
+    left: 10px;
+    width: 70px; /* Размер кнопки */
+    height: 70px;
+    background-color: transparent; /* Делает кнопку невидимой */
+    /*border: none;*/
+    cursor: pointer;
+    z-index: 1000; /* Убедитесь, что кнопка находится поверх других элементов */
+    border: 3px solid red;
+}

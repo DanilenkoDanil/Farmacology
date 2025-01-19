@@ -1,20 +1,47 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>My first presentation</title>
-    </head>
-    <body>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <div id="impress">
-            <div id="myFirstSlide" class="step">
-                <h1>My first Slide</h1>
-            </div>
-            <div id="mySecondSlide" class="step" data-x="1000" data-y="1000" data-z="-1000" data-scale="2" data-rotate-z="90">
-                <h1>My second Slide</h1>
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+        <div class="reveal">
+            <div class="slides" id="slides-container">
+				<section id="slide-0" data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<div class="main-buttons-container">
+						<button class="button" id="pediatr" onclick="loadSlides('pediatr')">Педіатр</button>
+						<button class="button" id="gastro" onclick="loadSlides('gastro')">Гастро</button>
+						<button class="button" id="gastro-kid" onclick="loadSlides('gastro-kid')">Гастро дит</button>
+						<button class="button" id="simey-advance" onclick="loadSlides('simey-advance')">Сімейні "продвинуті"</button>
+						<button class="button" id="simey-begin" onclick="loadSlides('simey-begin')">Сімейні "початківці"</button>
+						<button class="button" id="lor" onclick="loadSlides('lor')">Лор</button>
+					</div>
+				</section>
             </div>
         </div>
 
-        <script src="js/impress.js"></script>
-        <script>impress().init()</script>
-    </body>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+			});
+		</script>
+        <script src="js/mapping.js"></script>
+        <script src="js/scripts.js"></script>
+		<button class="invisible-button" onclick="Reveal.slide(0);"></button>
+	</body>
 </html>
