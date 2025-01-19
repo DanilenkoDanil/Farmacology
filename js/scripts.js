@@ -49,14 +49,6 @@ function loadSlides(setName) {
         transition: 'slide', // Без анимации
     });
 
-    document.querySelectorAll('section').forEach(section => {
-    section.style.display = 'flex';
-    section.style.justifyContent = 'center';
-    section.style.alignItems = 'center';
-    section.style.width = '100%';
-    section.style.height = '100%';
-    section.style.boxSizing = 'border-box';
-    });
 
     Reveal.slide(1); // Переход на первый слайд
 }
