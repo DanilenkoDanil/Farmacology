@@ -55,7 +55,7 @@ function loadSlides(setName) {
 
         Reveal.slide(1); // Переход на первый слайд
         slidesContainer.style.visibility = 'visible';
-    }, 10000);
+    }, 1000);
 }
 
 
