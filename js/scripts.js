@@ -2,14 +2,16 @@ function generateSlides(slideSet) {
     return slideSet.map(slide => `
         <section
             style="
-                background-image: url('/Farmacology${slide.image}');
                 display: flex;
                 width: 100%;
                 height: 100%;
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
+                border: 3px solid green;
+                justify-content: center;
+                align-items: center;
             ">
+            <div class="background-container"
+            style="background-image: url('${slide.image}');">
+            </div>
         </section>
     `).join('');
 }
@@ -25,6 +27,7 @@ function loadSlides(setName) {
     });
 
     const newSlides = generateSlides(mapping[setName]);
+
     const tempDiv = document.createElement('div');
     tempDiv.innerHTML = newSlides;
 
@@ -32,7 +35,10 @@ function loadSlides(setName) {
         slidesContainer.appendChild(slide);
     });
 
-    reveal.style.display = 'block';
+
+
+    reveal.style.display = 'flex';
+
 
    slidesContainer.style.visibility = 'hidden';
 
