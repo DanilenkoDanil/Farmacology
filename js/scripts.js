@@ -38,8 +38,15 @@ function loadSlides(setName) {
 
     // Откладываем синхронизацию
     setTimeout(() => {
-        Reveal.sync();
-        Reveal.layout();
+        Reveal.destroy();
+
+        // Заново инициализируем Reveal.js
+        Reveal.initialize({
+            width: '100%',
+            height: '100%',
+            transition: 'slide', // Без анимации
+        });
+
         Reveal.slide(1); // Переход на первый слайд
         slidesContainer.style.visibility = 'visible';
     }, 10000);
