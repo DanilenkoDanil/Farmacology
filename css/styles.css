@@ -35,10 +35,36 @@
 
 .invisible-button {
     position: absolute;
-    top: 10px; /* Расположение в левом верхнем углу */
-    left: 10px;
-    width: 70px; /* Размер кнопки */
-    height: 70px;
+    top: 0; /* Расположение в левом верхнем углу */
+    left: 0;
+    width: 25%; /* Размер кнопки */
+    height: 25%;
+    background-color: transparent; /* Делает кнопку невидимой */
+    /*border: none;*/
+    cursor: pointer;
+    z-index: 1001; /* Убедитесь, что кнопка находится поверх других элементов */
+    border: 3px solid red;
+}
+
+.invisible-left-button {
+    position: absolute;
+    top: 0; /* Расположение в левом верхнем углу */
+    left: 0;
+    width: 25%; /* Размер кнопки */
+    height: 100%;
+    background-color: transparent; /* Делает кнопку невидимой */
+    /*border: none;*/
+    cursor: pointer;
+    z-index: 1000; /* Убедитесь, что кнопка находится поверх других элементов */
+    border: 3px solid red;
+}
+
+.invisible-right-button {
+    position: absolute;
+    top: 0; /* Расположение в левом верхнем углу */
+    left: 75%;
+    width: 25%; /* Размер кнопки */
+    height: 100%;
     background-color: transparent; /* Делает кнопку невидимой */
     /*border: none;*/
     cursor: pointer;
@@ -61,7 +87,7 @@
 
 
 .visit-container {
-display: flex;
+    display: flex;
     flex-direction: column; /* Расположение кнопок в колонку */
     align-items: center; /* Центрирование кнопок по горизонтали */
     gap: 17px; /* Расстояние между кнопками */
@@ -74,43 +100,42 @@ display: flex;
     position: absolute; /* Чтобы элемент оставался внутри .section */
     top: 0;
     left: 0; /* При необходимости можно менять позиции */
-      }
+}
 
-      .visit {
-        width: auto; /* Ширина кнопки: 80% от ширины контейнера */
-        /*max-width: 400px;*/
-        max-height: 100%;
-        height: 100%; /* Автоматическая высота для сохранения пропорций */
-        aspect-ratio: 443 / 119; /* Соотношение сторон кнопки */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        border: none; /* Убирает рамку */
-        cursor: pointer;
-        transition: transform 0.2s ease;
+.visit {
+    width: auto; /* Ширина кнопки: 80% от ширины контейнера */
+    /*max-width: 400px;*/
+    max-height: 100%;
+    height: 100%; /* Автоматическая высота для сохранения пропорций */
+    aspect-ratio: 443 / 119; /* Соотношение сторон кнопки */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none; /* Убирает рамку */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
 
-      }
+.visit:hover {
+    transform: scale(1.05); /* Лёгкое увеличение кнопки при наведении */
+}
 
-      .visit:hover {
-              transform: scale(1.05); /* Лёгкое увеличение кнопки при наведении */
-      }
-
-      #visit1 {
-        background-image: url('../slides/Asacol/A0/1.png'); /* Фоновое изображение */
-      }
-      #visit2 {
-        background-image: url('../slides/Asacol/A0/2.png'); /* Фоновое изображение */
-      }
-      #visit3 {
-        background-image: url('../slides/Asacol/A0/3.png'); /* Фоновое изображение */
-      }
-      #visit4 {
-        background-image: url('../slides/Asacol/A0/4.png'); /* Фоновое изображение */
-      }
-      #visit5 {
-        background-image: url('../slides/Asacol/A0/5.png'); /* Фоновое изображение */
-      }
+#visit1 {
+    background-image: url('../slides/Asacol/A0/1.png'); /* Фоновое изображение */
+}
+#visit2 {
+    background-image: url('../slides/Asacol/A0/2.png'); /* Фоновое изображение */
+}
+#visit3 {
+    background-image: url('../slides/Asacol/A0/3.png'); /* Фоновое изображение */
+}
+#visit4 {
+    background-image: url('../slides/Asacol/A0/4.png'); /* Фоновое изображение */
+}
+#visit5 {
+    background-image: url('../slides/Asacol/A0/5.png'); /* Фоновое изображение */
+}
 
 
 .background-container {
