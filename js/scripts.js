@@ -35,27 +35,27 @@ function loadSlides(setName) {
         slidesContainer.appendChild(slide);
     });
 
-
-
     reveal.style.display = 'flex';
 
+    Reveal.destroy();
 
-   slidesContainer.style.visibility = 'hidden';
+    // Заново инициализируем Reveal.js
+    Reveal.initialize({
+        width: '100%',
+        height: '100%',
+        transition: 'slide', // Без анимации
+    });
 
-    // Откладываем синхронизацию
-    setTimeout(() => {
-        Reveal.destroy();
+    document.querySelectorAll('section').forEach(section => {
+    section.style.display = 'flex';
+    section.style.justifyContent = 'center';
+    section.style.alignItems = 'center';
+    section.style.width = '100%';
+    section.style.height = '100%';
+    section.style.boxSizing = 'border-box';
+    });
 
-        // Заново инициализируем Reveal.js
-        Reveal.initialize({
-            width: '100%',
-            height: '100%',
-            transition: 'slide', // Без анимации
-        });
-
-        Reveal.slide(1); // Переход на первый слайд
-        slidesContainer.style.visibility = 'visible';
-    }, 1000);
+    Reveal.slide(1); // Переход на первый слайд
 }
 
 
