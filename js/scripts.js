@@ -2,7 +2,7 @@ function generateSlides(slideSet) {
     return slideSet.map(slide => `
         <section
             style="
-                background-image: url('Farmacology/${slide.image}');
+                background-image: url('https://github.com/DanilenkoDanil/Farmacology/tree/master${slide.image}');
                 display: flex;
                 width: 100%;
                 height: 100%;
