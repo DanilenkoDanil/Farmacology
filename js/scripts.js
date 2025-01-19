@@ -1,10 +1,10 @@
 function generateSlides(slideSet) {
     if (document.body.classList.contains('reveal-scroll')) {
         console.log('Класс "reveal-scroll" is в теге <body>');
-        return loadSlidesVert(slideSet)
+        return loadSlidesVert(slideSet);
     } else {
         console.log('Класс "reveal-scroll" отсутствует в теге <body>');
-        return loadSlidesHoriz(slideSet)
+        return loadSlidesHoriz(slideSet);
     }
 
 }
@@ -25,9 +25,10 @@ function loadSlidesHoriz(slideSet) {
                 justify-content: center;
                 align-items: center;
                 top: 25%;
+
             ">
             <div class="background-container"
-            style="background-image: url('/Farmacology${slide.image}');">
+            style="background-image: url('/Farmacology${slide.image}'); height: 100%; width: auto;">
             <button class="invisible-button" onclick="Reveal.slide(0);"></button>
             <button class="invisible-left-button" onclick="Reveal.prev();"></button>
             <button class="invisible-right-button" onclick="Reveal.next();"></button>
@@ -55,13 +56,12 @@ function loadSlidesVert(slideSet) {
                 border: 3px solid green;
                 justify-content: center;
                 align-items: center;
-                top: 25%;
             ">
             <div class="background-container"
-            style="background-image: url('/Farmacology${slide.image}');">
-            <button class="invisible-button" onclick="Reveal.slide(0);"></button>
-            <button class="invisible-left-button" onclick="Reveal.prev();"></button>
-            <button class="invisible-right-button" onclick="Reveal.next();"></button>
+            style="background-image: url('/Farmacology${slide.image}'); margin-left: 0; margin-right: 0; width: 100%;">
+            <button class="invisible-button" onclick="slideToStart()"></button>
+            <button class="invisible-left-button" onclick="Reveal.prev()"></button>
+            <button class="invisible-right-button" onclick="Reveal.next()"></button>
             </div>
         </section>
     </div>
@@ -89,21 +89,12 @@ function loadSlides(setName) {
     tempDiv.innerHTML = newSlides;
 
     Array.from(tempDiv.children).forEach(slide => {
-        slide.style.top = '131px';
         slidesContainer.appendChild(slide);
 
     });
 
     reveal.style.display = 'flex';
-
-    Reveal.destroy();
-
-    // Заново инициализируем Reveal.js
-    Reveal.initialize({
-        width: '100%',
-        height: '100%',
-        transition: 'slide', // Без анимации
-    });
+    Reveal.next();
 
     Reveal.sync(); // Синхронизация
     Reveal.layout();
