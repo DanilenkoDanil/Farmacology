@@ -10,7 +10,7 @@ function generateSlides(slideSet) {
                 align-items: center;
             ">
             <div class="background-container"
-            style="background-image: url('${slide.image}');">
+            style="background-image: url('/Farmacology${slide.image}');">
             </div>
         </section>
     `).join('');
