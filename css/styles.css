@@ -54,7 +54,7 @@
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box; /* Учитывает padding и border в размерах */
-    overflow: hidden; /* Убирает содержимое, которое выходит за границы */
+    overflow: hidden;
     position: relative;
     border: 3px solid red;
 }
