@@ -1,6 +1,9 @@
 function generateSlides(slideSet) {
-    return slideSet.map(slide => `
+    return slideSet.map((slide, index) => `
         <section
+            data-type="${slide.type || ''}"
+            data-index="${index + 1}"
+            id="slide-${index + 1}"
             style="
                 display: flex !important;
                 width: 100%;
@@ -11,11 +14,12 @@ function generateSlides(slideSet) {
                 top: 25%;
             ">
             <div class="background-container"
-            style="background-image: url('/Farmacology${slide.image}');">
+                style="background-image: url('/Farmacology${slide.image}');">
             </div>
         </section>
     `).join('');
 }
+
 
 function loadSlides(setName) {
     const slidesContainer = document.getElementById('slides-container');
