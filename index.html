@@ -35,9 +35,10 @@
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
 			Reveal.initialize({
-				hash: true,
-				touch: true,
-				plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+				  width: '100%',
+				  height: '100%',
+				  mobileView: true, // Включение мобильного вида (настраивается дополнительно)
+				  plugins: [ RevealNotes, RevealMarkdown, RevealHighlight ]
 			});
 			document.addEventListener('DOMContentLoaded', () => {
     			document.querySelector('.reveal').style.background = '#f0f0f0';
