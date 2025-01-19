@@ -30,6 +30,8 @@ function loadSlides(setName) {
         }
     });
 
+
+
     const newSlides = generateSlides(mapping[setName]);
 
     const tempDiv = document.createElement('div');
@@ -51,7 +53,8 @@ function loadSlides(setName) {
         transition: 'slide', // Без анимации
     });
 
-
+    Reveal.sync(); // Синхронизация
+    Reveal.layout();
     Reveal.slide(1); // Переход на первый слайд
 }
 
