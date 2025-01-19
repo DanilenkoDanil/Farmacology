@@ -1,6 +1,15 @@
 function generateSlides(slideSet) {
     return slideSet.map(slide => `
-        <section data-background-image="${slide.image}" data-background-size="73%">
+        <section
+            style="
+                background-image: url('${slide.image}');
+                display: flex;
+                width: 100%;
+                height: 100%;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            ">
         </section>
     `).join('');
 }
