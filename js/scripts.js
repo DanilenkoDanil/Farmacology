@@ -34,9 +34,15 @@ function loadSlides(setName) {
 
     reveal.style.display = 'block';
 
-    Reveal.layout();
-    Reveal.sync();
-    Reveal.slide(1);
+   slidesContainer.style.visibility = 'hidden';
+
+    // Откладываем синхронизацию
+    setTimeout(() => {
+        Reveal.sync();
+        Reveal.layout();
+        Reveal.slide(1); // Переход на первый слайд
+        slidesContainer.style.visibility = 'visible';
+    }, 10000);
 }
 
 
