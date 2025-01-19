@@ -2,12 +2,13 @@ function generateSlides(slideSet) {
     return slideSet.map(slide => `
         <section
             style="
-                display: flex;
+                display: flex !important;
                 width: 100%;
                 height: 100%;
                 border: 3px solid green;
                 justify-content: center;
                 align-items: center;
+                top: 25%;
             ">
             <div class="background-container"
             style="background-image: url('/Farmacology${slide.image}');">
@@ -32,7 +33,9 @@ function loadSlides(setName) {
     tempDiv.innerHTML = newSlides;
 
     Array.from(tempDiv.children).forEach(slide => {
+        slide.style.top = '131px';
         slidesContainer.appendChild(slide);
+
     });
 
 

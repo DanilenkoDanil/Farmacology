@@ -124,3 +124,15 @@ display: flex;
     margin-right: 10%;
     border: 3px solid red;
 }
+
+section.present {
+    display: flex !important;
+}
+
+section.past {
+    display: flex !important;
+}
+
+section.future {
+    display: flex !important;
+}
