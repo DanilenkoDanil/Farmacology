@@ -18,6 +18,13 @@ function loadSlides(setName) {
     const slidesContainer = document.getElementById('slides-container');
     const reveal = document.querySelector('.reveal');
 
+    // Удаляем все существующие элементы слайдов, кроме первого
+    Array.from(slidesContainer.children).forEach((slide, index) => {
+        if (index > 0) {
+            slidesContainer.removeChild(slide);
+        }
+    });
+
     // Создаём новые элементы слайдов и добавляем их в контейнер
     const newSlides = generateSlides(mapping[setName]);
     const tempDiv = document.createElement('div');
@@ -30,8 +37,9 @@ function loadSlides(setName) {
 
     reveal.style.display = 'block';
 
-    Reveal.layout(); // Перерасчёт макета
-    Reveal.sync()
-    Reveal.slide(1)
+    Reveal.layout();
+    Reveal.sync();
+    Reveal.slide(1);
 }
+
 
