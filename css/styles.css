@@ -54,8 +54,3 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
-body.desktop-mode {
-  width: 1024px;
-  overflow-x: scroll;
-}
