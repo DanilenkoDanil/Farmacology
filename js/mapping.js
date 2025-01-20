@@ -577,16 +577,16 @@ const slideButtonConfig = {
     Bebykol: [
         { id: 'btn-back', icon: '/Farmacology/slides/Bebykol2560/icons/545330_2024.png', x: 7, y: 84, width: 5, height: 5, action: 'Reveal.prev();' },
         { id: 'btn-star', icon: '/Farmacology/slides/Bebykol2560/icons/232324.png', x: 10, y: 84, width: 5, height: 5, action: 'Reveal.next();' },
-        { id: 'btn-home', icon: '/Farmacology/slides/Bebykol2560/icons/323234.png', x: 14.8, y: 84, width: 5, height: 5, action: 'Reveal.slide(0);' },
-        { id: 'btn-info', icon: '/Farmacology/slides/Bebykol2560/icons/14.png', x: 18.8, y: 84, width: 5, height: 5, action: 'Reveal.slide(0);' },
-        { id: 'btn-settings', icon: '/Farmacology/slides/Bebykol2560/icons/Bebykol_2560_1600_2024.png', x: 22.8, y: 84, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-home', icon: '/Farmacology/slides/Bebykol2560/icons/323234.png', x: 14.8, y: 84, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Bebykol2560/Б (1).png', type: 'Bebykol',});" },
+        { id: 'btn-info', icon: '/Farmacology/slides/Bebykol2560/icons/14.png', x: 18.8, y: 84, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Bebykol2560/Б (12).png', type: 'Bebykol',});" },
+        { id: 'btn-settings', icon: '/Farmacology/slides/Bebykol2560/icons/Bebykol_2560_1600_2024.png', x: 22.8, y: 84, width: 5, height: 5, action: '' },
     ],
     Stresam: [
         { id: 'btn-back', icon: '/Farmacology/slides/Bebykol2560/icons/545330_2024.png', x: 7, y: 84, width: 5, height: 5, action: 'Reveal.prev();' },
         { id: 'btn-star', icon: '/Farmacology/slides/Bebykol2560/icons/232324.png', x: 9.8, y: 84, width: 5, height: 5, action: 'Reveal.next();' },
-        { id: 'btn-home', icon: '/Farmacology/slides/Bebykol2560/icons/323234.png', x: 13.8, y: 84, width: 5, height: 5, action: 'Reveal.slide(0);' },
-        { id: 'btn-info', icon: '/Farmacology/slides/Bebykol2560/icons/14.png', x: 17.8, y: 84, width: 5, height: 5, action: 'Reveal.slide(0);' },
-        { id: 'btn-settings', icon: '/Farmacology/slides/Bebykol2560/icons/Bebykol_2560_1600_2024.png', x: 21.8, y: 84, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-home', icon: '/Farmacology/slides/Bebykol2560/icons/323234.png', x: 13.8, y: 84, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Stresam2560/C (1).png', type: 'Stresam',});" },
+        { id: 'btn-info', icon: '/Farmacology/slides/Bebykol2560/icons/14.png', x: 17.8, y: 84, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Stresam2560/C (13).png', type: 'Stresam',});" },
+        { id: 'btn-settings', icon: '/Farmacology/slides/Bebykol2560/icons/Bebykol_2560_1600_2024.png', x: 21.8, y: 84, width: 5, height: 5, action: '' },
     ],
 };
 
