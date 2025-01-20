@@ -142,6 +142,10 @@ function loadSlides(setName) {
 					});
 				} else {
 					console.log("Устройство в ландшафтной ориентации");
+					document.querySelectorAll('.background-container').forEach(cont => {
+						cont.style.width = '110vw';
+						cont.style.height = 'auto';
+					});
 				}
 			} else {
 				console.log("Сайт открыт на компьютере");

@@ -564,3 +564,5 @@ const slideButtonConfig = {
         { id: 'btn-settings', icon: '/Farmacology/slides/Bebykol2560/icons/Bebykol_2560_1600_2024.png', x: 21.8, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
     ],
 };
+
+
