@@ -37,7 +37,7 @@ function loadSlidesHoriz(slideSet) {
             inSection = `
                 <div class="background-container"
                     >
-                    <img class="image" src="${slide.image}">
+                    <img class="image" src="/Farmacology${slide.image}">
                     <button class="invisible-button" onclick="Reveal.slide(0);"></button>
                     <button class="invisible-left-button" onclick="Reveal.prev();"></button>
                     <button class="invisible-right-button" onclick="Reveal.next();"></button>
