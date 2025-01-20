@@ -28,7 +28,7 @@ function loadSlidesHoriz(slideSet) {
 
             ">
             <div class="background-container"
-            style="background-image: url('/Farmacology${slide.image}'); height: 100%; width: auto;">
+            style="background-image: url('/Farmacology${slide.image}'); height: 100%; width: 100%;">
             <button class="invisible-button" onclick="Reveal.slide(0);"></button>
             <button class="invisible-left-button" onclick="Reveal.prev();"></button>
             <button class="invisible-right-button" onclick="Reveal.next();"></button>
@@ -51,7 +51,7 @@ function loadSlidesVert(slideSet) {
             id="slide-${index + 1}"
             style="
                 display: flex !important;
-                width: 100%;
+                width: 130%;
                 height: 100%;
                 border: 3px solid green;
                 justify-content: center;
@@ -94,8 +94,8 @@ function loadSlides(setName) {
     });
 
     reveal.style.display = 'flex';
-    Reveal.next();
 
+    Reveal.next();
     Reveal.sync(); // Синхронизация
     Reveal.layout();
     Reveal.slide(1); // Переход на первый слайд
