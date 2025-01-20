@@ -129,29 +129,34 @@ function loadSlides(setName) {
 
     });
 
+const width = window.innerWidth;
+    const height = window.innerHeight;
+    const userAgent = navigator.userAgent;
 
-
-
-
-			if (isMobileDevice()) {
-				console.log("Сайт открыт на мобильном устройстве");
-				if (window.matchMedia("(orientation: portrait)").matches) {
-					console.log("Устройство в портретной ориентации");
-					document.querySelectorAll('.background-container').forEach(cont => {
-						cont.style.width = '100%';
-						cont.style.height = 'auto';
-					});
-				} else {
-					console.log("Устройство в ландшафтной ориентации");
-					document.querySelectorAll('.background-container').forEach(cont => {
+			    if (width / height >= 16 / 9) {
+        console.log("height" + height);
+        console.log(width);
+        document.querySelectorAll('.background-container').forEach(cont => {
 						cont.style.width = 'auto';
 						cont.style.height = '100%';
 					});
-				}
-			} else {
-				console.log("Сайт открыт на компьютере");
-			}
+					console.log("set")
+    } else {
+    console.log("height" + height);
+        console.log(width);
+        document.querySelectorAll('.background-container').forEach((cont, index) => {
 
+						cont.style.width = '100%';
+						cont.style.height = 'auto';
+
+						img = cont.querySelector('.image');
+						console.log(img);
+						img.style.width = '100%';
+						img.style.height = 'auto';
+
+					console.log("set")
+					});
+    }
     reveal.style.display = 'flex';
     Reveal.next();
 

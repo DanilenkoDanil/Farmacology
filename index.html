@@ -93,6 +93,32 @@
 				}
 			}
 
+			const width = window.innerWidth;
+    const height = window.innerHeight;
+    const userAgent = navigator.userAgent;
+
+			    if (width > height) {
+        console.log("height" + height);
+        console.log(width);
+        document.querySelectorAll('.background-container').forEach(cont => {
+						cont.style.width = 'auto';
+						cont.style.height = '100%';
+					});
+					console.log("set")
+    } else {
+    console.log("height" + height);
+        console.log(width);
+        document.querySelectorAll('.background-container').forEach(cont => {
+						cont.style.width = '100%';
+						cont.style.height = 'auto';
+
+						img = cont.querySelector('img');
+						img.style.width = '100%';
+						img.style.height = '50%';
+					});
+					console.log("set")
+    }
+
 			function isMobileDevice() {
 				return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
 			}
@@ -133,16 +159,9 @@
 			}
 
 			function detectDevice() {
-    const width = window.innerWidth;
-    const userAgent = navigator.userAgent;
 
-    if (/iPad|Tablet|PlayBook|Nexus 7|Nexus 10|KFAPWI/i.test(userAgent) || (width >= 768 && width <= 1024)) {
-        console.log("Сайт открыт на планшете");
-    } else if (!/Mobi|Android|iPhone|iPod|BlackBerry|Windows Phone/i.test(userAgent) && width > 1024) {
-        console.log("Сайт открыт на компьютере");
-    } else {
-        console.log("Сайт открыт на телефоне");
-    }
+
+
 }
 
 detectDevice();

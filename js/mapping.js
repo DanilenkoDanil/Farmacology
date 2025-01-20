@@ -167,7 +167,8 @@ const mapping = {
             type: "Asacol",
             special_animation: "Special",
             animation_file: `
-                <div class="background-container" style="background-image: url('/Farmacology/slides/Asacol/A (0).png');">
+                <div class="background-container" >
+                <img class="image" src='/slides/Asacol/A (0).png'>
                     <div class="visit-container" style="
                         position: absolute;
                         top: 50%; /* Центровка кнопок */

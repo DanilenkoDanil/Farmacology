@@ -1,4 +1,5 @@
 <div class="background-container" style="background-image: url('/Farmacology/slides/Asacol/A (0).png');
+<img class="image" src='/slides/Asacol/A (0).png'>
     <div class="visit-container" style="
         position: absolute;
         top: 50%; /* Центровка кнопок */
