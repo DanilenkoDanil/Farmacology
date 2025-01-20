@@ -2,24 +2,27 @@
 
 .main-buttons-container {
     display: grid;
-    grid-template-columns: repeat(3, 0.5fr); /* 3 кнопки в строке */
-    gap: 10vw;
-    row-gap: 5vh;/* Расстояние между кнопками */
+    grid-template-columns: repeat(3, 1fr); /* 3 кнопки в строке */
+    column-gap: 10vw; /* Расстояние между кнопками */
+    row-gap: 20vh;
     justify-items: center; /* Центровка кнопок по горизонтали */
-    position: relative;
-    top: -10vh;
+    position: absolute;
+    justify-content: center;
+
 }
 
 .main-buttons-container button {
-    width: 20vw;
-    height: 20vh;
+    width: 10vw;
+    min-width: 200px;
+    height: 10vh;
+    min-height: 100px;
     font-family: 'Montserrat', sans-serif;
     font-size: 40%;
     font-weight: 700;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 3%;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -76,8 +79,8 @@
 
 .section {
     display: flex;
-    width: 80vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -142,33 +145,18 @@
 
 .background-container {
     position: relative;
-    width: auto;
-    max-height: 100%;
-    height: 100%;/* Пропорционально размеру секции */
+    width: 80%; /* Пропорционально размеру секции */
     aspect-ratio: 16 / 9; /* Пропорции фонового изображения */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 10%;
+    margin-right: 10%;
     border: 3px solid red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.background-container img {
-  width: auto;
-  height: auto;
-  object-fit: contain; /* Альтернатива для изображений внутри контейнеров */
-  object-position: center;
-
 }
 
 section.present {
     display: flex !important;
-    align-items: center;
-    justify-content: center;
 }
 
 section.past {
@@ -179,6 +167,10 @@ section.future {
     display: flex !important;
 }
 
+section {
+    position: relative; /* Позволяет дочерним элементам позиционироваться относительно родителя */
+    overflow: hidden;   /* Обрезает выходящие элементы, если нужно */
+}
 
 /* Кнопки */
 .dynamic-button {
