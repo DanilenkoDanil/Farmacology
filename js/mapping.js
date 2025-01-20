@@ -168,7 +168,7 @@ const mapping = {
             special_animation: "Special",
             animation_file: `
                 <div class="background-container" >
-                <img class="image" src='/slides/Asacol/A (0).png'>
+                <img class="image" src='/Farmacology/slides/Asacol/A (0).png'>
                     <div class="visit-container" style="
                         position: absolute;
                         top: 50%; /* Центровка кнопок */
