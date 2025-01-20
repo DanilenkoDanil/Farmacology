@@ -3,21 +3,26 @@
 .main-buttons-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 кнопки в строке */
-    gap: 50px; /* Расстояние между кнопками */
+    column-gap: 10vw; /* Расстояние между кнопками */
+    row-gap: 20vh;
     justify-items: center; /* Центровка кнопок по горизонтали */
+    position: absolute;
+    justify-content: center;
 
 }
 
 .main-buttons-container button {
-    width: 200px;
-    height: 100px;
+    width: 10vw;
+    min-width: 200px;
+    height: 10vh;
+    min-height: 100px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 40%;
     font-weight: 700;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 3%;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
