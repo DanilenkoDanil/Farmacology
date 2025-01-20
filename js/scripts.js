@@ -119,7 +119,6 @@ function addButtonsToBackgroundContainer(slideId, buttons) {
                 btn.style.backgroundSize = 'contain';
                 btn.style.border = 'none';
                 btn.style.cursor = 'pointer';
-                btn.style.zIndex = '119999'
                 btn.setAttribute('onclick', button.action);
 
                 backgroundContainer.appendChild(btn); // Добавляем кнопку в background-container

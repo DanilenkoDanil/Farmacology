@@ -171,10 +171,9 @@ section {
 .dynamic-button {
     border-radius: 50%;
     transition: transform 0.3s;
-    z-index: 2; /* Чтобы кнопки были поверх фона */
+    z-index: 119999;
 }
 
 .dynamic-button:hover {
-    transform: scale(1.1); /* Увеличение кнопки при наведении */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.3); /* Увеличение кнопки при наведении */
 }
