@@ -36,7 +36,8 @@ function loadSlidesHoriz(slideSet) {
         } else {
             inSection = `
                 <div class="background-container"
-                    style="background-image: url('/Farmacology${slide.image}');">
+                    >
+                    <img class="image" src="${slide.image}">
                     <button class="invisible-button" onclick="Reveal.slide(0);"></button>
                     <button class="invisible-left-button" onclick="Reveal.prev();"></button>
                     <button class="invisible-right-button" onclick="Reveal.next();"></button>
@@ -143,8 +144,8 @@ function loadSlides(setName) {
 				} else {
 					console.log("Устройство в ландшафтной ориентации");
 					document.querySelectorAll('.background-container').forEach(cont => {
-						cont.style.width = '110vw';
-						cont.style.height = 'auto';
+						cont.style.width = 'auto';
+						cont.style.height = '100%';
 					});
 				}
 			} else {
@@ -179,6 +180,7 @@ function addButtonsToBackgroundContainer(slideId, buttons) {
                 btn.style.cursor = 'pointer';
                 btn.style.zIndex = '119999'
                 btn.setAttribute('onclick', button.action);
+                btn.style.transform = `translate(${button.x}%, ${button.y}%)`;
 
                 backgroundContainer.appendChild(btn); // Добавляем кнопку в background-container
             });

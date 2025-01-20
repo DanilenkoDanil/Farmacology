@@ -102,8 +102,8 @@
 				if (window.matchMedia("(orientation: portrait)").matches) {
 					console.log("Устройство в портретной ориентации");
 					document.querySelectorAll('.background-container').forEach(cont => {
-						cont.style.width = '100%';
-						cont.style.height = '100%';
+						cont.style.width = '100vw';
+						cont.style.height = 'auto';
 					});
 					const mainBtnCont = document.querySelector('.main-buttons-container');
 					mainBtnCont.style.width = '100vw';
@@ -120,8 +120,8 @@
 				} else {
 					console.log("Устройство в ландшафтной ориентации");
 					document.querySelectorAll('.background-container').forEach(cont => {
-						cont.style.width = '90vw';
-						cont.style.height = '100vh';
+						cont.style.width = '90%';
+						cont.style.height = '100%';
 					});
 					const mainBtnCont = document.querySelector('.main-buttons-container');
 					mainBtnCont.querySelectorAll('button').forEach(btn => {
@@ -132,6 +132,20 @@
 				console.log("Сайт открыт на компьютере");
 			}
 
+			function detectDevice() {
+    const width = window.innerWidth;
+    const userAgent = navigator.userAgent;
+
+    if (/iPad|Tablet|PlayBook|Nexus 7|Nexus 10|KFAPWI/i.test(userAgent) || (width >= 768 && width <= 1024)) {
+        console.log("Сайт открыт на планшете");
+    } else if (!/Mobi|Android|iPhone|iPod|BlackBerry|Windows Phone/i.test(userAgent) && width > 1024) {
+        console.log("Сайт открыт на компьютере");
+    } else {
+        console.log("Сайт открыт на телефоне");
+    }
+}
+
+detectDevice();
 		</script>
 		<script src="js/scripts.js"></script>
 	</body>

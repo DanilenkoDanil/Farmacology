@@ -141,8 +141,9 @@
 
 
 .background-container {
-    position: absolute;
-    width: 110vw;
+    position: relative;
+    width: auto;
+    max-height: 90vh;
     height: auto;/* Пропорционально размеру секции */
     aspect-ratio: 16 / 9; /* Пропорции фонового изображения */
     background-size: contain;
@@ -152,6 +153,13 @@
     margin-right: 0;
     border: 3px solid red;
     display: block;
+}
+
+.background-container img {
+  width: auto;
+  height: auto;
+  object-fit: cover; /* Альтернатива для изображений внутри контейнеров */
+
 }
 
 section.present {
