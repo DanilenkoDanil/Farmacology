@@ -1,74 +1,45 @@
+function checkSpecAnimation(slide) {
+    if (slide.special_animation === 'Special') {
+        return slide.animation_text;
+    } else return null;
+}
+
 function generateSlides(slideSet) {
-    if (document.body.classList.contains('reveal-scroll')) {
-        console.log('Класс "reveal-scroll" is в теге <body>');
-        return loadSlidesVert(slideSet);
-    } else {
-        console.log('Класс "reveal-scroll" отсутствует в теге <body>');
-        return loadSlidesHoriz(slideSet);
-    }
+    console.log("loadSlidesHoriz");
+    console.log("slideSet", slideSet);
 
-}
+    return slideSet.map((slide, index) => {
+        // Проверка наличия специальной анимации
+        const animationText = checkSpecAnimation(slide);
+        const text = animationText !== null ? animationText : "";
 
-function loadSlidesHoriz(slideSet) {
-    console.log("loadSlidesHoriz")
-    console.log("slideSet" + slideSet)
-    return slideSet.map((slide, index) => `
-        <section
-            data-type="${slide.type || ''}"
-            data-index="${index + 1}"
-            id="slide-${index + 1}"
-            style="
-                display: flex !important;
-                width: 100%;
-                height: 100%;
-                border: 3px solid green;
-                justify-content: center;
-                align-items: center;
-
-
-            ">
-            <div class="background-container"
-            style="background-image: url('/Farmacology${slide.image}'); height: 100%; width: 100%;">
-            <button class="invisible-button" onclick="Reveal.slide(0);"></button>
-            <button class="invisible-left-button" onclick="Reveal.prev();"></button>
-            <button class="invisible-right-button" onclick="Reveal.next();"></button>
-            </div>
-        </section>
-    `).join('');
-}
-
-function loadSlidesVert(slideSet) {
-    console.log("loadSlidesVert")
-    console.log(slideSet)
-    return slideSet.map((slide, index) => `
-    <div class="scroll-page" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(25, 25, 25); --slide-height: auto; --page-scroll-padding: 0px; scroll-snap-align: start;">
-    <div class="scroll-page-sticky" style="position: relative;">
-    <div class="scroll-page-content"
-        <section
-            data-type="${slide.type || ''}"
-            data-index-h="${index + 1}"
-            data-index-v="0"
-            id="slide-${index + 1}"
-            style="
-                display: flex !important;
-                width: 100%;
-                height: 100%;
-                border: 3px solid green;
-                justify-content: center;
-                align-items: center;
-            ">
-            <div class="background-container"
-            style="background-image: url('/Farmacology${slide.image}'); margin-left: 0; margin-right: 0; width: 100%;">
-            <button class="invisible-button" onclick="slideToStart()"></button>
-            <button class="invisible-left-button" onclick="Reveal.prev()"></button>
-            <button class="invisible-right-button" onclick="Reveal.next()"></button>
-            </div>
-        </section>
-    </div>
-    </div>
-    <div class="scroll-snap-point"></div>
-    </div>
-    `).join('');
+        return `
+            <section
+                data-type="${slide.type || ''}"
+                data-index="${index + 1}"
+                id="slide-${index + 1}"
+                style="
+                    display: flex !important;
+                    width: 100%;
+                    height: 100%;
+                    border: 3px solid green;
+                    justify-content: center;
+                    align-items: center;
+                ">
+                <div class="background-container"
+                    style="
+                        background-image: url('/Farmacology${slide.image}');
+                        height: 100%;
+                        width: 100%;
+                    ">
+                    <button class="invisible-button" onclick="Reveal.slide(0);"></button>
+                    <button class="invisible-left-button" onclick="Reveal.prev();"></button>
+                    <button class="invisible-right-button" onclick="Reveal.next();"></button>
+                    ${text}
+                </div>
+            </section>
+        `;
+    }).join('');
 }
 
 
