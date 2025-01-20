@@ -24,7 +24,7 @@ function loadSlidesHoriz(slideSet) {
                 border: 3px solid green;
                 justify-content: center;
                 align-items: center;
-                top: 25%;
+
 
             ">
             <div class="background-container"
@@ -51,7 +51,7 @@ function loadSlidesVert(slideSet) {
             id="slide-${index + 1}"
             style="
                 display: flex !important;
-                width: 130%;
+                width: 100%;
                 height: 100%;
                 border: 3px solid green;
                 justify-content: center;
