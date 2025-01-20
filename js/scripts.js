@@ -24,8 +24,6 @@ function loadSlidesHoriz(slideSet) {
                 border: 3px solid green;
                 justify-content: center;
                 align-items: center;
-
-
             ">
             <div class="background-container"
             style="background-image: url('/Farmacology${slide.image}'); height: 100%; width: 100%;">
@@ -141,3 +139,4 @@ Reveal.on('slidechanged', event => {
         addButtonsToBackgroundContainer(currentSlideId, slideButtonConfig[slideType]);
     }
 });
+
