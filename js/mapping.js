@@ -3,7 +3,46 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (1).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: `
+            <div class="percent-container">
+    <button class="percent" id="percent5" style="background-image: url('../slides/Enterol2560/E1/5.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent4" style="background-image: url('../slides/Enterol2560/E1/4.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent3" style="background-image: url('../slides/Enterol2560/E1/3.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent2" style="background-image: url('../slides/Enterol2560/E1/2.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent1" style="background-image: url('../slides/Enterol2560/E1/1.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+</div>
+            `
         },
         {
             image: "/slides/Enterol2560/E (2).png",
@@ -165,31 +204,16 @@ const mapping = {
         {
             image: "/slides/Asacol/A (0).png",
             type: "Asacol",
-            special_animation: "Special",
-            animation_file: `
-                <div class="background-container" >
-                <img class="image" src='/Farmacology/slides/Asacol/A (0).png'>
-                    <div class="visit-container" style="
-                        position: absolute;
-                        top: 50%; /* Центровка кнопок */
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        display: flex;
-                        flex-direction: column;
-                        gap: 10px;
-                        ">
-
-                        <button class="visit" id="visit1" onclick="slideToStart()"></button>
-                        <button class="visit" id="visit2" onclick="loadSlides('slide-0')"></button>
-                        <button class="visit" id="visit3" onclick="loadSlides('slide-0')"></button>
-                        <button class="visit" id="visit4" onclick="loadSlides('slide-0')"></button>
-                        <button class="visit" id="visit5" onclick="loadSlides('slide-0')"></button>
-                    </div>
-
-                    <button class="invisible-button" onclick="slideToStart();"></button>
-                    <button class="invisible-left-button" onclick="Reveal.prev();"></button>
-                    <button class="invisible-right-button" onclick="Reveal.next();"></button>
-            </div>`
+            special_animation: 'Special',
+            animation_text: `
+            <div class="visit-container">
+                <button class="visit" id="visit1" style="background-image: url('../slides/Asacol/A0/1.png');" onclick="Reveal.slide(0)"></button>
+                <button class="visit" id="visit2" style="background-image: url('../slides/Asacol/A0/2.png');" onclick="loadSlides('slide-0')"></button>
+                <button class="visit" id="visit3" style="background-image: url('../slides/Asacol/A0/3.png');" onclick="loadSlides('slide-0')"></button>
+                <button class="visit" id="visit4" style="background-image: url('../slides/Asacol/A0/4.png');" onclick="loadSlides('slide-0')"></button>
+                <button class="visit" id="visit5" style="background-image: url('../slides/Asacol/A0/5.png');" onclick="loadSlides('slide-0')"></button>
+            </div>
+            `
         },
         {
             image: "/slides/Stresam2560/C (14).png",
@@ -531,7 +555,6 @@ const mapping = {
         },
     ]
 }
-
 
 
 const slideButtonConfig = {

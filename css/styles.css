@@ -95,16 +95,20 @@
     display: flex;
     flex-direction: column; /* Расположение кнопок в колонку */
     align-items: center; /* Центрирование кнопок по горизонтали */
-    gap: 17px; /* Расстояние между кнопками */
+    gap: 10px; /* Расстояние между кнопками */
     height: 100%; /* Занимает всю высоту родителя (.section) */
-    width: 100%; /* Ширина контейнера */
+    width: 40%; /* Ширина контейнера */
     margin: 0; /* Убирает внешние отступы */
     padding: 2% 0 2% 33%;
-    border: 3px solid red; /* Для проверки границ */
+    border: 3px solid blue; /* Для проверки границ */
     box-sizing: border-box; /* Учитывает border в размерах */
     position: absolute; /* Чтобы элемент оставался внутри .section */
-    top: 0;
-    left: 0; /* При необходимости можно менять позиции */
+    top: 50%;
+    left: 50%; /* При необходимости можно менять позиции */
+    padding-top: 10%;
+    padding-bottom: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 99999999;
 }
 
 .visit {
@@ -126,20 +130,56 @@
     transform: scale(1.05); /* Лёгкое увеличение кнопки при наведении */
 }
 
-#visit1 {
-    background-image: url('../slides/Asacol/A0/1.png'); /* Фоновое изображение */
+.percent-container {
+    display: flex;
+    flex-direction: row; /* Расположение кнопок в колонку */
+    justify-content: center;
+    align-items: center; /* Центрирование кнопок по горизонтали */
+    gap: 2.5%; /* Расстояние между кнопками */
+    height: auto; /* Занимает всю высоту родителя (.section) */
+    max-width: 100%;
+    width: 60%; /* Ширина контейнера */
+    margin: 0; /* Убирает внешние отступы */
+    border: 3px solid blue; /* Для проверки границ */
+    box-sizing: border-box; /* Учитывает border в размерах */
+    position: absolute; /* Чтобы элемент оставался внутри .section */
+    top: 69%;
+    left: 31.5%; /* При необходимости можно менять позиции */
+    transform: translate(-50%, -50%);
+    z-index: 99999999;
+    overflow: visible;
 }
-#visit2 {
-    background-image: url('../slides/Asacol/A0/2.png'); /* Фоновое изображение */
+
+.percent {
+    width: 17%; /* Ширина кнопки: 80% от ширины контейнера */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    aspect-ratio: 240 / 232; /* Соотношение сторон кнопки */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none; /* Убирает рамку */
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease;
 }
-#visit3 {
-    background-image: url('../slides/Asacol/A0/3.png'); /* Фоновое изображение */
+
+.percent:hover {
+    transform: scale(1.05); /* Лёгкое увеличение кнопки при наведении */
 }
-#visit4 {
-    background-image: url('../slides/Asacol/A0/4.png'); /* Фоновое изображение */
+
+.percent.active {
+    animation: scaleUp 2s forwards; /* Анимация увеличения */
 }
-#visit5 {
-    background-image: url('../slides/Asacol/A0/5.png'); /* Фоновое изображение */
+
+/* Анимация для плавного увеличения */
+@keyframes scaleUp {
+    0% {
+        transform: scale(1.05); /* Начальный размер */
+    }
+    100% {
+        transform: scale(1.5); /* Увеличение до 120% */
+    }
 }
 
 

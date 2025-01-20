@@ -1,0 +1,7 @@
+<div class="visit-container">
+    <button class="visit" id="visit1" style="background-image: url('../slides/Asacol/A0/1.png');" onclick="Reveal.slide(0)"></button>
+    <button class="visit" id="visit2" style="background-image: url('../slides/Asacol/A0/2.png');" onclick="loadSlides('slide-0')"></button>
+    <button class="visit" id="visit3" style="background-image: url('../slides/Asacol/A0/3.png');" onclick="loadSlides('slide-0')"></button>
+    <button class="visit" id="visit4" style="background-image: url('../slides/Asacol/A0/4.png');" onclick="loadSlides('slide-0')"></button>
+    <button class="visit" id="visit5" style="background-image: url('../slides/Asacol/A0/5.png');" onclick="loadSlides('slide-0')"></button>
+</div>
