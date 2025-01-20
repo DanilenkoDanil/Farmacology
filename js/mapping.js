@@ -165,7 +165,30 @@ const mapping = {
         {
             image: "/slides/Asacol/A (0).png",
             type: "Asacol",
-            special_animation: 'Base'
+            special_animation: "Special",
+            animation_file: `
+                <div class="background-container" style="background-image: url('/Farmacology/slides/Asacol/A (0).png');">
+                    <div class="visit-container" style="
+                        position: absolute;
+                        top: 50%; /* Центровка кнопок */
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        ">
+
+                        <button class="visit" id="visit1" onclick="slideToStart()"></button>
+                        <button class="visit" id="visit2" onclick="loadSlides('slide-0')"></button>
+                        <button class="visit" id="visit3" onclick="loadSlides('slide-0')"></button>
+                        <button class="visit" id="visit4" onclick="loadSlides('slide-0')"></button>
+                        <button class="visit" id="visit5" onclick="loadSlides('slide-0')"></button>
+                    </div>
+
+                    <button class="invisible-button" onclick="slideToStart();"></button>
+                    <button class="invisible-left-button" onclick="Reveal.prev();"></button>
+                    <button class="invisible-right-button" onclick="Reveal.next();"></button>
+            </div>`
         },
         {
             image: "/slides/Stresam2560/C (14).png",

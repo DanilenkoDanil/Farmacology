@@ -9,33 +9,64 @@ function generateSlides(slideSet) {
 
 }
 
-function loadSlidesHoriz(slideSet) {
-    console.log("loadSlidesHoriz")
-    console.log("slideSet" + slideSet)
-    return slideSet.map((slide, index) => `
-        <section
-            data-type="${slide.type || ''}"
-            data-index="${index + 1}"
-            id="slide-${index + 1}"
-            style="
-                display: flex !important;
-                width: 100%;
-                height: 100%;
-                border: 3px solid green;
-                justify-content: center;
-                align-items: center;
-                top: 25%;
+function checkSpecAnimation(slide) {
+    console.log(slide.special_animation);
+    console.log(slide.animation_file);
+    if (slide.special_animation === 'Special') {
+        const text = slide.animation_file;
+        return text;
+    } else {console.log("null"); return null;}
 
-            ">
-            <div class="background-container"
-            style="background-image: url('/Farmacology${slide.image}'); height: 100%; width: 100%;">
-            <button class="invisible-button" onclick="Reveal.slide(0);"></button>
-            <button class="invisible-left-button" onclick="Reveal.prev();"></button>
-            <button class="invisible-right-button" onclick="Reveal.next();"></button>
-            </div>
-        </section>
-    `).join('');
 }
+
+function loadSlidesHoriz(slideSet) {
+    console.log("loadSlidesHoriz");
+    console.log("slideSet", slideSet);
+
+    let result = ''; // Итоговая строка
+
+    slideSet.forEach((slide, index) => {
+        let inSection;
+        let htmlCode = checkSpecAnimation(slide);
+        console.log("htmlCode " + htmlCode)
+
+        // Проверка специальной анимации
+        if (htmlCode !== null) {
+            inSection = htmlCode;
+        } else {
+            inSection = `
+                <div class="background-container"
+                    style="background-image: url('/Farmacology${slide.image}'); height: 100%; width: 100%;">
+                    <button class="invisible-button" onclick="Reveal.slide(0);"></button>
+                    <button class="invisible-left-button" onclick="Reveal.prev();"></button>
+                    <button class="invisible-right-button" onclick="Reveal.next();"></button>
+                </div>
+            `;
+        }
+
+        // Добавляем обработанный слайд к результату
+        result += `
+            <section
+                data-type="${slide.type || ''}"
+                data-index="${index + 1}"
+                id="slide-${index + 1}"
+                style="
+                    display: flex !important;
+                    width: 100%;
+                    height: 100%;
+                    border: 3px solid green;
+                    justify-content: center;
+                    align-items: center;
+                    top: 25%;
+                ">
+                ${inSection}
+            </section>
+        `;
+    });
+
+    return result; // Возвращаем итоговую строку
+}
+
 
 function loadSlidesVert(slideSet) {
     console.log("loadSlidesVert")
@@ -94,8 +125,8 @@ function loadSlides(setName) {
     });
 
     reveal.style.display = 'flex';
-
     Reveal.next();
+
     Reveal.sync(); // Синхронизация
     Reveal.layout();
     Reveal.slide(1); // Переход на первый слайд
@@ -119,6 +150,7 @@ function addButtonsToBackgroundContainer(slideId, buttons) {
                 btn.style.backgroundSize = 'contain';
                 btn.style.border = 'none';
                 btn.style.cursor = 'pointer';
+                btn.style.zIndex = '119999'
                 btn.setAttribute('onclick', button.action);
 
                 backgroundContainer.appendChild(btn); // Добавляем кнопку в background-container

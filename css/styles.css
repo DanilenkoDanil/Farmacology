@@ -140,7 +140,7 @@
 
 .background-container {
     position: relative;
-    width: 80%; /* Пропорционально размеру секции */
+    width: 100%; /* Пропорционально размеру секции */
     aspect-ratio: 16 / 9; /* Пропорции фонового изображения */
     background-size: contain;
     background-position: center;
