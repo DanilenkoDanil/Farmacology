@@ -15,9 +15,9 @@
 	</head>
 	<body>
         <div class="reveal">
-            <div class="slides" id="slides-container">
+            <div class="slides" id="slides-container" style="align-items: center; justify-content: center;">
 				<section id="slide-0" data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
-					<div class="main-buttons-container">
+					<div class="main-buttons-container" style="width: 100vw; height: 50vh; margin: 40vh 20% 20% 20%;">
 						<button class="button" id="pediatr" onclick="loadSlides('pediatr')">Педіатр</button>
 						<button class="button" id="gastro" onclick="loadSlides('gastro')">Гастро</button>
 						<button class="button" id="gastro-kid" onclick="loadSlides('pediatric_gastro')">Гастро дит</button>
@@ -69,6 +69,7 @@
 		  transitionSpeed: 'slow',
 		  mobileViewDistance: 2,
 		  mouseWheel: true,
+		  disableLayout: true,
 		});
 
 		document.addEventListener('DOMContentLoaded', () => {
@@ -76,14 +77,13 @@
 		});
 		</script>
         <script src="js/mapping.js"></script>
-        <script src="js/scripts.js"></script>
+
 		<script>
+
 			document.querySelectorAll('section').forEach(section => {
 				section.style.display = 'flex';
 				section.style.justifyContent = 'center';
 				section.style.alignItems = 'center';
-				section.style.width = '100%';
-				section.style.height = '100%';
 				section.style.boxSizing = 'border-box';
 			});
 
@@ -92,7 +92,43 @@
 					Reveal.prev();
 				}
 			}
-		</script>
 
+			function isMobileDevice() {
+				return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+			}
+
+			if (isMobileDevice()) {
+				console.log("Сайт открыт на мобильном устройстве");
+				if (window.matchMedia("(orientation: portrait)").matches) {
+					console.log("Устройство в портретной ориентации");
+					document.querySelectorAll('.background-container').forEach(cont => {
+						cont.style.width = '100%';
+						cont.style.height = '100%';
+					});
+					const mainBtnCont = document.querySelector('.main-buttons-container');
+					mainBtnCont.style.width = '100vw';
+					mainBtnCont.style.height = '50vh';
+					mainBtnCont.style.gridTemplateColumns = 'repeat(2, 0.5fr)';
+					mainBtnCont.style.margin = '25vh 20% 20% 20%';
+
+					buttons = mainBtnCont.querySelector('button');
+					mainBtnCont.querySelectorAll('button').forEach(btn => {
+						btn.style.width = '30vw';
+						btn.style.height = '20vh';
+						btn.style.fontSize = '30%';
+						});
+				} else {
+					console.log("Устройство в ландшафтной ориентации");
+					const mainBtnCont = document.querySelector('.main-buttons-container');
+					mainBtnCont.querySelectorAll('button').forEach(btn => {
+						btn.style.fontSize = '30%';
+						});
+				}
+			} else {
+				console.log("Сайт открыт на компьютере");
+			}
+
+		</script>
+		<script src="js/scripts.js"></script>
 	</body>
 </html>

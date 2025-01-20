@@ -36,7 +36,7 @@ function loadSlidesHoriz(slideSet) {
         } else {
             inSection = `
                 <div class="background-container"
-                    style="background-image: url('/Farmacology${slide.image}'); height: 100%; width: 100%;">
+                    style="background-image: url('/Farmacology${slide.image}');">
                     <button class="invisible-button" onclick="Reveal.slide(0);"></button>
                     <button class="invisible-left-button" onclick="Reveal.prev();"></button>
                     <button class="invisible-right-button" onclick="Reveal.next();"></button>
@@ -52,12 +52,12 @@ function loadSlidesHoriz(slideSet) {
                 id="slide-${index + 1}"
                 style="
                     display: flex !important;
-                    width: 100%;
+                    width: 100vw;
                     height: 100%;
                     border: 3px solid green;
                     justify-content: center;
                     align-items: center;
-                    top: 25%;
+                    margin-right: 35%;
                 ">
                 ${inSection}
             </section>
@@ -82,7 +82,7 @@ function loadSlidesVert(slideSet) {
             id="slide-${index + 1}"
             style="
                 display: flex !important;
-                width: 130%;
+                width: 100%;
                 height: 100%;
                 border: 3px solid green;
                 justify-content: center;
@@ -101,6 +101,10 @@ function loadSlidesVert(slideSet) {
     </div>
     `).join('');
 }
+
+function isMobileDevice() {
+				return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+			}
 
 
 function loadSlides(setName) {
@@ -123,6 +127,25 @@ function loadSlides(setName) {
         slidesContainer.appendChild(slide);
 
     });
+
+
+
+
+
+			if (isMobileDevice()) {
+				console.log("Сайт открыт на мобильном устройстве");
+				if (window.matchMedia("(orientation: portrait)").matches) {
+					console.log("Устройство в портретной ориентации");
+					document.querySelectorAll('.background-container').forEach(cont => {
+						cont.style.width = '100%';
+						cont.style.height = 'auto';
+					});
+				} else {
+					console.log("Устройство в ландшафтной ориентации");
+				}
+			} else {
+				console.log("Сайт открыт на компьютере");
+			}
 
     reveal.style.display = 'flex';
     Reveal.next();
