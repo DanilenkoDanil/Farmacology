@@ -507,3 +507,37 @@ const mapping = {
         },
     ]
 }
+
+
+const slideButtonConfig = {
+    Enterol: [
+        { id: 'btn-back', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle-1.svg', x: 10, y: 91, width: 5, height: 5, action: 'Reveal.prev();' },
+        { id: 'btn-home', icon: '/Farmacology/slides/Enterol2560/1icons/svg/home-door.svg', x: 15, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-info', icon: '/Farmacology/slides/Enterol2560/1icons/svg/info.svg', x: 20, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-settings', icon: '/Farmacology/slides/Enterol2560/1icons/svg/clip_path_group.svg', x: 25, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-star', icon: '/Farmacology/slides/Enterol2560/1icons/svg/Shape.svg', x: 30, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-next', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle.svg', x: 35, y: 91, width: 5, height: 5, action: 'Reveal.next();' },
+    ],
+    EnterolV3: [
+        { id: 'btn-back', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle-1.svg', x: 30, y: 91, width: 5, height: 5, action: 'Reveal.prev();' },
+        { id: 'btn-home', icon: '/Farmacology/slides/Enterol2560/1icons/svg/home-door.svg', x: 35, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-info', icon: '/Farmacology/slides/Enterol2560/1icons/svg/info.svg', x: 40, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-settings', icon: '/Farmacology/slides/Enterol2560/1icons/svg/clip_path_group.svg', x: 45, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-star', icon: '/Farmacology/slides/Enterol2560/1icons/svg/Shape.svg', x: 50, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-next', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle.svg', x: 55, y: 91, width: 5, height: 5, action: 'Reveal.next();' },
+    ],
+    Bebykol: [
+        { id: 'btn-back', icon: '/Farmacology/slides/Bebykol2560/icons/545330_2024.png', x: 7, y: 91, width: 5, height: 5, action: 'Reveal.prev();' },
+        { id: 'btn-star', icon: '/Farmacology/slides/Bebykol2560/icons/232324.png', x: 9.8, y: 91, width: 5, height: 5, action: 'Reveal.next();' },
+        { id: 'btn-home', icon: '/Farmacology/slides/Bebykol2560/icons/323234.png', x: 13.8, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-info', icon: '/Farmacology/slides/Bebykol2560/icons/14.png', x: 17.8, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-settings', icon: '/Farmacology/slides/Bebykol2560/icons/Bebykol_2560_1600_2024.png', x: 21.8, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+    ],
+    Stresam: [
+        { id: 'btn-back', icon: '/Farmacology/slides/Bebykol2560/icons/545330_2024.png', x: 7, y: 91, width: 5, height: 5, action: 'Reveal.prev();' },
+        { id: 'btn-star', icon: '/Farmacology/slides/Bebykol2560/icons/232324.png', x: 9.8, y: 91, width: 5, height: 5, action: 'Reveal.next();' },
+        { id: 'btn-home', icon: '/Farmacology/slides/Bebykol2560/icons/323234.png', x: 13.8, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-info', icon: '/Farmacology/slides/Bebykol2560/icons/14.png', x: 17.8, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+        { id: 'btn-settings', icon: '/Farmacology/slides/Bebykol2560/icons/Bebykol_2560_1600_2024.png', x: 21.8, y: 91, width: 5, height: 5, action: 'Reveal.slide(0);' },
+    ],
+};

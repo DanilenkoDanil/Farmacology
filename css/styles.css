@@ -161,3 +161,20 @@ section.past {
 section.future {
     display: flex !important;
 }
+
+section {
+    position: relative; /* Позволяет дочерним элементам позиционироваться относительно родителя */
+    overflow: hidden;   /* Обрезает выходящие элементы, если нужно */
+}
+
+/* Кнопки */
+.dynamic-button {
+    border-radius: 50%;
+    transition: transform 0.3s;
+    z-index: 2; /* Чтобы кнопки были поверх фона */
+}
+
+.dynamic-button:hover {
+    transform: scale(1.1); /* Увеличение кнопки при наведении */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}

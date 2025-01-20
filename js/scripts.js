@@ -100,3 +100,45 @@ function loadSlides(setName) {
     Reveal.layout();
     Reveal.slide(1); // Переход на первый слайд
 }
+
+function addButtonsToBackgroundContainer(slideId, buttons) {
+    const section = document.getElementById(slideId); // Находим section по ID
+    if (section) {
+        const backgroundContainer = section.querySelector('.background-container'); // Находим div с классом background-container
+        if (backgroundContainer) {
+            buttons.forEach(button => {
+                const btn = document.createElement('button');
+                btn.className = 'dynamic-button';
+                btn.id = button.id;
+                btn.style.position = 'absolute';
+                btn.style.left = `${button.x}%`;
+                btn.style.top = `${button.y}%`;
+                btn.style.width = `${button.width}%`;
+                btn.style.height = `${button.height}%`;
+                btn.style.background = `url(${button.icon}) no-repeat center`;
+                btn.style.backgroundSize = 'contain';
+                btn.style.border = 'none';
+                btn.style.cursor = 'pointer';
+                btn.style.zIndex = '119999'
+                btn.setAttribute('onclick', button.action);
+
+                backgroundContainer.appendChild(btn); // Добавляем кнопку в background-container
+            });
+        } else {
+            console.error('background-container не найден в section:', slideId);
+        }
+    } else {
+        console.error('Section с ID', slideId, 'не найден');
+    }
+}
+
+Reveal.on('slidechanged', event => {
+    console.log('work it')
+    const currentSlideId = event.currentSlide.id;
+    console.log(event.currentSlide.id);
+    const slideType = event.currentSlide.dataset.type;
+    console.log(slideType);
+    if (slideButtonConfig[slideType]) {
+        addButtonsToBackgroundContainer(currentSlideId, slideButtonConfig[slideType]);
+    }
+});
