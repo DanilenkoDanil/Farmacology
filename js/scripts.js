@@ -120,6 +120,14 @@ Reveal.on('slidechanged', event => {
     let swipeDisabled = false;
 
     function handleMouseMove(event) {
+
+        const noSwipeElement = document.querySelector('.no-swipe-zone');
+
+        // Блокируем событие touchmove в этой области
+        noSwipeElement.addEventListener('touchmove', (event) => {
+            event.preventDefault();
+        });
+
         if (event.target.closest('.no-swipe-zone')) return;
         const humans = document.querySelectorAll('.human');
         const percentageElement = document.querySelector('#percentage');
@@ -147,6 +155,13 @@ Reveal.on('slidechanged', event => {
     }
 
     function handleTouchMove(event) {
+        const noSwipeElement = document.querySelector('.no-swipe-zone');
+
+        // Блокируем событие touchmove в этой области
+        noSwipeElement.addEventListener('touchmove', (event) => {
+            event.preventDefault();
+        });
+
         if (event.target.closest('.no-swipe-zone')) {
             if (!swipeDisabled) {
                 disableSwipe();
