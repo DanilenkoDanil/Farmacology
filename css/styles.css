@@ -51,10 +51,9 @@
     width: 25%; /* Размер кнопки */
     height: 25%;
     background-color: transparent; /* Делает кнопку невидимой */
-    /*border: none;*/
+    border: none;
     cursor: pointer;
     z-index: 1001; /* Убедитесь, что кнопка находится поверх других элементов */
-    border: 3px solid red;
 }
 
 .invisible-left-button {
@@ -64,10 +63,9 @@
     width: 25%; /* Размер кнопки */
     height: 100%;
     background-color: transparent; /* Делает кнопку невидимой */
-    /*border: none;*/
+    border: none;
     cursor: pointer;
     z-index: 1000; /* Убедитесь, что кнопка находится поверх других элементов */
-    border: 3px solid red;
 }
 
 .invisible-right-button {
@@ -77,10 +75,9 @@
     width: 25%; /* Размер кнопки */
     height: 100%;
     background-color: transparent; /* Делает кнопку невидимой */
-    /*border: none;*/
+    border: none;
     cursor: pointer;
     z-index: 1000; /* Убедитесь, что кнопка находится поверх других элементов */
-    border: 3px solid red;
 }
 
 .section {
@@ -93,7 +90,6 @@
     box-sizing: border-box; /* Учитывает padding и border в размерах */
     overflow: hidden;
     position: relative;
-    border: 3px solid red;
 }
 
 
@@ -196,7 +192,6 @@
     background-repeat: no-repeat;
     margin-left: 10%;
     margin-right: 10%;
-    border: 3px solid red;
 }
 
 section.present {
@@ -313,7 +308,6 @@ section {
     display: flex;
     justify-content: center;
     gap: 20px;
-    border: 3px solid blue;
 }
 
 #image1 {
@@ -362,7 +356,6 @@ section {
     left: 5%;
     z-index: 51651515;
     cursor: pointer;
-    border: 3px solid green;
 }
 
 .m_1_button_asp {
@@ -373,7 +366,6 @@ section {
     left: 40%;
     z-index: 51651515;
     cursor: pointer;
-    border: 3px solid green;
 }
 
 .m_1_button_izo {
@@ -384,7 +376,6 @@ section {
     left: 71.5%;
     z-index: 51651515;
     cursor: pointer;
-    border: 3px solid green;
 }
 
 .circle-buttons {
@@ -513,7 +504,6 @@ display: flex;
     gap: 3%;
     height: auto;
     width: 25%;
-    border: 3px solid blue;
     top: 32%;
     left: 70%;
     z-index: 99999999999999;
@@ -549,7 +539,6 @@ display: flex;
     gap: 3%;
     height: auto;
     width: 25%;
-    border: 3px solid blue;
     top: 32%;
     left: 70%;
     z-index: 99999999999999;
