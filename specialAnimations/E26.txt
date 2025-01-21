@@ -1,0 +1,2 @@
+<div class="pill" onclick="addTemporarySlide({image: '/slides/Enterol 2560/E (28).png', type: 'Enterol',})"></div>
+<div class="bubble-text" onclick="addTemporarySlide({image: '/slides/Enterol 2560/E (27).png', type: 'Enterol',})"></div>

@@ -1,0 +1,30 @@
+<div id="main-block" class="main-block">
+    <div class="columns">
+        <div class="column images">
+            <img src="../slides/Enterol2560/E2/1.png" class="hidden number-image">
+            <img src="../slides/Enterol2560/E2/2.png" class="hidden number-image">
+            <img src="../slides/Enterol2560/E2/3.png" class="hidden number-image">
+            <img src="../slides/Enterol2560/E2/4.png" class="hidden number-image">
+            <img src="../slides/Enterol2560/E2/5.png" class="hidden number-image">
+            <img src="../slides/Enterol2560/E2/6.png" class="hidden number-image">
+            <img src="../slides/Enterol2560/E2/7.png" class="hidden number-image">
+            <img src="../slides/Enterol2560/E2/8.png" class="hidden number-image">
+            <img src="../slides/Enterol2560/E2/9.png" class="hidden number-image">
+            <img src="../slides/Enterol2560/E2/10.png" class="hidden number-image">
+            <img src="../slides/Enterol2560/E2/11.png" class="hidden number-image">
+        </div>
+        <div class="column texts">
+            <img src="../slides/Enterol2560/E2/circle.png" class="hidden text-image">
+            <img src="../slides/Enterol2560/E2/circle.png" class="hidden text-image">
+            <img src="../slides/Enterol2560/E2/circle.png" class="hidden text-image">
+            <img src="../slides/Enterol2560/E2/circle.png" class="hidden text-image">
+            <img src="../slides/Enterol2560/E2/circle.png" class="hidden text-image">
+            <img src="../slides/Enterol2560/E2/circle.png" class="hidden text-image">
+            <img src="../slides/Enterol2560/E2/circle.png" class="hidden text-image">
+            <img src="../slides/Enterol2560/E2/circle.png" class="hidden text-image">
+            <img src="../slides/Enterol2560/E2/circle.png" class="hidden text-image">
+            <img src="../slides/Enterol2560/E2/circle.png" class="hidden text-image">
+            <img src="../slides/Enterol2560/E2/circle.png" class="hidden text-image">
+        </div>
+    </div>
+</div>

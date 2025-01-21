@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url('../css/fonts/SGSDTSGothamPro-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
 
 .main-buttons-container {
     display: grid;
@@ -100,7 +106,6 @@
     width: 40%; /* Ширина контейнера */
     margin: 0; /* Убирает внешние отступы */
     padding: 2% 0 2% 33%;
-    border: 3px solid blue; /* Для проверки границ */
     box-sizing: border-box; /* Учитывает border в размерах */
     position: absolute; /* Чтобы элемент оставался внутри .section */
     top: 50%;
@@ -140,7 +145,6 @@
     max-width: 100%;
     width: 60%; /* Ширина контейнера */
     margin: 0; /* Убирает внешние отступы */
-    border: 3px solid blue; /* Для проверки границ */
     box-sizing: border-box; /* Учитывает border в размерах */
     position: absolute; /* Чтобы элемент оставался внутри .section */
     top: 69%;
@@ -220,4 +224,84 @@ section {
 
 .dynamic-button:hover {
     transform: scale(1.3); /* Увеличение кнопки при наведении */
+}
+
+.main-block {
+    width: 90%;
+    height: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    top: 37%;
+    left: 17%;
+    text-align: left;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.column-texts {
+    display: flex;
+    flex-direction: column;
+    gap-row: 0;
+    width: 95%;
+
+}
+.column-images {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 5%;
+}
+
+
+.column-texts p {
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-size: 50%;
+    line-height: 0;
+    color: white;
+    margin: 1.9%;
+}
+
+.column-images img {
+    height: 7.1%;
+    width: fit-content;
+    margin: 0;
+    background-color: transparent;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.pill {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    top: 10%;
+    left: 70%;
+    z-index: 51651515;
+    cursor: pointer;
+}
+
+.bubble-text {
+    position: absolute;
+    width: 13%;
+    height: 17%;
+    top: 33%;
+    left: 67%;
+    z-index: 51651516;
+    cursor: pointer;
+    border-radius: 50%;
 }

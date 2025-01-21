@@ -45,9 +45,65 @@ const mapping = {
             `
         },
         {
-            image: "/slides/Enterol2560/E (2).png",
+            image: "/slides/Enterol2560/E2/E (2).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: `
+<div id="main-block" class="main-block">
+    <div class="columns">
+        <!-- Колонка с изображениями -->
+        <div class="column-images">
+            <img src="./slides/Enterol2560/E2/1.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/2.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/3.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/4.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/5.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/6.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/7.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/8.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/9.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/10.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/11.png" class="hidden text-image">
+        </div>
+        <!-- Колонка с текстами -->
+        <div class="column-texts">
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
+            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
+            ">Синдром подразненного кішківника</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
+            ">Запальні захворювання кішківника</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
+            ">Захворювання шкіри</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
+            ">Діарея (дисбіоз) будь-якого генезу</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
+            ">Призначення ІПП</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
+            ">Метаболічні порушенні (ожиріння)</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
+            ">Використання АТБ при урологічних захворюваннях</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
+            ">Метаболічно асоційована стеатотична хвороба печінки</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
+            ">Хелікобактер пілорі інфекція</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
+            ">Інші …</p>
+        </div>
+    </div>
+</div>
+            `
         },
         {
             image: "/slides/Enterol2560/E (25).png",
@@ -77,7 +133,16 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (26).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: `
+            <div class="pill"
+                onclick="addTemporarySlide({image: '/slides/Enterol2560/E (28).png', type: 'Enterol',})">
+            </div>
+            <div class="bubble-text"
+                onclick="addTemporarySlide({image: '/slides/Enterol2560/E (27).png', type: 'Enterol',})">
+            </div>
+
+            `
         },
         {
             image: "/slides/Marimer2560/M (8).png",
@@ -169,12 +234,107 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (1).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: `
+            <div class="percent-container">
+    <button class="percent" id="percent5" style="background-image: url('../slides/Enterol2560/E1/5.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent4" style="background-image: url('../slides/Enterol2560/E1/4.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent3" style="background-image: url('../slides/Enterol2560/E1/3.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent2" style="background-image: url('../slides/Enterol2560/E1/2.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent1" style="background-image: url('../slides/Enterol2560/E1/1.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+</div>
+            `
         },
         {
             image: "/slides/Enterol2560/E (2).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: `
+<div id="main-block" class="main-block">
+    <div class="columns">
+        <!-- Колонка с изображениями -->
+        <div class="column-images">
+            <img src="./slides/Enterol2560/E2/adjusted_image_1.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_2.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_3.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_4.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_5.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_6.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_7.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_8.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_9.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_10.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_11.png" class="hidden text-image">
+        </div>
+        <!-- Колонка с текстами -->
+        <div class="column-texts">
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
+            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
+            ">Синдром подразненного кішківника</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
+            ">Запальні захворювання кішківника</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
+            ">Захворювання шкіри</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
+            ">Діарея (дисбіоз) будь-якого генезу</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
+            ">Призначення ІПП</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
+            ">Метаболічні порушенні (ожиріння)</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
+            ">Використання АТБ при урологічних захворюваннях</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
+            ">Метаболічно асоційована стеатотична хвороба печінки</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
+            ">Хелікобактер пілорі інфекція</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
+            ">Інші …</p>
+        </div>
+    </div>
+</div>
+            `
         },
         {
             image: "/slides/Enterol2560/E (20).png",
@@ -240,12 +400,107 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (1).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: `
+            <div class="percent-container">
+    <button class="percent" id="percent5" style="background-image: url('../slides/Enterol2560/E1/5.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent4" style="background-image: url('../slides/Enterol2560/E1/4.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent3" style="background-image: url('../slides/Enterol2560/E1/3.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent2" style="background-image: url('../slides/Enterol2560/E1/2.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent1" style="background-image: url('../slides/Enterol2560/E1/1.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+</div>
+            `
         },
         {
             image: "/slides/Enterol2560/E (2).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: `
+<div id="main-block" class="main-block">
+    <div class="columns">
+        <!-- Колонка с изображениями -->
+        <div class="column-images">
+            <img src="./slides/Enterol2560/E2/adjusted_image_1.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_2.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_3.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_4.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_5.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_6.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_7.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_8.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_9.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_10.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_11.png" class="hidden text-image">
+        </div>
+        <!-- Колонка с текстами -->
+        <div class="column-texts">
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
+            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
+            ">Синдром подразненного кішківника</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
+            ">Запальні захворювання кішківника</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
+            ">Захворювання шкіри</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
+            ">Діарея (дисбіоз) будь-якого генезу</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
+            ">Призначення ІПП</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
+            ">Метаболічні порушенні (ожиріння)</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
+            ">Використання АТБ при урологічних захворюваннях</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
+            ">Метаболічно асоційована стеатотична хвороба печінки</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
+            ">Хелікобактер пілорі інфекція</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
+            ">Інші …</p>
+        </div>
+    </div>
+</div>
+            `
         },
         {
             image: "/slides/Enterol2560/E (20).png",
@@ -297,12 +552,107 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (1).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: `
+            <div class="percent-container">
+    <button class="percent" id="percent5" style="background-image: url('../slides/Enterol2560/E1/5.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent4" style="background-image: url('../slides/Enterol2560/E1/4.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent3" style="background-image: url('../slides/Enterol2560/E1/3.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent2" style="background-image: url('../slides/Enterol2560/E1/2.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent1" style="background-image: url('../slides/Enterol2560/E1/1.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+</div>
+            `
         },
         {
             image: "/slides/Enterol2560/E (2).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: `
+<div id="main-block" class="main-block">
+    <div class="columns">
+        <!-- Колонка с изображениями -->
+        <div class="column-images">
+            <img src="./slides/Enterol2560/E2/adjusted_image_1.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_2.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_3.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_4.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_5.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_6.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_7.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_8.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_9.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_10.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_11.png" class="hidden text-image">
+        </div>
+        <!-- Колонка с текстами -->
+        <div class="column-texts">
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
+            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
+            ">Синдром подразненного кішківника</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
+            ">Запальні захворювання кішківника</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
+            ">Захворювання шкіри</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
+            ">Діарея (дисбіоз) будь-якого генезу</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
+            ">Призначення ІПП</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
+            ">Метаболічні порушенні (ожиріння)</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
+            ">Використання АТБ при урологічних захворюваннях</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
+            ">Метаболічно асоційована стеатотична хвороба печінки</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
+            ">Хелікобактер пілорі інфекція</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
+            ">Інші …</p>
+        </div>
+    </div>
+</div>
+            `
         },
         {
             image: "/slides/Enterol2560/E (20).png",
@@ -394,12 +744,107 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (1).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: `
+            <div class="percent-container">
+    <button class="percent" id="percent5" style="background-image: url('../slides/Enterol2560/E1/5.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent4" style="background-image: url('../slides/Enterol2560/E1/4.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent3" style="background-image: url('../slides/Enterol2560/E1/3.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent2" style="background-image: url('../slides/Enterol2560/E1/2.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+    <button class="percent" id="percent1" style="background-image: url('../slides/Enterol2560/E1/1.png');" onclick="
+            this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 2000);
+        "></button>
+</div>
+            `
         },
         {
             image: "/slides/Enterol2560/E (2).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: `
+<div id="main-block" class="main-block">
+    <div class="columns">
+        <!-- Колонка с изображениями -->
+        <div class="column-images">
+            <img src="./slides/Enterol2560/E2/adjusted_image_1.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_2.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_3.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_4.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_5.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_6.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_7.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_8.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_9.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_10.png" class="hidden text-image">
+            <img src="./slides/Enterol2560/E2/adjusted_image_11.png" class="hidden text-image">
+        </div>
+        <!-- Колонка с текстами -->
+        <div class="column-texts">
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
+            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
+            ">Синдром подразненного кішківника</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
+            ">Запальні захворювання кішківника</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
+            ">Захворювання шкіри</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
+            ">Діарея (дисбіоз) будь-якого генезу</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
+            ">Призначення ІПП</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
+            ">Метаболічні порушенні (ожиріння)</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
+            ">Використання АТБ при урологічних захворюваннях</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
+            ">Метаболічно асоційована стеатотична хвороба печінки</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
+            ">Хелікобактер пілорі інфекція</p>
+            <p class="text" onclick="
+                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
+            ">Інші …</p>
+        </div>
+    </div>
+</div>
+            `
         },
         {
             image: "/slides/Enterol2560/E (5).png",
