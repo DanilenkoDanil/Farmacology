@@ -59,6 +59,7 @@ const e_9 = `
     </div>
 `
 
+
 const c_2 = `
     <div class="stresam-buttons-container">
         <img src="./slides/Stresam2560/C2/1.png" class="stresam-buttons" onclick="this.classList.add('active');
