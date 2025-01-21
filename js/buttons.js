@@ -1,4 +1,4 @@
-let temp_id = 1
+let temp_id = 1;
 let lastTempSlide = null;
 
 function generateTemporarySlide(slideData) {
@@ -7,7 +7,7 @@ function generateTemporarySlide(slideData) {
 
     const section = document.createElement('section');
     section.id = slideData.type + "-temp-" + temp_id
-    temp_id = temp_id + 1
+    temp_id = temp_id + 1;
     section.setAttribute('data-type', slideData.type || '');
     section.setAttribute('class', 'temp-slide');
     section.style.cssText = `

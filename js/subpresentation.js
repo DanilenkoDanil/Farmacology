@@ -1,12 +1,12 @@
-let temp_id = 1;
+let temp_id2 = 1;
 
 function generateTemporarySlide(slideData) {
     console.log("generateTemporarySlide");
     console.log("slideData", slideData);
 
     const section = document.createElement('section');
-    section.id = slideData.type + "-sub-temp-" + temp_id;
-    temp_id = temp_id + 1;
+    section.id = slideData.type + "-sub-temp-" + temp_id2;
+    temp_id2 = temp_id2 + 1;
     section.setAttribute('data-type', slideData.type || '');
     section.setAttribute('class', 'temp-slide');
     section.style.cssText = `
