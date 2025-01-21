@@ -47,6 +47,18 @@ const e_26 = `
     </div>
 `
 
+const e_9 = `
+    <div class="pill-e9"
+        onclick="addTemporarySlide({image: '/slides/Enterol2560/E (11).png', type: 'Enterol',})">
+    </div>
+    <div class="bubble-text-top-e9"
+        onclick="addTemporarySlide({image: '/slides/Enterol2560/E (27).png', type: 'Enterol',})">
+    </div>
+    <div class="bubble-text-bottom-e9"
+        onclick="addTemporarySlide({image: '/slides/Enterol2560/E (10).png', type: 'Enterol',})">
+    </div>
+`
+
 const c_2 = `
     <div class="stresam-buttons-container">
         <img src="./slides/Stresam2560/C2/1.png" class="stresam-buttons" onclick="this.classList.add('active');
