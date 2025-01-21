@@ -122,7 +122,18 @@ Reveal.on('slidechanged', event => {
     }
 });
 
+let isMouseDown = false; // Флаг для проверки зажатия кнопки мыши
+
+document.addEventListener('mousedown', () => {
+    isMouseDown = true;
+});
+
+document.addEventListener('mouseup', () => {
+    isMouseDown = false;
+});
+
 function handleMouseMove(event) {
+    if (!isMouseDown) return; // Если кнопка мыши не зажата, ничего не делаем
     if (event.target.classList.contains('no-swipe-zone')) return;
     const humans = document.querySelectorAll('.human');
     const percentageElement = document.querySelector('#percentage');
