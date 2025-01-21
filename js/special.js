@@ -573,7 +573,7 @@ const a_2 = `
 `
 
 const e_20 = `
-<div id="e20-container" style="opacity: 0; width: 100%; height: 100%;" onclick="document.getElementById('e20-container').style.opacity = '1';">
+<div id="e20-container" style="position: absolute; opacity: 0; width: 100%; height: 100%; z-index: 500;" onclick="document.getElementById('e20-container').style.opacity = '1';">
     <div>
         <img src="/Farmacology/slides/Enterol2560/e20-title.png" style="position: absolute; top: 7%; right: 0; width: 100%; height: fit-content; max-width: 200%; max_height: 200%; aspect-ratio: 1454 / 161; margin: 0; left: 0;" />
     </div>
