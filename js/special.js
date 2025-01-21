@@ -187,88 +187,36 @@ const m_1 = `
 
 
 const a_1 = `
-    <div class="human-container" 
-        style="position: relative; width: 100%; height: 100%;" 
-        onmousemove="(function() {
-            const humans = document.querySelectorAll('.human');
-            const percentageElement = document.querySelector('#percentage');
-            let paintedCount = document.querySelectorAll('.human.painted').length;
-            
-            humans.forEach(human => {
-                if (!human.classList.contains('painted')) {
-                    const rect = human.getBoundingClientRect();
-                    if (event.clientX >= rect.left && event.clientX <= rect.right &&
-                        event.clientY >= rect.top && event.clientY <= rect.bottom) {
-                        
-                        human.classList.add('painted');
-                        human.style.backgroundImage = 'url(/slides/Asacol/A1/231239.png)';
-                        paintedCount++;
-                        
-                        if (paintedCount > 0) {
-                            percentageElement.style.display = 'block';
-                        }
-                        
-                        const percentage = Math.round((paintedCount / humans.length) * 100);
-                        percentageElement.textContent = `${percentage}%`;
-                    }
-                }
+     <div class="human-container" onmousemove="(function() {
+        const humans = document.querySelectorAll('.human');
+        humans.forEach(human => {
+            human.addEventListener('mousemove', function() {
+                this.style.backgroundImage = 'url(/slides/Asacol/A1/231239.png)';
             });
-        })();" 
-        ontouchmove="(function(event) {
-            const humans = document.querySelectorAll('.human');
-            const percentageElement = document.querySelector('#percentage');
-            let paintedCount = document.querySelectorAll('.human.painted').length;
-            
-            humans.forEach(human => {
-                if (!human.classList.contains('painted')) {
-                    const rect = human.getBoundingClientRect();
-                    const touch = event.touches[0];
-                    
-                    if (touch.clientX >= rect.left && touch.clientX <= rect.right &&
-                        touch.clientY >= rect.top && touch.clientY <= rect.bottom) {
-                        
-                        human.classList.add('painted');
-                        human.style.backgroundImage = 'url(/slides/Asacol/A1/231239.png)';
-                        paintedCount++;
-                        
-                        if (paintedCount > 0) {
-                            percentageElement.style.display = 'block';
-                        }
-                        
-                        const percentage = Math.round((paintedCount / humans.length) * 100);
-                        percentageElement.textContent = `${percentage}%`;
-                    }
-                }
+        });
+    })();" ontouchmove="(function() {
+        const humans = document.querySelectorAll('.human');
+        humans.forEach(human => {
+            human.addEventListener('touchmove', function(e) {
+                e.preventDefault();
+                this.style.backgroundImage = 'url(/slides/Asacol/A1/231239.png)';
             });
-        })(event);">
-        
-        <!-- Человечки -->
-        <div class="human" style="width: 50px; height: 100px; background: gray;"></div>
-        <div class="human" style="width: 50px; height: 100px; background: gray;"></div>
-        <div class="human" style="width: 50px; height: 100px; background: gray;"></div>
-        <div class="human" style="width: 50px; height: 100px; background: gray;"></div>
-        <div class="human" style="width: 50px; height: 100px; background: gray;"></div>
-        <div class="human" style="width: 50px; height: 100px; background: gray;"></div>
-        <div class="human" style="width: 50px; height: 100px; background: gray;"></div>
-        <div class="human" style="width: 50px; height: 100px; background: gray;"></div>
-        <div class="human" style="width: 50px; height: 100px; background: gray;"></div>
-        <div class="human" style="width: 50px; height: 100px; background: gray;"></div>
+        });
+    })();">
+         <!-- Человечки -->
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+     </div>
 
-        <!-- Процент -->
-        <div id="percentage" 
-            style="
-                position: absolute; 
-                top: 50%; 
-                left: 50%; 
-                transform: translate(-50%, -50%); 
-                font-size: 3rem; 
-                font-weight: bold; 
-                color: black; 
-                display: none;
-            ">
-        </div>
-    </div>
-`;
+`
 
 const numbers = `
     <div id="main-block" class="main-block">
@@ -576,7 +524,7 @@ const numbers = `
             </div>
         </div>
     </div>
-`;
+`
 
 const a_2 = `
     <button class="play-button"
@@ -617,4 +565,4 @@ const a_2 = `
         <source src="slides/Asacol/A2/asacol.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-`;
+`
