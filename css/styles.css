@@ -585,3 +585,22 @@ display: flex;
     animation: scaleUp 1.5s forwards; /* Анимация увеличения */
 }
 
+.human-container {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1414214151251525;
+}
+
+.human {
+    width: 80px;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/slides/Asacol/A1/21312009.png'); /* Серый человечек */
+    transition: background-image 0.3s ease; /* Плавное закрашивание */
+    z-index: 1414214151251525;
+}
