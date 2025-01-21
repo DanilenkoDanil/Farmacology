@@ -1,0 +1,20 @@
+<div class="image-container" onclick="
+     document.getElementById('image1').classList.toggle('hidden');
+     document.getElementById('image1').classList.toggle('visible');
+     document.getElementById('image2').classList.toggle('hidden');
+     document.getElementById('image2').classList.toggle('visible');
+     document.getElementById('image1-new').classList.toggle('hidden');
+     document.getElementById('image1-new').classList.toggle('visible');
+     document.getElementById('image2-new').classList.toggle('hidden');
+     document.getElementById('image2-new').classList.toggle('visible');
+
+   ">
+
+    <img src="./slides/Enterol2560/E3/title1Cut.png" class="title-image visible" id="image1" />
+    <img src="./slides/Enterol2560/E3/Element1.png" class="column-image visible" id="image2" />
+
+    <img src="./slides/Enterol2560/E3/title2Cut.png" class="title-image hidden" id="image1-new" />
+    <img src="./slides/Enterol2560/E3/Element2.png" class="column-image hidden" id="image2-new" />
+
+
+</div>

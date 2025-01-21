@@ -305,3 +305,49 @@ section {
     cursor: pointer;
     border-radius: 50%;
 }
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: 3px solid blue;
+}
+
+#image1 {
+    position: absolute;
+    width: 115%;
+    height: auto;
+    top: 6%;
+    aspect-ratio: 1450 / 175;
+    transition: opacity 0.5s ease;
+}
+#image1-new {
+    position: absolute;
+    width: 115%;
+    height: auto;
+    top: 7%;
+    aspect-ratio: 1450 / 175;
+    transition: opacity 0.5s ease;
+}
+
+#image2 {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    top: 37%;
+    left: 75%;
+    transition: opacity 0.5s ease;
+    aspect-ratio: 568 / 755;
+}
+
+#image2-new {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    top: 47%;
+    left: 73%;
+    transition: opacity 0.5s ease;
+    aspect-ratio: 983 / 498;
+}

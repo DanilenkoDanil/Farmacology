@@ -49,60 +49,60 @@ const mapping = {
             type: "Enterol",
             special_animation: 'Special',
             animation_text: `
-<div id="main-block" class="main-block">
-    <div class="columns">
-        <!-- Колонка с изображениями -->
-        <div class="column-images">
-            <img src="./slides/Enterol2560/E2/1.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/2.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/3.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/4.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/5.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/6.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/7.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/8.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/9.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/10.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/11.png" class="hidden text-image">
-        </div>
-        <!-- Колонка с текстами -->
-        <div class="column-texts">
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
-            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
-            ">Синдром подразненного кішківника</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
-            ">Запальні захворювання кішківника</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
-            ">Захворювання шкіри</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
-            ">Діарея (дисбіоз) будь-якого генезу</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
-            ">Призначення ІПП</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
-            ">Метаболічні порушенні (ожиріння)</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
-            ">Використання АТБ при урологічних захворюваннях</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
-            ">Метаболічно асоційована стеатотична хвороба печінки</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
-            ">Хелікобактер пілорі інфекція</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
-            ">Інші …</p>
-        </div>
-    </div>
-</div>
+                <div id="main-block" class="main-block">
+                    <div class="columns">
+                        <!-- Колонка с изображениями -->
+                        <div class="column-images">
+                            <img src="./slides/Enterol2560/E2/1.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/2.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/3.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/4.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/5.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/6.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/7.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/8.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/9.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/10.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/11.png" class="hidden text-image">
+                        </div>
+                        <!-- Колонка с текстами -->
+                        <div class="column-texts">
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
+                            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
+                            ">Синдром подразненного кішківника</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
+                            ">Запальні захворювання кішківника</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
+                            ">Захворювання шкіри</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
+                            ">Діарея (дисбіоз) будь-якого генезу</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
+                            ">Призначення ІПП</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
+                            ">Метаболічні порушенні (ожиріння)</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
+                            ">Використання АТБ при урологічних захворюваннях</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
+                            ">Метаболічно асоційована стеатотична хвороба печінки</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
+                            ">Хелікобактер пілорі інфекція</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
+                            ">Інші …</p>
+                        </div>
+                    </div>
+            </div>
             `
         },
         {
@@ -276,64 +276,64 @@ const mapping = {
             `
         },
         {
-            image: "/slides/Enterol2560/E (2).png",
+            image: "/slides/Enterol2560/E2/E (2).png",
             type: "Enterol",
             special_animation: 'Special',
             animation_text: `
-<div id="main-block" class="main-block">
-    <div class="columns">
-        <!-- Колонка с изображениями -->
-        <div class="column-images">
-            <img src="./slides/Enterol2560/E2/adjusted_image_1.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_2.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_3.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_4.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_5.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_6.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_7.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_8.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_9.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_10.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_11.png" class="hidden text-image">
-        </div>
-        <!-- Колонка с текстами -->
-        <div class="column-texts">
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
-            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
-            ">Синдром подразненного кішківника</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
-            ">Запальні захворювання кішківника</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
-            ">Захворювання шкіри</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
-            ">Діарея (дисбіоз) будь-якого генезу</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
-            ">Призначення ІПП</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
-            ">Метаболічні порушенні (ожиріння)</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
-            ">Використання АТБ при урологічних захворюваннях</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
-            ">Метаболічно асоційована стеатотична хвороба печінки</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
-            ">Хелікобактер пілорі інфекція</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
-            ">Інші …</p>
-        </div>
-    </div>
-</div>
+            <div id="main-block" class="main-block">
+                    <div class="columns">
+                        <!-- Колонка с изображениями -->
+                        <div class="column-images">
+                            <img src="./slides/Enterol2560/E2/1.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/2.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/3.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/4.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/5.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/6.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/7.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/8.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/9.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/10.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/11.png" class="hidden text-image">
+                        </div>
+                        <!-- Колонка с текстами -->
+                        <div class="column-texts">
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
+                            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
+                            ">Синдром подразненного кішківника</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
+                            ">Запальні захворювання кішківника</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
+                            ">Захворювання шкіри</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
+                            ">Діарея (дисбіоз) будь-якого генезу</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
+                            ">Призначення ІПП</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
+                            ">Метаболічні порушенні (ожиріння)</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
+                            ">Використання АТБ при урологічних захворюваннях</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
+                            ">Метаболічно асоційована стеатотична хвороба печінки</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
+                            ">Хелікобактер пілорі інфекція</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
+                            ">Інші …</p>
+                        </div>
+                    </div>
+            </div>
             `
         },
         {
@@ -442,64 +442,64 @@ const mapping = {
             `
         },
         {
-            image: "/slides/Enterol2560/E (2).png",
+            image: "/slides/Enterol2560/E2/E (2).png",
             type: "Enterol",
             special_animation: 'Special',
             animation_text: `
-<div id="main-block" class="main-block">
-    <div class="columns">
-        <!-- Колонка с изображениями -->
-        <div class="column-images">
-            <img src="./slides/Enterol2560/E2/adjusted_image_1.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_2.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_3.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_4.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_5.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_6.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_7.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_8.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_9.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_10.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_11.png" class="hidden text-image">
-        </div>
-        <!-- Колонка с текстами -->
-        <div class="column-texts">
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
-            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
-            ">Синдром подразненного кішківника</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
-            ">Запальні захворювання кішківника</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
-            ">Захворювання шкіри</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
-            ">Діарея (дисбіоз) будь-якого генезу</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
-            ">Призначення ІПП</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
-            ">Метаболічні порушенні (ожиріння)</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
-            ">Використання АТБ при урологічних захворюваннях</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
-            ">Метаболічно асоційована стеатотична хвороба печінки</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
-            ">Хелікобактер пілорі інфекція</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
-            ">Інші …</p>
-        </div>
-    </div>
-</div>
+            <div id="main-block" class="main-block">
+                    <div class="columns">
+                        <!-- Колонка с изображениями -->
+                        <div class="column-images">
+                            <img src="./slides/Enterol2560/E2/1.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/2.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/3.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/4.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/5.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/6.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/7.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/8.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/9.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/10.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/11.png" class="hidden text-image">
+                        </div>
+                        <!-- Колонка с текстами -->
+                        <div class="column-texts">
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
+                            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
+                            ">Синдром подразненного кішківника</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
+                            ">Запальні захворювання кішківника</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
+                            ">Захворювання шкіри</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
+                            ">Діарея (дисбіоз) будь-якого генезу</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
+                            ">Призначення ІПП</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
+                            ">Метаболічні порушенні (ожиріння)</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
+                            ">Використання АТБ при урологічних захворюваннях</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
+                            ">Метаболічно асоційована стеатотична хвороба печінки</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
+                            ">Хелікобактер пілорі інфекція</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
+                            ">Інші …</p>
+                        </div>
+                    </div>
+            </div>
             `
         },
         {
@@ -594,64 +594,64 @@ const mapping = {
             `
         },
         {
-            image: "/slides/Enterol2560/E (2).png",
+            image: "/slides/Enterol2560/E2/E (2).png",
             type: "Enterol",
             special_animation: 'Special',
             animation_text: `
-<div id="main-block" class="main-block">
-    <div class="columns">
-        <!-- Колонка с изображениями -->
-        <div class="column-images">
-            <img src="./slides/Enterol2560/E2/adjusted_image_1.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_2.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_3.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_4.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_5.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_6.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_7.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_8.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_9.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_10.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_11.png" class="hidden text-image">
-        </div>
-        <!-- Колонка с текстами -->
-        <div class="column-texts">
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
-            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
-            ">Синдром подразненного кішківника</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
-            ">Запальні захворювання кішківника</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
-            ">Захворювання шкіри</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
-            ">Діарея (дисбіоз) будь-якого генезу</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
-            ">Призначення ІПП</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
-            ">Метаболічні порушенні (ожиріння)</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
-            ">Використання АТБ при урологічних захворюваннях</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
-            ">Метаболічно асоційована стеатотична хвороба печінки</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
-            ">Хелікобактер пілорі інфекція</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
-            ">Інші …</p>
-        </div>
-    </div>
-</div>
+            <div id="main-block" class="main-block">
+                    <div class="columns">
+                        <!-- Колонка с изображениями -->
+                        <div class="column-images">
+                            <img src="./slides/Enterol2560/E2/1.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/2.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/3.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/4.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/5.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/6.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/7.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/8.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/9.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/10.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/11.png" class="hidden text-image">
+                        </div>
+                        <!-- Колонка с текстами -->
+                        <div class="column-texts">
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
+                            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
+                            ">Синдром подразненного кішківника</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
+                            ">Запальні захворювання кішківника</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
+                            ">Захворювання шкіри</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
+                            ">Діарея (дисбіоз) будь-якого генезу</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
+                            ">Призначення ІПП</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
+                            ">Метаболічні порушенні (ожиріння)</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
+                            ">Використання АТБ при урологічних захворюваннях</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
+                            ">Метаболічно асоційована стеатотична хвороба печінки</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
+                            ">Хелікобактер пілорі інфекція</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
+                            ">Інші …</p>
+                        </div>
+                    </div>
+            </div>
             `
         },
         {
@@ -786,64 +786,64 @@ const mapping = {
             `
         },
         {
-            image: "/slides/Enterol2560/E (2).png",
+            image: "/slides/Enterol2560/E2/E (2).png",
             type: "Enterol",
             special_animation: 'Special',
             animation_text: `
-<div id="main-block" class="main-block">
-    <div class="columns">
-        <!-- Колонка с изображениями -->
-        <div class="column-images">
-            <img src="./slides/Enterol2560/E2/adjusted_image_1.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_2.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_3.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_4.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_5.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_6.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_7.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_8.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_9.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_10.png" class="hidden text-image">
-            <img src="./slides/Enterol2560/E2/adjusted_image_11.png" class="hidden text-image">
-        </div>
-        <!-- Колонка с текстами -->
-        <div class="column-texts">
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
-            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
-            ">Синдром подразненного кішківника</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
-            ">Запальні захворювання кішківника</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
-            ">Захворювання шкіри</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
-            ">Діарея (дисбіоз) будь-якого генезу</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
-            ">Призначення ІПП</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
-            ">Метаболічні порушенні (ожиріння)</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
-            ">Використання АТБ при урологічних захворюваннях</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
-            ">Метаболічно асоційована стеатотична хвороба печінки</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
-            ">Хелікобактер пілорі інфекція</p>
-            <p class="text" onclick="
-                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
-            ">Інші …</p>
-        </div>
-    </div>
-</div>
+            <div id="main-block" class="main-block">
+                    <div class="columns">
+                        <!-- Колонка с изображениями -->
+                        <div class="column-images">
+                            <img src="./slides/Enterol2560/E2/1.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/2.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/3.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/4.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/5.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/6.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/7.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/8.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/9.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/10.png" class="hidden text-image">
+                            <img src="./slides/Enterol2560/E2/11.png" class="hidden text-image">
+                        </div>
+                        <!-- Колонка с текстами -->
+                        <div class="column-texts">
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[0].classList.add('visible');
+                            ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[1].classList.add('visible');
+                            ">Синдром подразненного кішківника</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[2].classList.add('visible');
+                            ">Запальні захворювання кішківника</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[3].classList.add('visible');
+                            ">Захворювання шкіри</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[4].classList.add('visible');
+                            ">Діарея (дисбіоз) будь-якого генезу</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[5].classList.add('visible');
+                            ">Призначення ІПП</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[6].classList.add('visible');
+                            ">Метаболічні порушенні (ожиріння)</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[7].classList.add('visible');
+                            ">Використання АТБ при урологічних захворюваннях</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[8].classList.add('visible');
+                            ">Метаболічно асоційована стеатотична хвороба печінки</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[9].classList.add('visible');
+                            ">Хелікобактер пілорі інфекція</p>
+                            <p class="text" onclick="
+                                document.querySelectorAll('.column-images .text-image')[10].classList.add('visible');
+                            ">Інші …</p>
+                        </div>
+                    </div>
+            </div>
             `
         },
         {
@@ -857,14 +857,31 @@ const mapping = {
             special_animation: 'Base'
         },
         {
-            image: "/slides/Enterol2560/E (3).png",
+            image: "/slides/Enterol2560/E3/E (3).png",
             type: "Enterol",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Enterol2560/E (4).png",
-            type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: `
+            <div class="image-container" onclick="
+                 document.getElementById('image1').classList.toggle('hidden');
+                 document.getElementById('image1').classList.toggle('visible');
+                 document.getElementById('image2').classList.toggle('hidden');
+                 document.getElementById('image2').classList.toggle('visible');
+                 document.getElementById('image1-new').classList.toggle('hidden');
+                 document.getElementById('image1-new').classList.toggle('visible');
+                 document.getElementById('image2-new').classList.toggle('hidden');
+                 document.getElementById('image2-new').classList.toggle('visible');
+
+               ">
+
+                <img src="./slides/Enterol2560/E3/title1Cut.png" class="title-image visible" id="image1" />
+                <img src="./slides/Enterol2560/E3/Element1.png" class="column-image visible" id="image2" />
+
+                <img src="./slides/Enterol2560/E3/title2Cut.png" class="title-image hidden" id="image1-new" />
+                <img src="./slides/Enterol2560/E3/Element2.png" class="column-image hidden" id="image2-new" />
+
+
+            </div>
+            `
         },
         {
             image: "/slides/Enterol2560/E (7).png",
