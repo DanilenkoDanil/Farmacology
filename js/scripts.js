@@ -122,93 +122,68 @@ Reveal.on('slidechanged', event => {
     }
 });
 
-    let swipeDisabled = false;
+function handleMouseMove(event) {
+    if (event.target.classList.contains('no-swipe-zone')) return;
+    const humans = document.querySelectorAll('.human');
+    const percentageElement = document.querySelector('#percentage');
+    let paintedCount = 0;
 
-    function handleMouseMove(event) {
-
-        const noSwipeElement = document.querySelector('.no-swipe-zone');
-
-        // Блокируем событие touchmove в этой области
-        noSwipeElement.addEventListener('touchmove', (event) => {
-            event.preventDefault();
-        });
-
-        if (event.target.closest('.no-swipe-zone')) return;
-        const humans = document.querySelectorAll('.human');
-        const percentageElement = document.querySelector('#percentage');
-        let paintedCount = 0;
-
-        humans.forEach(human => {
-            const rect = human.getBoundingClientRect();
-            if (event.clientX >= rect.left && event.clientX <= rect.right &&
-                event.clientY >= rect.top && event.clientY <= rect.bottom) {
-                if (!human.classList.contains('painted')) {
-                    human.classList.add('painted');
-                    human.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
-                }
+    humans.forEach(human => {
+        const rect = human.getBoundingClientRect();
+        if (event.clientX >= rect.left && event.clientX <= rect.right &&
+            event.clientY >= rect.top && event.clientY <= rect.bottom) {
+            if (!human.classList.contains('painted')) {
+                human.classList.add('painted');
+                human.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
             }
-        });
-
-        paintedCount = document.querySelectorAll('.human.painted').length;
-        const totalHumans = humans.length;
-        const percentage = Math.round((paintedCount / totalHumans) * 100);
-
-        if (paintedCount > 0) {
-            percentageElement.style.display = 'block';
-            percentageElement.textContent = `${percentage}%`;
         }
+    });
+
+    paintedCount = document.querySelectorAll('.human.painted').length;
+    const totalHumans = humans.length;
+    const percentage = Math.round((paintedCount / totalHumans) * 100);
+
+    if (paintedCount > 0) {
+        percentageElement.style.display = 'block';
+        percentageElement.textContent = `${percentage}%`;
     }
+}
 
-    function handleTouchMove(event) {
-        const noSwipeElement = document.querySelector('.no-swipe-zone');
+function handleTouchMove(event) {
+    if (event.target.classList.contains('no-swipe-zone')) {
+        event.preventDefault(); // Блокируем перелистывание
+        return;
+    }
+    const humans = document.querySelectorAll('.human');
+    const percentageElement = document.querySelector('#percentage');
+    let paintedCount = 0;
+    const touch = event.touches[0];
 
-        // Блокируем событие touchmove в этой области
-        noSwipeElement.addEventListener('touchmove', (event) => {
-            event.preventDefault();
-        });
-
-        if (event.target.closest('.no-swipe-zone')) {
-            if (!swipeDisabled) {
-                disableSwipe();
+    humans.forEach(human => {
+        const rect = human.getBoundingClientRect();
+        if (touch.clientX >= rect.left && touch.clientX <= rect.right &&
+            touch.clientY >= rect.top && touch.clientY <= rect.bottom) {
+            if (!human.classList.contains('painted')) {
+                human.classList.add('painted');
+                human.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
             }
-            event.preventDefault();
-            return;
         }
-        const humans = document.querySelectorAll('.human');
-        const percentageElement = document.querySelector('#percentage');
-        let paintedCount = 0;
-        const touch = event.touches[0];
+    });
 
-        humans.forEach(human => {
-            const rect = human.getBoundingClientRect();
-            if (touch.clientX >= rect.left && touch.clientX <= rect.right &&
-                touch.clientY >= rect.top && touch.clientY <= rect.bottom) {
-                if (!human.classList.contains('painted')) {
-                    human.classList.add('painted');
-                    human.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
-                }
-            }
-        });
+    paintedCount = document.querySelectorAll('.human.painted').length;
+    const totalHumans = humans.length;
+    const percentage = Math.round((paintedCount / totalHumans) * 100);
 
-        paintedCount = document.querySelectorAll('.human.painted').length;
-        const totalHumans = humans.length;
-        const percentage = Math.round((paintedCount / totalHumans) * 100);
-
-        if (paintedCount > 0) {
-            percentageElement.style.display = 'block';
-            percentageElement.textContent = `${percentage}%`;
-        }
+    if (paintedCount > 0) {
+        percentageElement.style.display = 'block';
+        percentageElement.textContent = `${percentage}%`;
     }
+}
 
-    function disableSwipe() {
-        swipeDisabled = true;
-        Reveal.configure({ touch: false }); // Отключаем свайпы
+Reveal.on('slidechanged', (event) => {
+    if (event.currentSlide.querySelector('.no-swipe-zone')) {
+        disableRevealSwipe();
+    } else {
+        enableRevealSwipe();
     }
-
-    function enableSwipe() {
-        swipeDisabled = false;
-        Reveal.configure({ touch: true }); // Включаем свайпы
-    }
-
-    // Снова включаем свайпы при выходе из зоны
-    document.querySelector('.no-swipe-zone').addEventListener('mouseleave', enableSwipe);
+});
