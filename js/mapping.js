@@ -207,11 +207,11 @@ const mapping = {
             special_animation: 'Special',
             animation_text: `
             <div class="visit-container">
-                <button class="visit" id="visit1" style="background-image: url('../slides/Asacol/A0/1.png');" onclick="Reveal.slide(0)"></button>
-                <button class="visit" id="visit2" style="background-image: url('../slides/Asacol/A0/2.png');" onclick="loadSlides('slide-0')"></button>
-                <button class="visit" id="visit3" style="background-image: url('../slides/Asacol/A0/3.png');" onclick="loadSlides('slide-0')"></button>
-                <button class="visit" id="visit4" style="background-image: url('../slides/Asacol/A0/4.png');" onclick="loadSlides('slide-0')"></button>
-                <button class="visit" id="visit5" style="background-image: url('../slides/Asacol/A0/5.png');" onclick="loadSlides('slide-0')"></button>
+                <button class="visit" id="visit1" style="background-image: url('../slides/Asacol/A0/1.png');" onclick="addTemporarySlides(arrayVisit1)"></button>
+                <button class="visit" id="visit2" style="background-image: url('../slides/Asacol/A0/2.png');" onclick="addTemporarySlides(arrayVisit2)"></button>
+                <button class="visit" id="visit3" style="background-image: url('../slides/Asacol/A0/3.png');" onclick="addTemporarySlides(arrayVisit3)"></button>
+                <button class="visit" id="visit4" style="background-image: url('../slides/Asacol/A0/4.png');" onclick="addTemporarySlides(arrayVisit4)"></button>
+                <button class="visit" id="visit5" style="background-image: url('../slides/Asacol/A0/5.png');" onclick=""></button>
             </div>
             `
         },
@@ -591,3 +591,27 @@ const slideButtonConfig = {
 };
 
 
+const arrayVisit1 = [
+    { type: "Asacol", image: "/slides/Asacol/A (1).png" },
+    { type: "Asacol", image: "/slides/Asacol/A (2).png" },
+    { type: "Asacol", image: "/slides/Asacol/A (3).png" }
+];
+
+const arrayVisit2 = [
+    { type: "Asacol", image: "/slides/Asacol/A (4).png" },
+    { type: "Asacol", image: "/slides/Asacol/A (5).png" },
+    { type: "Asacol", image: "/slides/Asacol/A (6).png" },
+    { type: "Asacol", image: "/slides/Asacol/A (7).png" },
+    { type: "Asacol", image: "/slides/Asacol/A (3).png" }
+];
+
+const arrayVisit3 = [
+    { type: "Asacol", image: "/slides/Asacol/A (8).png" },
+    { type: "Asacol", image: "/slides/Asacol/A (9).png" },
+    { type: "Asacol", image: "/slides/Asacol/A (10).png" }
+];
+
+const arrayVisit4 = [
+    { type: "Asacol", image: "/slides/Asacol/A (17).png" },
+    { type: "Asacol", image: "/slides/Asacol/A (4).png" },
+];
