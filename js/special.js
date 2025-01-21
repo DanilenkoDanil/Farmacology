@@ -4,35 +4,30 @@ const percent_animation = `
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 2000);
         "></button>
     <button class="percent" id="percent4" style="background-image: url('/Farmacology/slides/Enterol2560/E1/4.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 2000);
         "></button>
     <button class="percent" id="percent3" style="background-image: url('/Farmacology/slides/Enterol2560/E1/3.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 2000);
         "></button>
     <button class="percent" id="percent2" style="background-image: url('/Farmacology/slides/Enterol2560/E1/2.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 2000);
         "></button>
     <button class="percent" id="percent1" style="background-image: url('/Farmacology/slides/Enterol2560/E1/1.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 2000);
         "></button>
 </div>
@@ -65,27 +60,22 @@ const c_2 = `
         <img src="./slides/Stresam2560/C2/1.png" class="stresam-buttons" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 1000);" />
         <img src="./slides/Stresam2560/C2/2.png" class="stresam-buttons" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 1000);" />
         <img src="./slides/Stresam2560/C2/3.png" class="stresam-buttons" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 1000);" />
         <img src="./slides/Stresam2560/C2/4.png" class="stresam-buttons" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 1000);" />
         <img src="./slides/Stresam2560/C2/5.png" class="stresam-buttons" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 1000);" />
     </div>
 `
@@ -105,22 +95,18 @@ const c_14 = `
     <img src="./slides/Stresam2560/C14/1.png" class="stresam-buttons-c14" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 1000);" />
     <img src="./slides/Stresam2560/C14/2.png" class="stresam-buttons-c14" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 1000);" />
     <img src="./slides/Stresam2560/C14/3.png" class="stresam-buttons-c14" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 1000);" />
     <img src="./slides/Stresam2560/C14/4.png" class="stresam-buttons-c14" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
-                Reveal.next();
             }, 1000);" />
 </div>
 `
