@@ -82,21 +82,26 @@ function addButtonsToBackgroundContainer(slideId, buttons) {
         const backgroundContainer = section.querySelector('.background-container'); // Находим div с классом background-container
         if (backgroundContainer) {
             buttons.forEach(button => {
-                const btn = document.createElement('button');
-                btn.className = 'dynamic-button';
-                btn.id = button.id;
-                btn.style.position = 'absolute';
-                btn.style.left = `${button.x}%`;
-                btn.style.top = `${button.y}%`;
-                btn.style.width = `${button.width}%`;
-                btn.style.height = `${button.height}%`;
-                btn.style.background = `url(${button.icon}) no-repeat center`;
-                btn.style.backgroundSize = 'contain';
-                btn.style.border = 'none';
-                btn.style.cursor = 'pointer';
-                btn.setAttribute('onclick', button.action);
+                // Проверяем, существует ли кнопка с таким ID
+                if (!backgroundContainer.querySelector(`#${button.id}`)) {
+                    const btn = document.createElement('button');
+                    btn.className = 'dynamic-button';
+                    btn.id = button.id;
+                    btn.style.position = 'absolute';
+                    btn.style.left = `${button.x}%`;
+                    btn.style.top = `${button.y}%`;
+                    btn.style.width = `${button.width}%`;
+                    btn.style.height = `${button.height}%`;
+                    btn.style.background = `url(${button.icon}) no-repeat center`;
+                    btn.style.backgroundSize = 'contain';
+                    btn.style.border = 'none';
+                    btn.style.cursor = 'pointer';
+                    btn.setAttribute('onclick', button.action);
 
-                backgroundContainer.appendChild(btn); // Добавляем кнопку в background-container
+                    backgroundContainer.appendChild(btn); // Добавляем кнопку в background-container
+                } else {
+                    console.warn(`Кнопка с ID ${button.id} уже существует на слайде ${slideId}`);
+                }
             });
         } else {
             console.error('background-container не найден в section:', slideId);
