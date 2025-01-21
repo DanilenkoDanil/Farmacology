@@ -91,11 +91,11 @@ const c_2 = `
 
 const visit = `
     <div class="visit-container">
-        <button class="visit" id="visit1" style="background-image: url('../slides/Asacol/A0/1.png');" onclick="addTemporarySlides(arrayVisit1)"></button>
-        <button class="visit" id="visit2" style="background-image: url('../slides/Asacol/A0/2.png');" onclick="addTemporarySlides(arrayVisit2)"></button>
-        <button class="visit" id="visit3" style="background-image: url('../slides/Asacol/A0/3.png');" onclick="addTemporarySlides(arrayVisit3)"></button>
-        <button class="visit" id="visit4" style="background-image: url('../slides/Asacol/A0/4.png');" onclick="addTemporarySlides(arrayVisit4)"></button>
-        <button class="visit" id="visit5" style="background-image: url('../slides/Asacol/A0/5.png');" onclick=""></button>
+        <button class="visit" id="visit1" style="background-image: url('./slides/Asacol/A0/1.png');" onclick="addTemporarySlides(arrayVisit1)"></button>
+        <button class="visit" id="visit2" style="background-image: url('./slides/Asacol/A0/2.png');" onclick="addTemporarySlides(arrayVisit2)"></button>
+        <button class="visit" id="visit3" style="background-image: url('./slides/Asacol/A0/3.png');" onclick="addTemporarySlides(arrayVisit3)"></button>
+        <button class="visit" id="visit4" style="background-image: url('./slides/Asacol/A0/4.png');" onclick="addTemporarySlides(arrayVisit4)"></button>
+        <button class="visit" id="visit5" style="background-image: url('./slides/Asacol/A0/5.png');" onclick=""></button>
     </div>
 `
 
