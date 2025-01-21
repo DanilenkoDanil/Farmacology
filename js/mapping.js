@@ -798,7 +798,12 @@ const slideButtonConfig = {
 
 
 const arrayVisit1 = [
-    { type: "Asacol", image: "/slides/Asacol/A (1).png" },
+    {
+        type: "Asacol",
+        image: "/slides/Asacol/A (1).png",
+        special_animation: 'Special',
+        animation_text: a_1,
+    },
     { type: "Asacol", image: "/slides/Asacol/A (2).png" },
     { type: "Asacol", image: "/slides/Asacol/A (3).png" }
 ];

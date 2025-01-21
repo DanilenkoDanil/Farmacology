@@ -107,3 +107,8 @@ const m_1 = `
         onclick="addTemporarySlides(arrayM1_3)">
     </div>
 `
+
+
+const a_1 = `
+
+`
