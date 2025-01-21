@@ -564,12 +564,12 @@ const a_2 = `
         style="
             display: none;
             position: absolute;
-            top: 52%;
+            top: 49.9%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
             height: auto;
-            z-index: 1000;
+            z-index: 999;
         "
         controls
         disablepictureinpicture
@@ -577,4 +577,14 @@ const a_2 = `
         <source src="slides/Asacol/A2/asacol.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
+    <div class="bottom-corner" style="position: absolute; top: 66.3%; left: -3%; width: 20%; height: 20%; z-index: 999;">
+        <img src="/Farmacology/slides/Asacol/A2/bottom-corner.png" />
+    </div>
+    <div class="top-corner" style="position: absolute; top: 19.8%; right: -3%; width: 20%; height: 20%; z-index: 999;">
+        <img src="/Farmacology/slides/Asacol/A2/top-corner.png" />
+    </div>
+    <div class="video-title" style="position: absolute; top: 11%; right: 0; width: 105%; height: fit-content; aspect-ratio: 1363 / 118; z-index: 999; margin: 0; left: -2.7%;">
+        <img src="/Farmacology/slides/Asacol/A2/title.png" style="margin: 0;"/>
+    </div>
 `

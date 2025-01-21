@@ -692,3 +692,8 @@ display: flex;
     width: fir-content;
     aspect-ratio: 240 / 232;
 }
+
+.reveal video {
+    max-width: 100%;
+    max-height: 100%;
+}
