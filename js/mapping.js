@@ -464,7 +464,8 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (9).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: e_9,
         },
         {
             image: "/slides/Stresam2560/C2/f10000000.png",
@@ -629,7 +630,8 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (9).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: e_9,
         },
         {
             image: "/slides/Stresam2560/C2/f10000000.png",
@@ -747,7 +749,8 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (9).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: e_9,
         },
         {
             image: "/slides/Enterol2560/E (26).png",
