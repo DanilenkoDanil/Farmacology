@@ -146,8 +146,8 @@ Reveal.on('slidechanged', event => {
 
     function handleTouchMove(event) {
         if (event.target.classList.contains('no-swipe-zone')) {
-            event.preventDefault(); // Блокируем перелистывание
-            event.stopPropagation(); // Останавливаем всплытие
+            event.preventDefault(); // Блокируем действие по умолчанию
+            event.stopPropagation(); // Останавливаем всплытие события
             return;
         }
         const humans = document.querySelectorAll('.human');
@@ -177,6 +177,6 @@ Reveal.on('slidechanged', event => {
     }
 
     function blockSwipe(event) {
-        event.preventDefault(); // Блокируем действие браузера
-        event.stopPropagation(); // Останавливаем всплытие события
+        event.preventDefault(); // Полностью блокируем действие
+        event.stopPropagation(); // Блокируем всплытие
     }
