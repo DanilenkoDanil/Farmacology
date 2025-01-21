@@ -110,5 +110,45 @@ const m_1 = `
 
 
 const a_1 = `
-
+     <div class="human-container" onmousemove="(function() {
+        const humans = document.querySelectorAll('.human');
+        humans.forEach(human => {
+            human.addEventListener('mousemove', function() {
+                this.style.backgroundImage = 'url(/slides/Asacol/A1/231239.png)';
+            });
+        });
+    })();" ontouchmove="(function() {
+        const humans = document.querySelectorAll('.human');
+        humans.forEach(human => {
+            human.addEventListener('touchmove', function(e) {
+                e.preventDefault();
+                this.style.backgroundImage = 'url(/slides/Asacol/A1/231239.png)';
+            });
+        });
+    })();">
+         <!-- Человечки -->
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+         <div class="human"></div>
+     </div>
+<script>
+       console.log('start red');
+       document.querySelectorAll('.human').forEach(human => {
+       human.addEventListener('mouseover', () => {
+       human.style.backgroundImage = "url('/slides/Asacol/A1/231239.png')"; // Путь к красному человечку
+       });
+       
+       human.addEventListener('touchstart', (e) => {
+       e.preventDefault();
+       human.style.backgroundImage = "url('/slides/Asacol/A1/231239.png')"; // Путь к красному человечку
+       });
+       });
+</script>
 `
