@@ -51,7 +51,7 @@
     width: 25%; /* Размер кнопки */
     height: 25%;
     background-color: transparent; /* Делает кнопку невидимой */
-    /*border: none;*/
+    border: none;
     cursor: pointer;
     z-index: 1001; /* Убедитесь, что кнопка находится поверх других элементов */
 }
@@ -63,7 +63,7 @@
     width: 25%; /* Размер кнопки */
     height: 100%;
     background-color: transparent; /* Делает кнопку невидимой */
-    /*border: none;*/
+    border: none;
     cursor: pointer;
     z-index: 1000; /* Убедитесь, что кнопка находится поверх других элементов */
 }
@@ -75,7 +75,7 @@
     width: 25%; /* Размер кнопки */
     height: 100%;
     background-color: transparent; /* Делает кнопку невидимой */
-    /*border: none;*/
+    border: none;
     cursor: pointer;
     z-index: 1000; /* Убедитесь, что кнопка находится поверх других элементов */
 }

@@ -16,7 +16,6 @@ function generateTemporarySlide(slideData) {
                 display: flex !important;
                 width: 100%;
                 height: 100%;
-                border: 3px solid green;
                 justify-content: center;
                 align-items: center;
     `;
