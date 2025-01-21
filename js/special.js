@@ -59,6 +59,7 @@ const e_9 = `
     </div>
 `
 
+
 const c_2 = `
     <div class="stresam-buttons-container">
         <img src="./slides/Stresam2560/C2/1.png" class="stresam-buttons" onclick="this.classList.add('active');
@@ -91,11 +92,11 @@ const c_2 = `
 
 const visit = `
     <div class="visit-container">
-        <button class="visit" id="visit1" style="background-image: url('../slides/Asacol/A0/1.png');" onclick="addTemporarySlides(arrayVisit1)"></button>
-        <button class="visit" id="visit2" style="background-image: url('../slides/Asacol/A0/2.png');" onclick="addTemporarySlides(arrayVisit2)"></button>
-        <button class="visit" id="visit3" style="background-image: url('../slides/Asacol/A0/3.png');" onclick="addTemporarySlides(arrayVisit3)"></button>
-        <button class="visit" id="visit4" style="background-image: url('../slides/Asacol/A0/4.png');" onclick="addTemporarySlides(arrayVisit4)"></button>
-        <button class="visit" id="visit5" style="background-image: url('../slides/Asacol/A0/5.png');" onclick="window.location.href='https://drive.google.com/file/d/1hyBtO4NPeKQM0Lc9ZuoL3hBYD6DuX1Kp/view?usp=sharing';"></button>
+        <button class="visit" id="visit1" style="background-image: url('/Farmacology/slides/Asacol/A0/1.png');" onclick="addTemporarySlides(arrayVisit1)"></button>
+        <button class="visit" id="visit2" style="background-image: url('/Farmacology/slides/Asacol/A0/2.png');" onclick="addTemporarySlides(arrayVisit2)"></button>
+        <button class="visit" id="visit3" style="background-image: url('/Farmacology/slides/Asacol/A0/3.png');" onclick="addTemporarySlides(arrayVisit3)"></button>
+        <button class="visit" id="visit4" style="background-image: url('/Farmacology/slides/Asacol/A0/4.png');" onclick="addTemporarySlides(arrayVisit4)"></button>
+        <button class="visit" id="visit5" style="background-image: url('/Farmacology/slides/Asacol/A0/5.png');" onclick="window.location.href='https://drive.google.com/file/d/1hyBtO4NPeKQM0Lc9ZuoL3hBYD6DuX1Kp/view?usp=sharing';"></button>
     </div>
 `
 
@@ -191,7 +192,7 @@ const a_1 = `
         const humans = document.querySelectorAll('.human');
         humans.forEach(human => {
             human.addEventListener('mousemove', function() {
-                this.style.backgroundImage = 'url(/slides/Asacol/A1/231239.png)';
+                this.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
             });
         });
     })();" ontouchmove="(function() {
@@ -199,7 +200,7 @@ const a_1 = `
         humans.forEach(human => {
             human.addEventListener('touchmove', function(e) {
                 e.preventDefault();
-                this.style.backgroundImage = 'url(/slides/Asacol/A1/231239.png)';
+                this.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
             });
         });
     })();">
@@ -215,19 +216,7 @@ const a_1 = `
          <div class="human"></div>
          <div class="human"></div>
      </div>
-<script>
-       console.log('start red');
-       document.querySelectorAll('.human').forEach(human => {
-       human.addEventListener('mouseover', () => {
-       human.style.backgroundImage = "url('/slides/Asacol/A1/231239.png')"; // Путь к красному человечку
-       });
-       
-       human.addEventListener('touchstart', (e) => {
-       e.preventDefault();
-       human.style.backgroundImage = "url('/slides/Asacol/A1/231239.png')"; // Путь к красному человечку
-       });
-       });
-</script>
+
 `
 
 const numbers = `
@@ -556,7 +545,7 @@ const a_2 = `
             cursor: pointer;
             z-index: 1001;
         ">
-        <img src="/slides/Asacol/A2/31232009.png" alt="Play" style="width: 80px; height: 80px;">
+        <img src="/Farmacology/slides/Asacol/A2/31232009.png" alt="Play" style="width: 80px; height: 80px;">
     </button>
 
     <!-- Спрятанное видео -->
@@ -574,7 +563,7 @@ const a_2 = `
         controls
         disablepictureinpicture
         controlslist="nodownload noplaybackrate">
-        <source src="slides/Asacol/A2/asacol.mp4" type="video/mp4">
+        <source src="/Farmacology/slides/Asacol/A2/asacol.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 

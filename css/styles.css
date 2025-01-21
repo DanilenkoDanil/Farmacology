@@ -621,7 +621,7 @@ display: flex;
     height: 220px;
     background-size: cover;
     background-position: center;
-    background-image: url('/slides/Asacol/A1/21312009.png'); /* Серый человечек */
+    background-image: url('/Farmacology/slides/Asacol/A1/21312009.png'); /* Серый человечек */
     transition: background-image 0.3s ease; /* Плавное закрашивание */
     z-index: 1414214151251525;
 }
