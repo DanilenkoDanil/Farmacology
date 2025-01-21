@@ -544,7 +544,7 @@ const a_2 = `
             cursor: pointer;
             z-index: 1001;
         ">
-        <img src="/slides/Asacol/A2/31232009.png" alt="Play" style="width: 80px; height: 80px;">
+        <img src="/Farmacology/slides/Asacol/A2/31232009.png" alt="Play" style="width: 80px; height: 80px;">
     </button>
 
     <!-- Спрятанное видео -->
@@ -562,7 +562,7 @@ const a_2 = `
         controls
         disablepictureinpicture
         controlslist="nodownload noplaybackrate">
-        <source src="slides/Asacol/A2/asacol.mp4" type="video/mp4">
+        <source src="/Farmacology/slides/Asacol/A2/asacol.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 `
