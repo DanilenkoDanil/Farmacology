@@ -229,3 +229,311 @@ const a_1 = `
        });
 </script>
 `
+
+const numbers = `
+    <div id="main-block" class="main-block">
+        <div class="columns">
+            <!-- Колонка с изображениями -->
+            <div class="column-texts">
+                <div class="text-row">
+                    <div class="image-group">
+                        <img src="/Farmacology/slides/Enterol2560/E2/1.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/2.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/3.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/4.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/5.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/6.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/7.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/8.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/9.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/10.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
+                    </div>
+                    <p class="text" onclick="
+                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
+                            const images = this.previousElementSibling.querySelectorAll('.text-image');
+                            if (!window.imageIndex) window.imageIndex = 0;
+                            if (window.imageIndex < images.length) {
+                                images[window.imageIndex].style.opacity = 1;
+                                images[window.imageIndex].classList.add('visible');
+                                window.imageIndex++;
+                            }
+                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                        }
+                    ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
+                </div>
+                <div class="text-row">
+                    <div class="image-group ">
+                        <img src="/Farmacology/slides/Enterol2560/E2/1.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/2.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/3.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/4.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/5.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/6.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/7.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/8.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/9.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/10.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
+                    </div>
+                    <p class="text" onclick="
+                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
+                            const images = this.previousElementSibling.querySelectorAll('.text-image');
+                            if (!window.imageIndex) window.imageIndex = 0;
+                            if (window.imageIndex < images.length) {
+                                images[window.imageIndex].style.opacity = 1;
+                                images[window.imageIndex].classList.add('visible');
+                                window.imageIndex++;
+                            }
+                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                        }
+                    ">Синдром подразненного кішківника</p>
+                </div>
+                <div class="text-row">
+                    <div class="image-group ">
+                        <img src="/Farmacology/slides/Enterol2560/E2/1.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/2.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/3.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/4.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/5.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/6.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/7.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/8.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/9.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/10.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
+                    </div>
+                    <p class="text" onclick="
+                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
+                            const images = this.previousElementSibling.querySelectorAll('.text-image');
+                            if (!window.imageIndex) window.imageIndex = 0;
+                            if (window.imageIndex < images.length) {
+                                images[window.imageIndex].style.opacity = 1;
+                                images[window.imageIndex].classList.add('visible');
+                                window.imageIndex++;
+                            }
+                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                        }
+                    ">Запальні захворювання кішківника</p>
+                </div>
+                <div class="text-row">
+                    <div class="image-group ">
+                        <img src="/Farmacology/slides/Enterol2560/E2/1.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/2.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/3.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/4.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/5.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/6.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/7.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/8.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/9.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/10.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
+                    </div>
+                    <p class="text" onclick="
+                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
+                            const images = this.previousElementSibling.querySelectorAll('.text-image');
+                            if (!window.imageIndex) window.imageIndex = 0;
+                            if (window.imageIndex < images.length) {
+                                images[window.imageIndex].style.opacity = 1;
+                                images[window.imageIndex].classList.add('visible');
+                                window.imageIndex++;
+                            }
+                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                        }
+                    ">Захворювання шкіри</p>
+                </div>
+                <div class="text-row">
+                    <div class="image-group ">
+                        <img src="/Farmacology/slides/Enterol2560/E2/1.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/2.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/3.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/4.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/5.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/6.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/7.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/8.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/9.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/10.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
+                    </div>
+                    <p class="text" onclick="
+                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
+                            const images = this.previousElementSibling.querySelectorAll('.text-image');
+                            if (!window.imageIndex) window.imageIndex = 0;
+                            if (window.imageIndex < images.length) {
+                                images[window.imageIndex].style.opacity = 1;
+                                images[window.imageIndex].classList.add('visible');
+                                window.imageIndex++;
+                            }
+                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                        }
+                    ">Діарея (дисбіоз) будь-якого генезу</p>
+                </div>
+                <div class="text-row">
+                    <div class="image-group ">
+                        <img src="/Farmacology/slides/Enterol2560/E2/1.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/2.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/3.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/4.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/5.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/6.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/7.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/8.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/9.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/10.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
+                    </div>
+                    <p class="text" onclick="
+                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
+                            const images = this.previousElementSibling.querySelectorAll('.text-image');
+                            if (!window.imageIndex) window.imageIndex = 0;
+                            if (window.imageIndex < images.length) {
+                                images[window.imageIndex].style.opacity = 1;
+                                images[window.imageIndex].classList.add('visible');
+                                window.imageIndex++;
+                            }
+                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                        }
+                    ">Призначення ІПП</p>
+                </div>
+                <div class="text-row">
+                    <div class="image-group ">
+                        <img src="/Farmacology/slides/Enterol2560/E2/1.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/2.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/3.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/4.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/5.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/6.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/7.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/8.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/9.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/10.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
+                    </div>
+                    <p class="text" onclick="
+                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
+                            const images = this.previousElementSibling.querySelectorAll('.text-image');
+                            if (!window.imageIndex) window.imageIndex = 0;
+                            if (window.imageIndex < images.length) {
+                                images[window.imageIndex].style.opacity = 1;
+                                images[window.imageIndex].classList.add('visible');
+                                window.imageIndex++;
+                            }
+                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                        }
+                    ">Метаболічні порушенні (ожиріння)</p>
+                </div>
+                <div class="text-row">
+                    <div class="image-group ">
+                        <img src="/Farmacology/slides/Enterol2560/E2/1.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/2.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/3.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/4.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/5.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/6.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/7.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/8.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/9.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/10.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
+                    </div>
+                    <p class="text" onclick="
+                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
+                            const images = this.previousElementSibling.querySelectorAll('.text-image');
+                            if (!window.imageIndex) window.imageIndex = 0;
+                            if (window.imageIndex < images.length) {
+                                images[window.imageIndex].style.opacity = 1;
+                                images[window.imageIndex].classList.add('visible');
+                                window.imageIndex++;
+                            }
+                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                        }
+                    ">Використання АТБ при урологічних захворюваннях</p>
+                </div>
+                <div class="text-row">
+                    <div class="image-group ">
+                        <img src="/Farmacology/slides/Enterol2560/E2/1.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/2.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/3.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/4.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/5.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/6.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/7.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/8.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/9.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/10.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
+                    </div>
+                    <p class="text" onclick="
+                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
+                            const images = this.previousElementSibling.querySelectorAll('.text-image');
+                            if (!window.imageIndex) window.imageIndex = 0;
+                            if (window.imageIndex < images.length) {
+                                images[window.imageIndex].style.opacity = 1;
+                                images[window.imageIndex].classList.add('visible');
+                                window.imageIndex++;
+                            }
+                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                        }
+                    ">Метаболічно асоційована стеатотична хвороба печінки</p>
+                </div>
+                <div class="text-row">
+                    <div class="image-group ">
+                        <img src="/Farmacology/slides/Enterol2560/E2/1.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/2.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/3.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/4.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/5.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/6.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/7.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/8.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/9.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/10.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
+                    </div>
+                    <p class="text" onclick="
+                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
+                            const images = this.previousElementSibling.querySelectorAll('.text-image');
+                            if (!window.imageIndex) window.imageIndex = 0;
+                            if (window.imageIndex < images.length) {
+                                images[window.imageIndex].style.opacity = 1;
+                                images[window.imageIndex].classList.add('visible');
+                                window.imageIndex++;
+                            }
+                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                        }
+                    ">Хелікобактер пілорі інфекція</p>
+                </div>
+                <div class="text-row">
+                    <div class="image-group ">
+                        <img src="/Farmacology/slides/Enterol2560/E2/1.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/2.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/3.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/4.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/5.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/6.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/7.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/8.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/9.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/10.png" class="text-image">
+                        <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
+                    </div>
+                    <p class="text" onclick="
+                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
+                            const images = this.previousElementSibling.querySelectorAll('.text-image');
+                            if (!window.imageIndex) window.imageIndex = 0;
+                            if (window.imageIndex < images.length) {
+                                images[window.imageIndex].style.opacity = 1;
+                                images[window.imageIndex].classList.add('visible');
+                                window.imageIndex++;
+                            }
+                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                        }
+                    ">Інші …</p>
+                </div>
+                <!-- Add similar blocks for other rows -->
+            </div>
+        </div>
+    </div>
+`
