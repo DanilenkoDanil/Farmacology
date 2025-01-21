@@ -6,35 +6,35 @@ const mapping = {
             special_animation: 'Special',
             animation_text: `
             <div class="percent-container">
-    <button class="percent" id="percent5" style="background-image: url('../slides/Enterol2560/E1/5.png');" onclick="
+    <button class="percent" id="percent5" style="background-image: url('./slides/Enterol2560/E1/5.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent4" style="background-image: url('../slides/Enterol2560/E1/4.png');" onclick="
+    <button class="percent" id="percent4" style="background-image: url('./slides/Enterol2560/E1/4.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent3" style="background-image: url('../slides/Enterol2560/E1/3.png');" onclick="
+    <button class="percent" id="percent3" style="background-image: url('./slides/Enterol2560/E1/3.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent2" style="background-image: url('../slides/Enterol2560/E1/2.png');" onclick="
+    <button class="percent" id="percent2" style="background-image: url('./slides/Enterol2560/E1/2.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent1" style="background-image: url('../slides/Enterol2560/E1/1.png');" onclick="
+    <button class="percent" id="percent1" style="background-image: url('./slides/Enterol2560/E1/1.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
@@ -1033,7 +1033,8 @@ const slideButtonConfig = {
         { id: 'btn-home', icon: '/Farmacology/slides/Enterol2560/1icons/svg/home-door.svg', x: 40, y:86, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Enterol v3/E (30).png', type: 'Enterol',});" },
         { id: 'btn-info', icon: '/Farmacology/slides/Enterol2560/1icons/svg/info.svg', x: 46, y: 86, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Enterol v3/E (42).png', type: 'EnterolV3',});" },
         { id: 'btn-settings', icon: '/Farmacology/slides/Enterol2560/1icons/svg/clip_path_group.svg', x: 52, y:86, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Enterol2560/E (1).png', type: 'Enterol',});" },
-        { id: 'btn-star', icon: '/Farmacology/slides/Enterol2560/1icons/svg/Shape.svg', x: 58, y: 86, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Enterol2560/E (Ssi).png', type: 'Enterol',});" },
+        { id: 'btn-star', icon: '/Farmacology/slides/Enterol2560/1icons/svg/Shape.svg', x: 58, y: 86, width: 5, height: 5,
+        action: "addTemporarySlide({image: '/slides/Enterol2560/E (Ssi).png', type: 'Enterol',});" },
         { id: 'btn-next', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle.svg', x: 64, y: 86, width: 5, height: 5, action: 'Reveal.next();' },
     ],
     Bebykol: [
