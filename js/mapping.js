@@ -36,7 +36,16 @@ const percent_animation = `
             }, 2000);
         "></button>
 </div>
-            `
+ `
+
+const e_26 = `
+    <div class="pill"
+        onclick="addTemporarySlide({image: '/slides/Enterol2560/E (28).png', type: 'Enterol',})">
+    </div>
+    <div class="bubble-text"
+        onclick="addTemporarySlide({image: '/slides/Enterol2560/E (27).png', type: 'Enterol',})">
+    </div>
+`
 
 
 const mapping = {
@@ -137,78 +146,10 @@ const mapping = {
             image: "/slides/Enterol2560/E (26).png",
             type: "Enterol",
             special_animation: 'Special',
-            animation_text: `
-            <div class="pill"
-                onclick="addTemporarySlide({image: '/slides/Enterol2560/E (28).png', type: 'Enterol',})">
-            </div>
-            <div class="bubble-text"
-                onclick="addTemporarySlide({image: '/slides/Enterol2560/E (27).png', type: 'Enterol',})">
-            </div>
-
-            `
+            animation_text: e_26,
         },
         {
-            image: "/slides/Marimer2560/M (8).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Marimer2560/M (9).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Marimer2560/M (11).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Marimer2560/M (13).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Marimer2560/M (14).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Marimer2560/M (6).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Marimer2560/M (5).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Marimer2560/M (23).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Marimer2560/M (2).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Marimer2560/M (18).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Marimer2560/M (16).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Marimer2560/M (17).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Marimer2560/M (23).png",
+            image: "/slides/Marimer2560/M (1).png",
             type: "Marimer",
             special_animation: 'Base'
         },
@@ -324,7 +265,9 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (26).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: e_26
+
         },
         {
             image: "/slides/Asacol/A (0).png",
@@ -452,7 +395,8 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (26).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: e_26
         },
         {
             image: "/slides/Bebykol2560/Б (4).png",
@@ -864,7 +808,8 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (26).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: e_26
         },
     ]
 }
