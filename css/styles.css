@@ -173,7 +173,7 @@
 }
 
 .percent.active {
-    animation: scaleUp 2s forwards; /* Анимация увеличения */
+    animation: scaleUp 1.5s forwards; /* Анимация увеличения */
 }
 
 /* Анимация для плавного увеличения */
@@ -182,7 +182,7 @@
         transform: scale(1.05); /* Начальный размер */
     }
     100% {
-        transform: scale(1.5); /* Увеличение до 120% */
+        transform: scale(1.2); /* Увеличение до 120% */
     }
 }
 
@@ -515,22 +515,73 @@ section {
     transform: scale(1.1);
 }
 
-.human-container {
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 1414214151251525;
+.stresam-buttons-container {
+position: absolute;
+display: flex;
+    flex-direction: column; /* Расположение кнопок в колонку */
+    align-items: center; /* Центрирование кнопок по горизонтали */
+    gap: 3%;
+    height: auto;
+    width: 25%;
+    border: 3px solid blue;
+    top: 32%;
+    left: 70%;
+    z-index: 99999999999999;
 }
 
-.human {
-    width: 80px;
-    height: 220px;
-    background-size: cover;
-    background-position: center;
-    background-image: url('/slides/Asacol/A1/21312009.png'); /* Серый человечек */
-    transition: background-image 0.3s ease; /* Плавное закрашивание */
-    z-index: 1414214151251525;
+.stresam-buttons {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 609 / 137;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
+
+.stresam-buttons:hover {
+    transform: scale(1.05);
+}
+
+.stresam-buttons-container img {
+    margin: 1.9%;
+}
+
+.stresam-buttons.active {
+    animation: scaleUp 1.5s forwards; /* Анимация увеличения */
+}
+
+
+
+.stresam-buttons-container-c14 {
+position: absolute;
+display: flex;
+    flex-direction: column; /* Расположение кнопок в колонку */
+    align-items: center; /* Центрирование кнопок по горизонтали */
+    gap: 3%;
+    height: auto;
+    width: 25%;
+    border: 3px solid blue;
+    top: 32%;
+    left: 70%;
+    z-index: 99999999999999;
+}
+
+.stresam-buttons-c14 {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 609 / 137;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.stresam-buttons-c14:hover {
+    transform: scale(1.05);
+}
+
+.stresam-buttons-container-c14 img {
+    margin: 5%;
+}
+
+.stresam-buttons-c14.active {
+    animation: scaleUp 1.5s forwards; /* Анимация увеличения */
+}
+
