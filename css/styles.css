@@ -351,3 +351,121 @@ section {
     transition: opacity 0.5s ease;
     aspect-ratio: 983 / 498;
 }
+
+.circle-buttons {
+    height: 8%;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    z-index: 99999999999999999;
+}
+
+#circle-btn-1 {
+    position: absolute;
+    top: 15%;
+    left: 65%;
+}
+
+#circle-btn-2 {
+    position: absolute;
+    top: 29%;
+    left: 70%;
+}
+
+#circle-btn-3 {
+    position: absolute;
+    top: 46%;
+    left: 70%;
+}
+
+#circle-btn-4 {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+}
+
+#circle-btn-5 {
+    height: 10%;
+    position: absolute;
+    top: 60%;
+    left: -2%;
+}
+
+#circle-btn-6 {
+    position: absolute;
+    top: 46%;
+    left: 2%;
+}
+
+#circle-btn-7 {
+    position: absolute;
+    top: 29%;
+    left: 4%;
+}
+
+#circle-btn-8 {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+}
+
+
+.circle-buttons:hover {
+    transform: scale(1.1);
+}
+
+
+.circle-buttons2 {
+    height: 11%;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    z-index: 99999999999999999;
+}
+
+#circle-btn-21 {
+    position: absolute;
+    top: 22%;
+    left: 68%;
+}
+
+#circle-btn-22 {
+    position: absolute;
+    top: 41%;
+    left: 73%;
+}
+
+#circle-btn-23 {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+}
+
+#circle-btn-24 {
+    height: 15%;
+    position: absolute;
+    top: 67%;
+    left: 42%;
+}
+
+#circle-btn-25 {
+    position: absolute;
+    top: 60%;
+    left: 7%;
+}
+
+#circle-btn-26 {
+    position: absolute;
+    top: 41%;
+    left: 0;
+}
+
+#circle-btn-27 {
+    height: 11%;
+    position: absolute;
+    top: 22%;
+    left: 1%;
+}
+
+
+.circle-buttons2:hover {
+    transform: scale(1.1);
+}
