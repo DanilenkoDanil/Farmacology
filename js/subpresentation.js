@@ -4,6 +4,9 @@ function generateTemporarySlide(slideData) {
     console.log("generateTemporarySlide");
     console.log("slideData", slideData);
 
+    const animationText = checkSpecAnimation(slideData);
+    const text = animationText !== null ? animationText : "";
+
     const section = document.createElement('section');
     section.id = slideData.type + "-sub-temp-" + temp_id2;
     temp_id2 = temp_id2 + 1;
@@ -29,6 +32,7 @@ function generateTemporarySlide(slideData) {
         <button class="invisible-button" onclick="Reveal.slide(0);"></button>
         <button class="invisible-left-button" onclick="Reveal.prev();"></button>
         <button class="invisible-right-button" onclick="Reveal.next();"></button>
+        ${text}
     `;
 
     section.appendChild(container);
