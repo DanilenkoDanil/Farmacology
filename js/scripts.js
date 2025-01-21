@@ -180,6 +180,14 @@ function handleTouchMove(event) {
     }
 }
 
+ function disableRevealSwipe() {
+        Reveal.configure({ touch: false });
+    }
+
+function enableRevealSwipe() {
+    Reveal.configure({ touch: true });
+}
+
 Reveal.on('slidechanged', (event) => {
     if (event.currentSlide.querySelector('.no-swipe-zone')) {
         disableRevealSwipe();
