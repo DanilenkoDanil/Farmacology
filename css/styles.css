@@ -624,3 +624,13 @@ display: flex;
     transition: background-image 0.3s ease; /* Плавное закрашивание */
     z-index: 1414214151251525;
 }
+
+.cell-button {
+    position: absolute;
+    width: 22%;
+    height: 22%;
+    top: 45%;
+    left: 3%;
+    cursor: pointer;
+    z-index: 9999999999999999;
+}
