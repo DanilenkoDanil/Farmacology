@@ -174,35 +174,42 @@ const m_1 = `
 
 
 const a_1 = `
-     <div class="human-container" onmousemove="(function() {
-        const humans = document.querySelectorAll('.human');
-        humans.forEach(human => {
-            human.addEventListener('mousemove', function() {
-                this.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
-            });
-        });
-    })();" ontouchmove="(function() {
-        const humans = document.querySelectorAll('.human');
-        humans.forEach(human => {
-            human.addEventListener('touchmove', function(e) {
-                e.preventDefault();
-                this.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
-            });
-        });
-    })();">
-         <!-- Человечки -->
-         <div class="human"></div>
-         <div class="human"></div>
-         <div class="human"></div>
-         <div class="human"></div>
-         <div class="human"></div>
-         <div class="human"></div>
-         <div class="human"></div>
-         <div class="human"></div>
-         <div class="human"></div>
-         <div class="human"></div>
-     </div>
-
+      <div class="human-container" 
+          onmousemove="handleMouseMove(event)" 
+          ontouchmove="handleTouchMove(event)">
+      
+          <!-- Зона без свайпа -->
+          <div class="no-swipe-zone" 
+              style="
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 1212121222222221122222;
+              ">
+          </div>
+          <div class="human"></div>
+          <div class="human"></div>
+          <div class="human"></div>
+          <div class="human"></div>
+          <div class="human"></div>
+          <div class="human"></div>
+          <div class="human"></div>
+          <div class="human"></div>
+          <div class="human"></div>
+          <div class="human"></div>
+          <div id="percentage" 
+            style="
+                position: absolute;
+                top: 120%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 3rem;
+                font-weight: bold;
+                color: red;
+                display: none;
+            ">
+            </div>
+      </div>
 `
 
 const numbers = `

@@ -116,3 +116,58 @@ Reveal.on('slidechanged', event => {
         addButtonsToBackgroundContainer(currentSlideId, slideButtonConfig[slideType]);
     }
 });
+
+function handleMouseMove(event) {
+    if (event.target.classList.contains('no-swipe-zone')) return;
+    const humans = document.querySelectorAll('.human');
+    const percentageElement = document.querySelector('#percentage');
+    let paintedCount = 0;
+
+    humans.forEach(human => {
+        const rect = human.getBoundingClientRect();
+        if (event.clientX >= rect.left && event.clientX <= rect.right &&
+            event.clientY >= rect.top && event.clientY <= rect.bottom) {
+            if (!human.classList.contains('painted')) {
+                human.classList.add('painted');
+                human.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
+            }
+        }
+    });
+
+    paintedCount = document.querySelectorAll('.human.painted').length;
+    const totalHumans = humans.length;
+    const percentage = Math.round((paintedCount / totalHumans) * 100);
+
+    if (paintedCount > 0) {
+        percentageElement.style.display = 'block';
+        percentageElement.textContent = `${percentage}%`;
+    }
+}
+
+function handleTouchMove(event) {
+    if (event.target.classList.contains('no-swipe-zone')) return;
+    const humans = document.querySelectorAll('.human');
+    const percentageElement = document.querySelector('#percentage');
+    let paintedCount = 0;
+    const touch = event.touches[0];
+
+    humans.forEach(human => {
+        const rect = human.getBoundingClientRect();
+        if (touch.clientX >= rect.left && touch.clientX <= rect.right &&
+            touch.clientY >= rect.top && touch.clientY <= rect.bottom) {
+            if (!human.classList.contains('painted')) {
+                human.classList.add('painted');
+                human.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
+            }
+        }
+    });
+
+    paintedCount = document.querySelectorAll('.human.painted').length;
+    const totalHumans = humans.length;
+    const percentage = Math.round((paintedCount / totalHumans) * 100);
+
+    if (paintedCount > 0) {
+        percentageElement.style.display = 'block';
+        percentageElement.textContent = `${percentage}%`;
+    }
+}

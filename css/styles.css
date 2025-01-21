@@ -608,11 +608,11 @@ display: flex;
 }
 .human-container {
     position: absolute;
-    top: 42%;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+    gap: 5px;
     z-index: 1414214151251525;
 }
 
