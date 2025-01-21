@@ -145,7 +145,10 @@ function handleMouseMove(event) {
 }
 
 function handleTouchMove(event) {
-    if (event.target.classList.contains('no-swipe-zone')) return;
+    if (event.target.classList.contains('no-swipe-zone')) {
+        event.preventDefault(); // Блокируем перелистывание
+        return;
+    }
     const humans = document.querySelectorAll('.human');
     const percentageElement = document.querySelector('#percentage');
     let paintedCount = 0;

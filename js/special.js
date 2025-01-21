@@ -200,7 +200,7 @@ const a_1 = `
           <div id="percentage" 
             style="
                 position: absolute;
-                top: 120%;
+                top: 140%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 font-size: 3rem;
