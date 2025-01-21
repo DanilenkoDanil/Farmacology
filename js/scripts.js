@@ -117,8 +117,10 @@ Reveal.on('slidechanged', event => {
     }
 });
 
+    let swipeDisabled = false;
+
     function handleMouseMove(event) {
-        if (event.target.classList.contains('no-swipe-zone')) return;
+        if (event.target.closest('.no-swipe-zone')) return;
         const humans = document.querySelectorAll('.human');
         const percentageElement = document.querySelector('#percentage');
         let paintedCount = 0;
@@ -145,9 +147,11 @@ Reveal.on('slidechanged', event => {
     }
 
     function handleTouchMove(event) {
-        if (event.target.classList.contains('no-swipe-zone')) {
-            event.preventDefault(); // Блокируем действие по умолчанию
-            event.stopPropagation(); // Останавливаем всплытие события
+        if (event.target.closest('.no-swipe-zone')) {
+            if (!swipeDisabled) {
+                disableSwipe();
+            }
+            event.preventDefault();
             return;
         }
         const humans = document.querySelectorAll('.human');
@@ -176,7 +180,15 @@ Reveal.on('slidechanged', event => {
         }
     }
 
-    function blockSwipe(event) {
-        event.preventDefault(); // Полностью блокируем действие
-        event.stopPropagation(); // Блокируем всплытие
+    function disableSwipe() {
+        swipeDisabled = true;
+        Reveal.configure({ touch: false }); // Отключаем свайпы
     }
+
+    function enableSwipe() {
+        swipeDisabled = false;
+        Reveal.configure({ touch: true }); // Включаем свайпы
+    }
+
+    // Снова включаем свайпы при выходе из зоны
+    document.querySelector('.no-swipe-zone').addEventListener('mouseleave', enableSwipe);
