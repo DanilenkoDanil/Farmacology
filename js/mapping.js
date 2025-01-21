@@ -823,19 +823,54 @@ const arrayVisit4 = [
 ];
 
 const arrayM1_1 = [
-    { type: "Asacol", image: "/slides/Asacol/A (1).png" },
-    { type: "Asacol", image: "/slides/Asacol/A (2).png" },
-    { type: "Asacol", image: "/slides/Asacol/A (3).png" }
+    {
+            image: "/slides/Marimer2560/M (8).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (9).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (11).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (13).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (14).png",
+            type: "Marimer",
+    },
 ];
 
 const arrayM1_2 = [
-    { type: "Asacol", image: "/slides/Asacol/A (1).png" },
-    { type: "Asacol", image: "/slides/Asacol/A (2).png" },
-    { type: "Asacol", image: "/slides/Asacol/A (3).png" }
+    {
+            image: "/slides/Marimer2560/M (6).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (5).png",
+            type: "Marimer",
+    },
 ];
 
 const arrayM1_3 = [
-    { type: "Asacol", image: "/slides/Asacol/A (1).png" },
-    { type: "Asacol", image: "/slides/Asacol/A (2).png" },
-    { type: "Asacol", image: "/slides/Asacol/A (3).png" }
+    {
+            image: "/slides/Marimer2560/M (2).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (18).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (16).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (17).png",
+            type: "Marimer",
+    },
 ];

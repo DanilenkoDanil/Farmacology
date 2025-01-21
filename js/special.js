@@ -98,12 +98,12 @@ const e_30 = `
 
 const m_1 = `
     <div class="m_1_button_ing"
-        onclick="addTemporarySlide({image: '/slides/Enterol2560/E (28).png', type: 'Enterol',})">
+        onclick="addTemporarySlides(arrayM1_1)">
     </div>
     <div class="m_1_button_asp"
-        onclick="addTemporarySlide({image: '/slides/Enterol2560/E (28).png', type: 'Enterol',})">
+        onclick="addTemporarySlides(arrayM1_2)">
     </div>
     <div class="m_1_button_izo"
-        onclick="addTemporarySlide({image: '/slides/Enterol2560/E (27).png', type: 'Enterol',})">
+        onclick="addTemporarySlides(arrayM1_3)">
     </div>
 `
