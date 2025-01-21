@@ -237,35 +237,35 @@ const mapping = {
             special_animation: 'Special',
             animation_text: `
             <div class="percent-container">
-    <button class="percent" id="percent5" style="background-image: url('../slides/Enterol2560/E1/5.png');" onclick="
+    <button class="percent" id="percent5" style="background-image: url('./slides/Enterol2560/E1/5.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent4" style="background-image: url('../slides/Enterol2560/E1/4.png');" onclick="
+    <button class="percent" id="percent4" style="background-image: url('./slides/Enterol2560/E1/4.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent3" style="background-image: url('../slides/Enterol2560/E1/3.png');" onclick="
+    <button class="percent" id="percent3" style="background-image: url('./slides/Enterol2560/E1/3.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent2" style="background-image: url('../slides/Enterol2560/E1/2.png');" onclick="
+    <button class="percent" id="percent2" style="background-image: url('./slides/Enterol2560/E1/2.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent1" style="background-image: url('../slides/Enterol2560/E1/1.png');" onclick="
+    <button class="percent" id="percent1" style="background-image: url('./slides/Enterol2560/E1/1.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
@@ -403,35 +403,35 @@ const mapping = {
             special_animation: 'Special',
             animation_text: `
             <div class="percent-container">
-    <button class="percent" id="percent5" style="background-image: url('../slides/Enterol2560/E1/5.png');" onclick="
+    <button class="percent" id="percent5" style="background-image: url('./slides/Enterol2560/E1/5.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent4" style="background-image: url('../slides/Enterol2560/E1/4.png');" onclick="
+    <button class="percent" id="percent4" style="background-image: url('./slides/Enterol2560/E1/4.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent3" style="background-image: url('../slides/Enterol2560/E1/3.png');" onclick="
+    <button class="percent" id="percent3" style="background-image: url('./slides/Enterol2560/E1/3.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent2" style="background-image: url('../slides/Enterol2560/E1/2.png');" onclick="
+    <button class="percent" id="percent2" style="background-image: url('./slides/Enterol2560/E1/2.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent1" style="background-image: url('../slides/Enterol2560/E1/1.png');" onclick="
+    <button class="percent" id="percent1" style="background-image: url('./slides/Enterol2560/E1/1.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
@@ -555,35 +555,35 @@ const mapping = {
             special_animation: 'Special',
             animation_text: `
             <div class="percent-container">
-    <button class="percent" id="percent5" style="background-image: url('../slides/Enterol2560/E1/5.png');" onclick="
+    <button class="percent" id="percent5" style="background-image: url('./slides/Enterol2560/E1/5.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent4" style="background-image: url('../slides/Enterol2560/E1/4.png');" onclick="
+    <button class="percent" id="percent4" style="background-image: url('./slides/Enterol2560/E1/4.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent3" style="background-image: url('../slides/Enterol2560/E1/3.png');" onclick="
+    <button class="percent" id="percent3" style="background-image: url('./slides/Enterol2560/E1/3.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent2" style="background-image: url('../slides/Enterol2560/E1/2.png');" onclick="
+    <button class="percent" id="percent2" style="background-image: url('./slides/Enterol2560/E1/2.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent1" style="background-image: url('../slides/Enterol2560/E1/1.png');" onclick="
+    <button class="percent" id="percent1" style="background-image: url('./slides/Enterol2560/E1/1.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
@@ -747,35 +747,35 @@ const mapping = {
             special_animation: 'Special',
             animation_text: `
             <div class="percent-container">
-    <button class="percent" id="percent5" style="background-image: url('../slides/Enterol2560/E1/5.png');" onclick="
+    <button class="percent" id="percent5" style="background-image: url('./slides/Enterol2560/E1/5.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent4" style="background-image: url('../slides/Enterol2560/E1/4.png');" onclick="
+    <button class="percent" id="percent4" style="background-image: url('./slides/Enterol2560/E1/4.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent3" style="background-image: url('../slides/Enterol2560/E1/3.png');" onclick="
+    <button class="percent" id="percent3" style="background-image: url('./slides/Enterol2560/E1/3.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent2" style="background-image: url('../slides/Enterol2560/E1/2.png');" onclick="
+    <button class="percent" id="percent2" style="background-image: url('./slides/Enterol2560/E1/2.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent1" style="background-image: url('../slides/Enterol2560/E1/1.png');" onclick="
+    <button class="percent" id="percent1" style="background-image: url('./slides/Enterol2560/E1/1.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
