@@ -1,34 +1,34 @@
 const percent_animation = `
             <div class="percent-container">
-    <button class="percent" id="percent5" style="background-image: url('./slides/Enterol2560/E1/5.png');" onclick="
+    <button class="percent" id="percent5" style="background-image: url('/Farmacology/slides/Enterol2560/E1/5.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent4" style="background-image: url('./slides/Enterol2560/E1/4.png');" onclick="
+    <button class="percent" id="percent4" style="background-image: url('/Farmacology/slides/Enterol2560/E1/4.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent3" style="background-image: url('./slides/Enterol2560/E1/3.png');" onclick="
+    <button class="percent" id="percent3" style="background-image: url('/Farmacology/slides/Enterol2560/E1/3.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent2" style="background-image: url('./slides/Enterol2560/E1/2.png');" onclick="
+    <button class="percent" id="percent2" style="background-image: url('/Farmacology/slides/Enterol2560/E1/2.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
                 Reveal.next();
             }, 2000);
         "></button>
-    <button class="percent" id="percent1" style="background-image: url('./slides/Enterol2560/E1/1.png');" onclick="
+    <button class="percent" id="percent1" style="background-image: url('/Farmacology/slides/Enterol2560/E1/1.png');" onclick="
             this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
@@ -91,11 +91,11 @@ const c_2 = `
 
 const visit = `
     <div class="visit-container">
-        <button class="visit" id="visit1" style="background-image: url('./slides/Asacol/A0/1.png');" onclick="addTemporarySlides(arrayVisit1)"></button>
-        <button class="visit" id="visit2" style="background-image: url('./slides/Asacol/A0/2.png');" onclick="addTemporarySlides(arrayVisit2)"></button>
-        <button class="visit" id="visit3" style="background-image: url('./slides/Asacol/A0/3.png');" onclick="addTemporarySlides(arrayVisit3)"></button>
-        <button class="visit" id="visit4" style="background-image: url('./slides/Asacol/A0/4.png');" onclick="addTemporarySlides(arrayVisit4)"></button>
-        <button class="visit" id="visit5" style="background-image: url('./slides/Asacol/A0/5.png');" onclick=""></button>
+        <button class="visit" id="visit1" style="background-image: url('/Farmacology/slides/Asacol/A0/1.png');" onclick="addTemporarySlides(arrayVisit1)"></button>
+        <button class="visit" id="visit2" style="background-image: url('/Farmacology/slides/Asacol/A0/2.png');" onclick="addTemporarySlides(arrayVisit2)"></button>
+        <button class="visit" id="visit3" style="background-image: url('/Farmacology/slides/Asacol/A0/3.png');" onclick="addTemporarySlides(arrayVisit3)"></button>
+        <button class="visit" id="visit4" style="background-image: url('/Farmacology/slides/Asacol/A0/4.png');" onclick="addTemporarySlides(arrayVisit4)"></button>
+        <button class="visit" id="visit5" style="background-image: url('/Farmacology/slides/Asacol/A0/5.png');" onclick=""></button>
     </div>
 `
 
