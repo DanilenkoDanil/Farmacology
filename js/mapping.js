@@ -224,20 +224,13 @@ const mapping = {
             image: "/slides/Asacol/A (0).png",
             type: "Asacol",
             special_animation: 'Special',
-            animation_text: `
-            <div class="visit-container">
-                <button class="visit" id="visit1" style="background-image: url('../slides/Asacol/A0/1.png');" onclick="addTemporarySlides(arrayVisit1)"></button>
-                <button class="visit" id="visit2" style="background-image: url('../slides/Asacol/A0/2.png');" onclick="addTemporarySlides(arrayVisit2)"></button>
-                <button class="visit" id="visit3" style="background-image: url('../slides/Asacol/A0/3.png');" onclick="addTemporarySlides(arrayVisit3)"></button>
-                <button class="visit" id="visit4" style="background-image: url('../slides/Asacol/A0/4.png');" onclick="addTemporarySlides(arrayVisit4)"></button>
-                <button class="visit" id="visit5" style="background-image: url('../slides/Asacol/A0/5.png');" onclick=""></button>
-            </div>
-            `
+            animation_text: visit,
         },
         {
-            image: "/slides/Stresam2560/C (14).png",
+            image: "/slides/Stresam2560/C14/C14.png",
             type: "Stresam",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: c_14
         },
         {
             image: "/slides/Stresam2560/C (1).png",
@@ -474,9 +467,10 @@ const mapping = {
             special_animation: 'Base'
         },
         {
-            image: "/slides/Stresam2560/C (2).png",
-            type: "Stresam",
-            special_animation: 'Base'
+            image: "/slides/Stresam2560/C2/f10000000.png",
+            type: "Special",
+            special_animation: 'Special',
+            animation_text: c_2,
         },
         {
             image: "/slides/Stresam2560/C (11).png",
@@ -638,9 +632,10 @@ const mapping = {
             special_animation: 'Base'
         },
         {
-            image: "/slides/Stresam2560/C (2).png",
+            image: "/slides/Stresam2560/C2/f10000000.png",
             type: "Stresam",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: c_2,
         },
         {
             image: "/slides/Stresam2560/C (11).png",

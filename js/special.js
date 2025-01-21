@@ -47,6 +47,71 @@ const e_26 = `
     </div>
 `
 
+const c_2 = `
+    <div class="stresam-buttons-container">
+        <img src="./slides/Stresam2560/C2/1.png" class="stresam-buttons" onclick="this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 1000);" />
+        <img src="./slides/Stresam2560/C2/2.png" class="stresam-buttons" onclick="this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 1000);" />
+        <img src="./slides/Stresam2560/C2/3.png" class="stresam-buttons" onclick="this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 1000);" />
+        <img src="./slides/Stresam2560/C2/4.png" class="stresam-buttons" onclick="this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 1000);" />
+        <img src="./slides/Stresam2560/C2/5.png" class="stresam-buttons" onclick="this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 1000);" />
+    </div>
+`
+
+const visit = `
+    <div class="visit-container">
+        <button class="visit" id="visit1" style="background-image: url('../slides/Asacol/A0/1.png');" onclick="addTemporarySlides(arrayVisit1)"></button>
+        <button class="visit" id="visit2" style="background-image: url('../slides/Asacol/A0/2.png');" onclick="addTemporarySlides(arrayVisit2)"></button>
+        <button class="visit" id="visit3" style="background-image: url('../slides/Asacol/A0/3.png');" onclick="addTemporarySlides(arrayVisit3)"></button>
+        <button class="visit" id="visit4" style="background-image: url('../slides/Asacol/A0/4.png');" onclick="addTemporarySlides(arrayVisit4)"></button>
+        <button class="visit" id="visit5" style="background-image: url('../slides/Asacol/A0/5.png');" onclick=""></button>
+    </div>
+`
+
+const c_14 = `
+<div class="stresam-buttons-container-c14">
+    <img src="./slides/Stresam2560/C14/1.png" class="stresam-buttons-c14" onclick="this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 1000);" />
+    <img src="./slides/Stresam2560/C14/2.png" class="stresam-buttons-c14" onclick="this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 1000);" />
+    <img src="./slides/Stresam2560/C14/3.png" class="stresam-buttons-c14" onclick="this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 1000);" />
+    <img src="./slides/Stresam2560/C14/4.png" class="stresam-buttons-c14" onclick="this.classList.add('active');
+            setTimeout(() => {
+                this.classList.remove('active');
+                Reveal.next();
+            }, 1000);" />
+</div>
+`
+
 const e_42 = `
 <div class="circle-buttons-container">
 							<img src="./slides/Enterol v3/Е42/Group 81.png" class="circle-buttons" id="circle-btn-1" onclick="addTemporarySlide({image: '/slides/Enterol v3/Е (48).png', type: 'EnterolV3'});" />
