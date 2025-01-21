@@ -305,7 +305,8 @@ const mapping = {
         {
             image: "/slides/Asacol/A (0).png",
             type: "Asacol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: visit,
         }
     ],
     advanced_family: [
@@ -747,7 +748,12 @@ const arrayVisit1 = [
         special_animation: 'Special',
         animation_text: a_1,
     },
-    { type: "Asacol", image: "/slides/Asacol/A (2).png" },
+    {
+        type: "Asacol",
+        image: "/slides/Asacol/A2/7.png",
+        special_animation: 'Special',
+        animation_text: a_2,
+    },
     { type: "Asacol", image: "/slides/Asacol/A (3).png" }
 ];
 

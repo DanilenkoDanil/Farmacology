@@ -537,3 +537,44 @@ const numbers = `
         </div>
     </div>
 `
+
+const a_2 = `
+    <button class="play-button"
+        onclick="
+            const video = document.querySelector('#hidden-video');
+            video.style.display = 'block';
+            video.play();
+            this.style.display = 'none';
+        "
+        style="
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1001;
+        ">
+        <img src="/slides/Asacol/A2/31232009.png" alt="Play" style="width: 80px; height: 80px;">
+    </button>
+
+    <!-- Спрятанное видео -->
+    <video id="hidden-video"
+        style="
+            display: none;
+            position: absolute;
+            top: 52%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+            z-index: 1000;
+        "
+        controls
+        disablepictureinpicture
+        controlslist="nodownload noplaybackrate">
+        <source src="slides/Asacol/A2/asacol.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+`
