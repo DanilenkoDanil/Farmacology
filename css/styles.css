@@ -352,6 +352,51 @@ section {
     aspect-ratio: 983 / 498;
 }
 
+.bubble-text {
+    position: absolute;
+    width: 13%;
+    height: 17%;
+    top: 33%;
+    left: 67%;
+    z-index: 51651516;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+.m_1_button_ing {
+    position: absolute;
+    width: 35%;
+    height: 40%;
+    top: 50%;
+    left: 5%;
+    z-index: 51651515;
+    cursor: pointer;
+    border: 3px solid green;
+}
+
+.m_1_button_asp {
+    position: absolute;
+    width: 31%;
+    height: 25%;
+    top: 65%;
+    left: 40%;
+    z-index: 51651515;
+    cursor: pointer;
+    border: 3px solid green;
+}
+
+.m_1_button_izo {
+    position: absolute;
+    width: 23%;
+    height: 25%;
+    top: 65%;
+    left: 71.5%;
+    z-index: 51651515;
+    cursor: pointer;
+    border: 3px solid green;
+}
+
 .circle-buttons {
     height: 8%;
     transition: transform 0.2s ease;
