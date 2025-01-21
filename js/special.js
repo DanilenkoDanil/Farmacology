@@ -191,7 +191,7 @@ const a_1 = `
         const humans = document.querySelectorAll('.human');
         humans.forEach(human => {
             human.addEventListener('mousemove', function() {
-                this.style.backgroundImage = 'url(/slides/Asacol/A1/231239.png)';
+                this.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
             });
         });
     })();" ontouchmove="(function() {
@@ -199,7 +199,7 @@ const a_1 = `
         humans.forEach(human => {
             human.addEventListener('touchmove', function(e) {
                 e.preventDefault();
-                this.style.backgroundImage = 'url(/slides/Asacol/A1/231239.png)';
+                this.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
             });
         });
     })();">
