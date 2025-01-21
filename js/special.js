@@ -126,12 +126,12 @@ const c_14 = `
 
 const e_42 = `
 <div class="circle-buttons-container">
-							<img src="./slides/Enterol v3/Е42/Group 81.png" class="circle-buttons" id="circle-btn-1" onclick="addTemporarySlide({image: '/slides/Enterol v3/Е (48).png', type: 'EnterolV3'});" />
-							<img src="./slides/Enterol v3/Е42/Group 82.png" class="circle-buttons" id="circle-btn-2" onclick="addTemporarySlide({image: '/slides/Enterol v3/Е (46).png', type: 'EnterolV3'});" />
-							<img src="./slides/Enterol v3/Е42/Group 83.png" class="circle-buttons" id="circle-btn-3" onclick="addTemporarySlide({image: '/slides/Enterol v3/Е (47).png', type: 'EnterolV3'});" />
-							<img src="./slides/Enterol v3/Е42/Group 84.png" class="circle-buttons" id="circle-btn-4" onclick="addTemporarySlide({image: '/slides/Enterol v3/Е (49).png', type: 'EnterolV3'});" />
-							<img src="./slides/Enterol v3/Е42/Group 85.png" class="circle-buttons" id="circle-btn-5" onclick="addTemporarySlide({image: '/slides/Enterol v3/Е (45).png', type: 'EnterolV3'});" />
-							<img src="./slides/Enterol v3/Е42/Group 86.png" class="circle-buttons" id="circle-btn-6"
+							<img src="/Farmacology/slides/Enterol v3/Е42/Group 81.png" class="circle-buttons" id="circle-btn-1" onclick="addTemporarySlide({image: '/slides/Enterol v3/Е (48).png', type: 'EnterolV3'});" />
+							<img src="/Farmacology/slides/Enterol v3/Е42/Group 82.png" class="circle-buttons" id="circle-btn-2" onclick="addTemporarySlide({image: '/slides/Enterol v3/Е (46).png', type: 'EnterolV3'});" />
+							<img src="/Farmacology/slides/Enterol v3/Е42/Group 83.png" class="circle-buttons" id="circle-btn-3" onclick="addTemporarySlide({image: '/slides/Enterol v3/Е (47).png', type: 'EnterolV3'});" />
+							<img src="/Farmacology/slides/Enterol v3/Е42/Group 84.png" class="circle-buttons" id="circle-btn-4" onclick="addTemporarySlide({image: '/slides/Enterol v3/Е (49).png', type: 'EnterolV3'});" />
+							<img src="/Farmacology/slides/Enterol v3/Е42/Group 85.png" class="circle-buttons" id="circle-btn-5" onclick="addTemporarySlide({image: '/slides/Enterol v3/Е (45).png', type: 'EnterolV3'});" />
+							<img src="/Farmacology/slides/Enterol v3/Е42/Group 86.png" class="circle-buttons" id="circle-btn-6"
 								 onclick="const slides6 = [
 									{ type: 'EnterolV3', image: '/slides/Enterol v3/Е (50).png' },
 									{ type: 'EnterolV3', image: '/slides/Enterol v3/Е (51).png' },
