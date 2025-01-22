@@ -106,7 +106,7 @@ const mapping = {
             image: "/slides/Asacol/A (0).png",
             type: "Asacol",
             special_animation: 'Special',
-            animation_text: visit,
+            animation_text: visit_full,
         },
         {
             image: "/slides/Stresam2560/C14/C14.png",
@@ -184,7 +184,7 @@ const mapping = {
             image: "/slides/Asacol/A (0).png",
             type: "Asacol",
             special_animation: 'Special',
-            animation_text: visit,
+            animation_text: visit_child,
         }
     ],
     advanced_family: [
