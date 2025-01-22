@@ -106,7 +106,7 @@ const mapping = {
             image: "/slides/Asacol/A (0).png",
             type: "Asacol",
             special_animation: 'Special',
-            animation_text: visit,
+            animation_text: visit_full,
         },
         {
             image: "/slides/Stresam2560/C14/C14.png",
@@ -184,7 +184,7 @@ const mapping = {
             image: "/slides/Asacol/A (0).png",
             type: "Asacol",
             special_animation: 'Special',
-            animation_text: visit,
+            animation_text: visit_child,
         }
     ],
     advanced_family: [
@@ -551,7 +551,7 @@ const arrayVisit3 = [
 
 const arrayVisit4 = [
     { type: "Asacol", image: "/slides/Asacol/A (17).png" },
-    { type: "Asacol", image: "/slides/Asacol/A (4).png" },
+    { type: "Asacol", image: "/slides/Asacol/A (3).png" },
 ];
 
 
@@ -584,6 +584,10 @@ const arrayM1_2 = [
             image: "/slides/Marimer2560/M (5).png",
             type: "Marimer",
     },
+    {
+            image: "/slides/Marimer2560/M (23).png",
+            type: "Marimer",
+    },
 ];
 
 const arrayM1_3 = [
@@ -605,6 +609,10 @@ const arrayM1_3 = [
     },
     {
             image: "/slides/Marimer2560/M (14).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (23).png",
             type: "Marimer",
     },
 ];

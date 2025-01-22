@@ -91,6 +91,26 @@ const visit = `
     </div>
 `
 
+const visit_child = `
+    <div class="visit-container">
+        <button class="visit" id="visit1" style="background-image: url('/Farmacology/slides/Asacol/A0/1.png');" onclick="addTemporarySlides(arrayVisit1)"></button>
+        <button class="visit" id="visit2" style="background-image: url('/Farmacology/slides/Asacol/A0/2.png');" onclick=""></button>
+        <button class="visit" id="visit3" style="background-image: url('/Farmacology/slides/Asacol/A0/3.png');" onclick=""></button>
+        <button class="visit" id="visit4" style="background-image: url('/Farmacology/slides/Asacol/A0/4.png');" onclick=""></button>
+        <button class="visit" id="visit5" style="background-image: url('/Farmacology/slides/Asacol/A0/5.png');" onclick="window.location.href='https://drive.google.com/file/d/1hyBtO4NPeKQM0Lc9ZuoL3hBYD6DuX1Kp/view?usp=sharing';"></button>
+    </div>
+`
+
+const visit_full = `
+    <div class="visit-container">
+        <button class="visit" id="visit1" style="background-image: url('/Farmacology/slides/Asacol/A0/1.png');" onclick=""></button>
+        <button class="visit" id="visit2" style="background-image: url('/Farmacology/slides/Asacol/A0/2.png');" onclick="addTemporarySlides(arrayVisit2)"></button>
+        <button class="visit" id="visit3" style="background-image: url('/Farmacology/slides/Asacol/A0/3.png');" onclick="addTemporarySlides(arrayVisit3)"></button>
+        <button class="visit" id="visit4" style="background-image: url('/Farmacology/slides/Asacol/A0/4.png');" onclick="addTemporarySlides(arrayVisit4)"></button>
+        <button class="visit" id="visit5" style="background-image: url('/Farmacology/slides/Asacol/A0/5.png');" onclick=""></button>
+    </div>
+`
+
 const c_14 = `
 <div class="stresam-buttons-container-c14">
     <button style="background-image: url('/Farmacology/slides/Stresam2560/C14/1.png');" class="stresam-buttons-c14" onclick="this.classList.add('active');
@@ -213,9 +233,6 @@ const a_1 = `
             </div>
       </div>
 `
-
-let globalImageQueue = [];
-const imageStates = {};
 
 const numbers = `
     <div id="main-block" class="main-block">

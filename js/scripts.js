@@ -46,7 +46,8 @@ function generateSlides(slideSet) {
 
 function loadSlides(setName) {
     window.imageIndex = 0;
-
+    window.globalImageQueue = [];
+    window.imageStates = {};
     const slidesContainer = document.getElementById('slides-container');
     const reveal = document.querySelector('.reveal');
 
