@@ -266,6 +266,11 @@ const mapping = {
             special_animation: 'Base'
         },
         {
+            image: "/slides/Otipax2560/O (2).png",
+            type: "Otipax",
+            special_animation: 'Base'
+        },
+        {
             image: "/slides/Otipax2560/O (5).png",
             type: "Otipax",
             special_animation: 'Base'
@@ -371,6 +376,11 @@ const mapping = {
         {
             image: "/slides/Stresam2560/C (1).png",
             type: "Stresam",
+            special_animation: 'Base'
+        },
+        {
+            image: "/slides/Otipax2560/O (1).png",
+            type: "Otipax",
             special_animation: 'Base'
         },
         {
