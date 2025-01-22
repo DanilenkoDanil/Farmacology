@@ -82,7 +82,8 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (20).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: e_20
         },
         {
             image: "/slides/Enterol2560/E (21).png",
@@ -145,7 +146,8 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (20).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: e_20
         },
         {
             image: "/slides/Enterol2560/E (21).png",
@@ -201,7 +203,8 @@ const mapping = {
         {
             image: "/slides/Enterol2560/E (20).png",
             type: "Enterol",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: e_20
         },
         {
             image: "/slides/Enterol2560/E (5).png",
