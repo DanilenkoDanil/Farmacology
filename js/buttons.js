@@ -64,23 +64,22 @@ function addTemporarySlide(slideData) {
 }
 
 
-const slideListener = (event) => {
-    const tempSlides = document.querySelectorAll('.temp-slide'); // Находим все временные слайды
+function removeTempSlidesOnSlideChange() {
+    // Добавляем обработчик события slidechanged
+    Reveal.on('slidechanged', () => {
+        // Найти все элементы с классом temp-slide
+        const tempSlides = document.querySelectorAll('.temp-slide');
+        console.log('DELETE')
 
-    if (tempSlides.length > 0) {
-        console.log('Переход между слайдами');
-
-        tempSlides.forEach((tempSlide) => {
-            if (tempSlide !== event.currentSlide) {
-                console.log('Удаление временного слайда');
-                tempSlide.remove();
+        tempSlides.forEach(slide => {
+            // Проверить, есть ли у элемента класс 'present'
+            if (!slide.classList.contains('present')) {
+                // Удалить элемент
+                slide.remove();
             }
         });
+    });
+}
 
-        Reveal.sync();
-
-        if (!event.currentSlide.classList.contains('temp-slide')) {
-            Reveal.removeEventListener('slidechanged', slideListener);
-        }
-    }
-};
+// Вызов функции для активации удаления
+removeTempSlidesOnSlideChange();

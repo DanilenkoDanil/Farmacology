@@ -1,6 +1,7 @@
-let temp_id2 = 1;
+let tempSlidesMap = {}; // Карта для хранения временных слайдов и их родительских слайдов
+let tempId = 1;
 
-function generateTemporarySlide(slideData) {
+function generateTemporarySlideForSlides(slideData) {
     console.log("generateTemporarySlide");
     console.log("slideData", slideData);
 
@@ -8,10 +9,10 @@ function generateTemporarySlide(slideData) {
     const text = animationText !== null ? animationText : "";
 
     const section = document.createElement('section');
-    section.id = slideData.type + "-sub-temp-" + temp_id2;
-    temp_id2 = temp_id2 + 1;
+    section.id = `${slideData.type}-sub-temp-${tempId}`;
+    tempId++;
     section.setAttribute('data-type', slideData.type || '');
-    section.setAttribute('class', 'temp-slide');
+    section.setAttribute('class', 'temp-sub-slide');
     section.style.cssText = `
                 display: flex !important;
                 width: 100%;
@@ -53,14 +54,44 @@ function addTemporarySlides(slideDataArray) {
         return;
     }
 
-    // Создаём и добавляем каждый слайд из массива
+    const parentSlideId = currentSlide.id; // ID текущего слайда
+    tempSlidesMap[parentSlideId] = []; // Создаем массив для временных слайдов
+
+    // Создаём и добавляем каждый временный слайд из массива
     slideDataArray.forEach(slideData => {
-        const tempSlide = generateTemporarySlide(slideData);
+        const tempSlide = generateTemporarySlideForSlides(slideData);
         slidesContainer.insertBefore(tempSlide, currentSlide); // Вставляем перед текущим слайдом
+        tempSlidesMap[parentSlideId].push(tempSlide.id); // Сохраняем ID временного слайда
     });
 
     Reveal.sync();
-    console.log('Слайды созданы');
+    console.log('Временные слайды добавлены');
     Reveal.prev(); // Переходим к началу добавленных слайдов
-    Reveal.next()
+    Reveal.next();
 }
+
+function removeTempSlidesForParent(parentSlideId) {
+    if (!tempSlidesMap[parentSlideId]) return;
+
+    // Удаляем временные слайды, связанные с данным родительским слайдом
+    tempSlidesMap[parentSlideId].forEach(slideId => {
+        const slide = document.getElementById(slideId);
+        if (slide) slide.remove();
+    });
+
+    // Удаляем запись о временных слайдах для данного родителя
+    delete tempSlidesMap[parentSlideId];
+
+    Reveal.sync();
+    console.log('Временные слайды удалены для родительского слайда:', parentSlideId);
+}
+
+// Логика удаления при возвращении к родительскому слайду
+Reveal.on('slidechanged', event => {
+    const currentSlideId = event.currentSlide.id;
+
+    // Проверяем, является ли текущий слайд родительским
+    if (tempSlidesMap[currentSlideId]) {
+        removeTempSlidesForParent(currentSlideId);
+    }
+});
