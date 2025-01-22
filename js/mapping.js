@@ -385,9 +385,10 @@ const mapping = {
             special_animation: 'Base'
         },
         {
-            image: "/slides/Otipax2560/O (1).png",
+            image: "/slides/Otipax2560/O (2).png",
             type: "Otipax",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: o_2
         },
         {
             image: "/slides/Otipax2560/O (5).png",
