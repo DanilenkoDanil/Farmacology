@@ -584,6 +584,10 @@ const arrayM1_2 = [
             image: "/slides/Marimer2560/M (5).png",
             type: "Marimer",
     },
+    {
+            image: "/slides/Marimer2560/M (23).png",
+            type: "Marimer",
+    },
 ];
 
 const arrayM1_3 = [
@@ -605,6 +609,10 @@ const arrayM1_3 = [
     },
     {
             image: "/slides/Marimer2560/M (14).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (23).png",
             type: "Marimer",
     },
 ];
