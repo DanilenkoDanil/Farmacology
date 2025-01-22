@@ -214,9 +214,6 @@ const a_1 = `
       </div>
 `
 
-let globalImageQueue = [];
-const imageStates = {};
-
 const numbers = `
     <div id="main-block" class="main-block">
         <div class="columns">
