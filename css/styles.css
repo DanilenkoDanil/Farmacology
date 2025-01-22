@@ -641,14 +641,14 @@ display: flex;
 
 .bubble-text-bottom-e9 {
     position: absolute;
-    width: 27%;
-    height: 33%;
-    top: 21%;
+    width: 42%;
+    height: 23%;
+    top: 53%;
     left: 43%;
     z-index: 51651516;
     cursor: pointer;
-    border-radius: 50%;
 }
+
 .human-container {
     position: absolute;
     top: 35%;
