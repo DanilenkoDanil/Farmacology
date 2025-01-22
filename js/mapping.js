@@ -43,7 +43,7 @@ const mapping = {
             image: "/slides/Marimer2560/M (1).png",
             type: "Marimer",
             special_animation: 'Special',
-            animation_text: m_1,
+            animation_text: m_1_1,
         },
         {
             image: "/slides/Bebykol2560/Б (3).png",
@@ -56,12 +56,17 @@ const mapping = {
             special_animation: 'Base'
         },
         {
-            image: "/slides/Otipax2560/O (7).png",
+            image: "/slides/Otipax2560/O (1).png",
             type: "Otipax",
             special_animation: 'Base'
         },
         {
             image: "/slides/Otipax2560/O (2).png",
+            type: "Otipax",
+            special_animation: 'Base'
+        },
+        {
+            image: "/slides/Otipax2560/O (7).png",
             type: "Otipax",
             special_animation: 'Special',
             animation_text: o_2
@@ -272,7 +277,8 @@ const mapping = {
         {
             image: "/slides/Marimer2560/M (15).png",
             type: "Marimer",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: m_15,
         },
         {
             image: "/slides/Marimer2560/M (16).png",
@@ -384,7 +390,8 @@ const mapping = {
         {
             image: "/slides/Marimer2560/M (15).png",
             type: "Marimer",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: m_15,
         },
         {
             image: "/slides/Marimer2560/M (16).png",
@@ -400,9 +407,10 @@ const mapping = {
     ],
     ent: [
         {
-            image: "/slides/Marimer2560/M (2).png",
-            type: "Marimer",
-            special_animation: 'Base'
+                image: "/slides/Marimer2560/M (1).png",
+                type: "Marimer",
+                special_animation: 'Special',
+                animation_text: m_1_2,
         },
         {
             image: "/slides/Marimer2560/M (18).png",

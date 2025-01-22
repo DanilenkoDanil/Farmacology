@@ -193,6 +193,20 @@ const m_1 = `
     </div>
 `
 
+const m_1_1 = `
+    <div class="m_1_button_asp"
+        onclick="addTemporarySlides(arrayM1_2)">
+    </div>
+    <div class="m_1_button_izo"
+        onclick="addTemporarySlides(arrayM1_3)">
+    </div>
+`
+
+const m_1_2 = `
+    <div class="m_1_button_ing"
+        onclick="Reveal.next()">
+    </div>
+`
 
 const a_1 = `
       <div class="human-container" 
@@ -1001,4 +1015,27 @@ const o_2 = `
 <div id="o_2-3" class="o_2-buttons" onclick="addTemporarySlide({image: '/slides/Otipax2560/O (8).png', type: 'Otipax'});"></div>
 <div id="o_2-4" class="o_2-buttons" onclick="addTemporarySlide({image: '/slides/Otipax2560/O (6).png', type: 'Otipax'});"></div>
 <div id="o_2-5" class="o_2-buttons" onclick="addTemporarySlide({image: '/slides/Otipax2560/O (5).png', type: 'Otipax'});"></div>
+`
+
+
+
+const m_15 = `
+    <div class="m_15_button_1"
+        onclick="addTemporarySlide({image: '/slides/Marimer2560/M (2).png', type: 'Marimer',})">
+    </div>
+    <div class="m_15_button_2"
+        onclick="addTemporarySlide({image: '/slides/Marimer2560/M (3).png', type: 'Marimer',})">
+    </div>
+    <div class="m_15_button_3"
+        onclick="addTemporarySlide({image: '/slides/Marimer2560/M (4).png', type: 'Marimer',})">
+    </div>
+    <div class="m_15_button_4"
+        onclick="addTemporarySlide({image: '/slides/Marimer2560/M (6).png', type: 'Marimer',})">
+    </div>
+    <div class="m_15_button_5"
+        onclick="addTemporarySlide({image: '/slides/Marimer2560/M (5).png', type: 'Marimer',})">
+    </div>
+    <div class="m_15_button_6"
+        onclick="addTemporarySlide({image: '/slides/Marimer2560/M (7).png', type: 'Marimer',})">
+    </div>
 `
