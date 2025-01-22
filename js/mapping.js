@@ -551,7 +551,7 @@ const arrayVisit3 = [
 
 const arrayVisit4 = [
     { type: "Asacol", image: "/slides/Asacol/A (17).png" },
-    { type: "Asacol", image: "/slides/Asacol/A (4).png" },
+    { type: "Asacol", image: "/slides/Asacol/A (3).png" },
 ];
 
 
