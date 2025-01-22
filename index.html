@@ -16,14 +16,21 @@
 	<body>
         <div class="reveal">
             <div class="slides" id="slides-container">
-				<section id="slide-0" data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
-					<div class="main-buttons-container">
-						<button class="button" id="pediatr" onclick="loadSlides('pediatr')">Педіатр</button>
-						<button class="button" id="gastro" onclick="loadSlides('gastro')">Гастро</button>
-						<button class="button" id="gastro-kid" onclick="loadSlides('pediatric_gastro')">Гастро дит</button>
-						<button class="button" id="simey-advance" onclick="loadSlides('advanced_family')">Сімейні "продвинуті"</button>
-						<button class="button" id="simey-begin" onclick="loadSlides('beginner_family')">Сімейні "початківці"</button>
-						<button class="button" id="lor" onclick="loadSlides('ent')">Лор</button>
+				<section id="slide-0" data-background-color="#1b2683">
+					<div class="main-container">
+						<h1>Оберіть категорію</h1>
+						<p>Оберіть спеціалізацію, щоб переглянути презентацію в визначеному порядку.<br>
+						Це допоможе вам отримати актуальну інформацію виходячи з вашої <br>
+							професійної діяльності та зробити вибір потрібних матеріалів.</p>
+
+						<div class="main-button-grid">
+							<button class="main-button" id="pediatr" onclick="loadSlides('pediatr')">Педіатр</button>
+							<button class="main-button" id="gastro" onclick="loadSlides('gastro')">Гастро</button>
+							<button class="main-button" id="gastro-kid" onclick="loadSlides('pediatric_gastro')">Гастро дитячий</button>
+							<button class="main-button" id="simey-advance" onclick="loadSlides('advanced_family')">Гастро дитячий</button>
+							<button class="main-button" id="simey-begin" onclick="loadSlides('beginner_family')">Сімейні "початківці"</button>
+							<button class="main-button" id="lor" onclick="loadSlides('ent')">ЛОР</button>
+						</div>
 					</div>
 				</section>
 			</div>
