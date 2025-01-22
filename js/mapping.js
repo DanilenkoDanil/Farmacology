@@ -540,7 +540,39 @@ const arrayVisit4 = [
     { type: "Asacol", image: "/slides/Asacol/A (4).png" },
 ];
 
+
+
 const arrayM1_1 = [
+    {
+            image: "/slides/Marimer2560/M (2).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (18).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (16).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (17).png",
+            type: "Marimer",
+    },
+];
+
+const arrayM1_2 = [
+    {
+            image: "/slides/Marimer2560/M (6).png",
+            type: "Marimer",
+    },
+    {
+            image: "/slides/Marimer2560/M (5).png",
+            type: "Marimer",
+    },
+];
+
+const arrayM1_3 = [
     {
             image: "/slides/Marimer2560/M (8).png",
             type: "Marimer",
@@ -559,36 +591,6 @@ const arrayM1_1 = [
     },
     {
             image: "/slides/Marimer2560/M (14).png",
-            type: "Marimer",
-    },
-];
-
-const arrayM1_2 = [
-    {
-            image: "/slides/Marimer2560/M (6).png",
-            type: "Marimer",
-    },
-    {
-            image: "/slides/Marimer2560/M (5).png",
-            type: "Marimer",
-    },
-];
-
-const arrayM1_3 = [
-    {
-            image: "/slides/Marimer2560/M (2).png",
-            type: "Marimer",
-    },
-    {
-            image: "/slides/Marimer2560/M (18).png",
-            type: "Marimer",
-    },
-    {
-            image: "/slides/Marimer2560/M (16).png",
-            type: "Marimer",
-    },
-    {
-            image: "/slides/Marimer2560/M (17).png",
             type: "Marimer",
     },
 ];
