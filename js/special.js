@@ -985,3 +985,12 @@ const e_20 = `
     </div>
 </div>
 `
+
+const m_16 = `
+<div id="m_16-1" class="m_16-buttons" onclick="addTemporarySlide({image: '/slides/Marimer2560/M (20).png', type: 'Marimer'});"></div>
+<div id="m_16-2" class="m_16-buttons" onclick="addTemporarySlide({image: '/slides/Marimer2560/M (20).png', type: 'Marimer'});"></div>
+<div id="m_16-3" class="m_16-buttons" onclick="addTemporarySlide({image: '/slides/Marimer2560/M (21).png', type: 'Marimer'});"></div>
+<div id="m_16-4" class="m_16-buttons" onclick="addTemporarySlide({image: '/slides/Marimer2560/M (19).png', type: 'Marimer'});"></div>
+<div id="m_16-5" class="m_16-buttons" onclick="addTemporarySlide({image: '/slides/Marimer2560/M (18).png', type: 'Marimer'});"></div>
+<div id="m_16-6" class="m_16-buttons" onclick="addTemporarySlide({image: '/slides/Marimer2560/M (17).png', type: 'Marimer'});"></div>
+`

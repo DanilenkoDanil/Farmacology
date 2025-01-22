@@ -276,7 +276,8 @@ const mapping = {
         {
             image: "/slides/Marimer2560/M (16).png",
             type: "Marimer",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: m_16
         },
         {
             image: "/slides/ACerumen2560/АЦ (1).png",
@@ -387,7 +388,8 @@ const mapping = {
         {
             image: "/slides/Marimer2560/M (16).png",
             type: "Marimer",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: m_16
         },
         {
             image: "/slides/ACerumen2560/АЦ (2).png",
@@ -409,7 +411,8 @@ const mapping = {
         {
             image: "/slides/Marimer2560/M (16).png",
             type: "Marimer",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: m_16
         },
         {
             image: "/slides/Marimer2560/M (17).png",

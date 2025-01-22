@@ -1679,3 +1679,44 @@ display: flex;
 .main-button:active {
     transform: scale(0.95);
 }
+
+.m_16-buttons {
+    width: 13%;
+    height: 17%;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999999999999999999999;
+}
+
+#m_16-1 {
+    position: absolute;
+    top: 22%;
+    left: 53%;
+}
+
+#m_16-2 {
+    position: absolute;
+    top: 41%;
+    left: 53%;
+}
+
+#m_16-3 {
+    position: absolute;
+    top: 59%;
+    left: 53%;
+}
+#m_16-4 {
+    position: absolute;
+    top: 59%;
+    left: 3%;
+}
+#m_16-5 {
+    position: absolute;
+    top: 41%;
+    left: 3%;
+}
+#m_16-6 {
+    position: absolute;
+    top: 22%;
+    left: 3%;
+}
