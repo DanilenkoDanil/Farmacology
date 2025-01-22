@@ -214,6 +214,9 @@ const a_1 = `
       </div>
 `
 
+let globalImageQueue = [];
+const imageStates = {};
+
 const numbers = `
     <div id="main-block" class="main-block">
         <div class="columns">
@@ -234,15 +237,50 @@ const numbers = `
                         <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
                     </div>
                     <p class="text" onclick="
-                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
-                            const images = this.previousElementSibling.querySelectorAll('.text-image');
-                            if (!window.imageIndex) window.imageIndex = 0;
-                            if (window.imageIndex < images.length) {
-                                images[window.imageIndex].style.opacity = 1;
-                                images[window.imageIndex].classList.add('visible');
-                                window.imageIndex++;
+                        const textElement = this;
+                        const imageGroup = this.previousElementSibling;
+                        const images = Array.from(imageGroup.querySelectorAll('.text-image'));
+
+                        if (!this.dataset.id) {
+                            this.dataset.id = Math.random().toString(36).substr(2, 9);
+                        }
+                        const textId = this.dataset.id;
+
+                        if (!window.globalImageQueue) {
+                            window.globalImageQueue = [];
+                        }
+
+                        if (!window.imageStates) {
+                            window.imageStates = {};
+                        }
+
+                        if (window.imageStates[textId]) {
+                            // Отмена выбора: убираем видимость
+                            window.imageStates[textId].forEach(index => {
+                                if (images[index]) {
+                                    images[index].style.opacity = 0;
+                                    images[index].classList.remove('visible');
+                                    window.globalImageQueue.push(index); // Возвращаем индекс в очередь
+                                    window.globalImageQueue.sort((a, b) => b - a)
+                                }
+                            });
+                            delete window.imageStates[textId];
+                        } else {
+                            // Новый выбор: показываем изображения
+                            if (window.globalImageQueue.length === 0) {
+                                window.globalImageQueue = images.map((_, i) => i).reverse(); // Инициализируем очередь
                             }
-                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                            let localIndices = [];
+                            while (window.globalImageQueue.length > 0) {
+                                const index = window.globalImageQueue.pop();
+                                if (images[index] && !images[index].classList.contains('visible')) {
+                                    images[index].style.opacity = 1;
+                                    images[index].classList.add('visible');
+                                    localIndices.push(index);
+                                    break; // Показать одно изображение за раз
+                                }
+                            }
+                            window.imageStates[textId] = localIndices;
                         }
                     ">Дисбіоз, пов’язаний с застосуванням АБТ</p>
                 </div>
@@ -261,15 +299,50 @@ const numbers = `
                         <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
                     </div>
                     <p class="text" onclick="
-                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
-                            const images = this.previousElementSibling.querySelectorAll('.text-image');
-                            if (!window.imageIndex) window.imageIndex = 0;
-                            if (window.imageIndex < images.length) {
-                                images[window.imageIndex].style.opacity = 1;
-                                images[window.imageIndex].classList.add('visible');
-                                window.imageIndex++;
+                        const textElement = this;
+                        const imageGroup = this.previousElementSibling;
+                        const images = Array.from(imageGroup.querySelectorAll('.text-image'));
+
+                        if (!this.dataset.id) {
+                            this.dataset.id = Math.random().toString(36).substr(2, 9);
+                        }
+                        const textId = this.dataset.id;
+
+                        if (!window.globalImageQueue) {
+                            window.globalImageQueue = [];
+                        }
+
+                        if (!window.imageStates) {
+                            window.imageStates = {};
+                        }
+
+                        if (window.imageStates[textId]) {
+                            // Отмена выбора: убираем видимость
+                            window.imageStates[textId].forEach(index => {
+                                if (images[index]) {
+                                    images[index].style.opacity = 0;
+                                    images[index].classList.remove('visible');
+                                    window.globalImageQueue.push(index); // Возвращаем индекс в очередь
+                                    window.globalImageQueue.sort((a, b) => b - a)
+                                }
+                            });
+                            delete window.imageStates[textId];
+                        } else {
+                            // Новый выбор: показываем изображения
+                            if (window.globalImageQueue.length === 0) {
+                                window.globalImageQueue = images.map((_, i) => i).reverse(); // Инициализируем очередь
                             }
-                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                            let localIndices = [];
+                            while (window.globalImageQueue.length > 0) {
+                                const index = window.globalImageQueue.pop();
+                                if (images[index] && !images[index].classList.contains('visible')) {
+                                    images[index].style.opacity = 1;
+                                    images[index].classList.add('visible');
+                                    localIndices.push(index);
+                                    break; // Показать одно изображение за раз
+                                }
+                            }
+                            window.imageStates[textId] = localIndices;
                         }
                     ">Синдром подразненного кішківника</p>
                 </div>
@@ -288,15 +361,50 @@ const numbers = `
                         <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
                     </div>
                     <p class="text" onclick="
-                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
-                            const images = this.previousElementSibling.querySelectorAll('.text-image');
-                            if (!window.imageIndex) window.imageIndex = 0;
-                            if (window.imageIndex < images.length) {
-                                images[window.imageIndex].style.opacity = 1;
-                                images[window.imageIndex].classList.add('visible');
-                                window.imageIndex++;
+                        const textElement = this;
+                        const imageGroup = this.previousElementSibling;
+                        const images = Array.from(imageGroup.querySelectorAll('.text-image'));
+
+                        if (!this.dataset.id) {
+                            this.dataset.id = Math.random().toString(36).substr(2, 9);
+                        }
+                        const textId = this.dataset.id;
+
+                        if (!window.globalImageQueue) {
+                            window.globalImageQueue = [];
+                        }
+
+                        if (!window.imageStates) {
+                            window.imageStates = {};
+                        }
+
+                        if (window.imageStates[textId]) {
+                            // Отмена выбора: убираем видимость
+                            window.imageStates[textId].forEach(index => {
+                                if (images[index]) {
+                                    images[index].style.opacity = 0;
+                                    images[index].classList.remove('visible');
+                                    window.globalImageQueue.push(index);
+                                    window.globalImageQueue.sort((a, b) => b - a)
+                                }
+                            });
+                            delete window.imageStates[textId];
+                        } else {
+                            // Новый выбор: показываем изображения
+                            if (window.globalImageQueue.length === 0) {
+                                window.globalImageQueue = images.map((_, i) => i).reverse(); // Инициализируем очередь
                             }
-                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                            let localIndices = [];
+                            while (window.globalImageQueue.length > 0) {
+                                const index = window.globalImageQueue.pop();
+                                if (images[index] && !images[index].classList.contains('visible')) {
+                                    images[index].style.opacity = 1;
+                                    images[index].classList.add('visible');
+                                    localIndices.push(index);
+                                    break; // Показать одно изображение за раз
+                                }
+                            }
+                            window.imageStates[textId] = localIndices;
                         }
                     ">Запальні захворювання кішківника</p>
                 </div>
@@ -315,15 +423,50 @@ const numbers = `
                         <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
                     </div>
                     <p class="text" onclick="
-                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
-                            const images = this.previousElementSibling.querySelectorAll('.text-image');
-                            if (!window.imageIndex) window.imageIndex = 0;
-                            if (window.imageIndex < images.length) {
-                                images[window.imageIndex].style.opacity = 1;
-                                images[window.imageIndex].classList.add('visible');
-                                window.imageIndex++;
+                        const textElement = this;
+                        const imageGroup = this.previousElementSibling;
+                        const images = Array.from(imageGroup.querySelectorAll('.text-image'));
+
+                        if (!this.dataset.id) {
+                            this.dataset.id = Math.random().toString(36).substr(2, 9);
+                        }
+                        const textId = this.dataset.id;
+
+                        if (!window.globalImageQueue) {
+                            window.globalImageQueue = [];
+                        }
+
+                        if (!window.imageStates) {
+                            window.imageStates = {};
+                        }
+
+                        if (window.imageStates[textId]) {
+                            // Отмена выбора: убираем видимость
+                            window.imageStates[textId].forEach(index => {
+                                if (images[index]) {
+                                    images[index].style.opacity = 0;
+                                    images[index].classList.remove('visible');
+                                    window.globalImageQueue.push(index);
+                                    window.globalImageQueue.sort((a, b) => b - a)
+                                }
+                            });
+                            delete window.imageStates[textId];
+                        } else {
+                            // Новый выбор: показываем изображения
+                            if (window.globalImageQueue.length === 0) {
+                                window.globalImageQueue = images.map((_, i) => i).reverse(); // Инициализируем очередь
                             }
-                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                            let localIndices = [];
+                            while (window.globalImageQueue.length > 0) {
+                                const index = window.globalImageQueue.pop();
+                                if (images[index] && !images[index].classList.contains('visible')) {
+                                    images[index].style.opacity = 1;
+                                    images[index].classList.add('visible');
+                                    localIndices.push(index);
+                                    break; // Показать одно изображение за раз
+                                }
+                            }
+                            window.imageStates[textId] = localIndices;
                         }
                     ">Захворювання шкіри</p>
                 </div>
@@ -342,15 +485,50 @@ const numbers = `
                         <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
                     </div>
                     <p class="text" onclick="
-                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
-                            const images = this.previousElementSibling.querySelectorAll('.text-image');
-                            if (!window.imageIndex) window.imageIndex = 0;
-                            if (window.imageIndex < images.length) {
-                                images[window.imageIndex].style.opacity = 1;
-                                images[window.imageIndex].classList.add('visible');
-                                window.imageIndex++;
+                        const textElement = this;
+                        const imageGroup = this.previousElementSibling;
+                        const images = Array.from(imageGroup.querySelectorAll('.text-image'));
+
+                        if (!this.dataset.id) {
+                            this.dataset.id = Math.random().toString(36).substr(2, 9);
+                        }
+                        const textId = this.dataset.id;
+
+                        if (!window.globalImageQueue) {
+                            window.globalImageQueue = [];
+                        }
+
+                        if (!window.imageStates) {
+                            window.imageStates = {};
+                        }
+
+                        if (window.imageStates[textId]) {
+                            // Отмена выбора: убираем видимость
+                            window.imageStates[textId].forEach(index => {
+                                if (images[index]) {
+                                    images[index].style.opacity = 0;
+                                    images[index].classList.remove('visible');
+                                    window.globalImageQueue.push(index);
+                                    window.globalImageQueue.sort((a, b) => b - a)
+                                }
+                            });
+                            delete window.imageStates[textId];
+                        } else {
+                            // Новый выбор: показываем изображения
+                            if (window.globalImageQueue.length === 0) {
+                                window.globalImageQueue = images.map((_, i) => i).reverse(); // Инициализируем очередь
                             }
-                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                            let localIndices = [];
+                            while (window.globalImageQueue.length > 0) {
+                                const index = window.globalImageQueue.pop();
+                                if (images[index] && !images[index].classList.contains('visible')) {
+                                    images[index].style.opacity = 1;
+                                    images[index].classList.add('visible');
+                                    localIndices.push(index);
+                                    break; // Показать одно изображение за раз
+                                }
+                            }
+                            window.imageStates[textId] = localIndices;
                         }
                     ">Діарея (дисбіоз) будь-якого генезу</p>
                 </div>
@@ -369,15 +547,50 @@ const numbers = `
                         <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
                     </div>
                     <p class="text" onclick="
-                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
-                            const images = this.previousElementSibling.querySelectorAll('.text-image');
-                            if (!window.imageIndex) window.imageIndex = 0;
-                            if (window.imageIndex < images.length) {
-                                images[window.imageIndex].style.opacity = 1;
-                                images[window.imageIndex].classList.add('visible');
-                                window.imageIndex++;
+                        const textElement = this;
+                        const imageGroup = this.previousElementSibling;
+                        const images = Array.from(imageGroup.querySelectorAll('.text-image'));
+
+                        if (!this.dataset.id) {
+                            this.dataset.id = Math.random().toString(36).substr(2, 9);
+                        }
+                        const textId = this.dataset.id;
+
+                        if (!window.globalImageQueue) {
+                            window.globalImageQueue = [];
+                        }
+
+                        if (!window.imageStates) {
+                            window.imageStates = {};
+                        }
+
+                        if (window.imageStates[textId]) {
+                            // Отмена выбора: убираем видимость
+                            window.imageStates[textId].forEach(index => {
+                                if (images[index]) {
+                                    images[index].style.opacity = 0;
+                                    images[index].classList.remove('visible');
+                                    window.globalImageQueue.push(index);
+                                    window.globalImageQueue.sort((a, b) => b - a)
+                                }
+                            });
+                            delete window.imageStates[textId];
+                        } else {
+                            // Новый выбор: показываем изображения
+                            if (window.globalImageQueue.length === 0) {
+                                window.globalImageQueue = images.map((_, i) => i).reverse(); // Инициализируем очередь
                             }
-                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                            let localIndices = [];
+                            while (window.globalImageQueue.length > 0) {
+                                const index = window.globalImageQueue.pop();
+                                if (images[index] && !images[index].classList.contains('visible')) {
+                                    images[index].style.opacity = 1;
+                                    images[index].classList.add('visible');
+                                    localIndices.push(index);
+                                    break; // Показать одно изображение за раз
+                                }
+                            }
+                            window.imageStates[textId] = localIndices;
                         }
                     ">Призначення ІПП</p>
                 </div>
@@ -396,15 +609,50 @@ const numbers = `
                         <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
                     </div>
                     <p class="text" onclick="
-                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
-                            const images = this.previousElementSibling.querySelectorAll('.text-image');
-                            if (!window.imageIndex) window.imageIndex = 0;
-                            if (window.imageIndex < images.length) {
-                                images[window.imageIndex].style.opacity = 1;
-                                images[window.imageIndex].classList.add('visible');
-                                window.imageIndex++;
+                        const textElement = this;
+                        const imageGroup = this.previousElementSibling;
+                        const images = Array.from(imageGroup.querySelectorAll('.text-image'));
+
+                        if (!this.dataset.id) {
+                            this.dataset.id = Math.random().toString(36).substr(2, 9);
+                        }
+                        const textId = this.dataset.id;
+
+                        if (!window.globalImageQueue) {
+                            window.globalImageQueue = [];
+                        }
+
+                        if (!window.imageStates) {
+                            window.imageStates = {};
+                        }
+
+                        if (window.imageStates[textId]) {
+                            // Отмена выбора: убираем видимость
+                            window.imageStates[textId].forEach(index => {
+                                if (images[index]) {
+                                    images[index].style.opacity = 0;
+                                    images[index].classList.remove('visible');
+                                    window.globalImageQueue.push(index);
+                                    window.globalImageQueue.sort((a, b) => b - a)
+                                }
+                            });
+                            delete window.imageStates[textId];
+                        } else {
+                            // Новый выбор: показываем изображения
+                            if (window.globalImageQueue.length === 0) {
+                                window.globalImageQueue = images.map((_, i) => i).reverse(); // Инициализируем очередь
                             }
-                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                            let localIndices = [];
+                            while (window.globalImageQueue.length > 0) {
+                                const index = window.globalImageQueue.pop();
+                                if (images[index] && !images[index].classList.contains('visible')) {
+                                    images[index].style.opacity = 1;
+                                    images[index].classList.add('visible');
+                                    localIndices.push(index);
+                                    break; // Показать одно изображение за раз
+                                }
+                            }
+                            window.imageStates[textId] = localIndices;
                         }
                     ">Метаболічні порушенні (ожиріння)</p>
                 </div>
@@ -423,15 +671,50 @@ const numbers = `
                         <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
                     </div>
                     <p class="text" onclick="
-                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
-                            const images = this.previousElementSibling.querySelectorAll('.text-image');
-                            if (!window.imageIndex) window.imageIndex = 0;
-                            if (window.imageIndex < images.length) {
-                                images[window.imageIndex].style.opacity = 1;
-                                images[window.imageIndex].classList.add('visible');
-                                window.imageIndex++;
+                        const textElement = this;
+                        const imageGroup = this.previousElementSibling;
+                        const images = Array.from(imageGroup.querySelectorAll('.text-image'));
+
+                        if (!this.dataset.id) {
+                            this.dataset.id = Math.random().toString(36).substr(2, 9);
+                        }
+                        const textId = this.dataset.id;
+
+                        if (!window.globalImageQueue) {
+                            window.globalImageQueue = [];
+                        }
+
+                        if (!window.imageStates) {
+                            window.imageStates = {};
+                        }
+
+                        if (window.imageStates[textId]) {
+                            // Отмена выбора: убираем видимость
+                            window.imageStates[textId].forEach(index => {
+                                if (images[index]) {
+                                    images[index].style.opacity = 0;
+                                    images[index].classList.remove('visible');
+                                    window.globalImageQueue.push(index);
+                                    window.globalImageQueue.sort((a, b) => b - a)
+                                }
+                            });
+                            delete window.imageStates[textId];
+                        } else {
+                            // Новый выбор: показываем изображения
+                            if (window.globalImageQueue.length === 0) {
+                                window.globalImageQueue = images.map((_, i) => i).reverse(); // Инициализируем очередь
                             }
-                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                            let localIndices = [];
+                            while (window.globalImageQueue.length > 0) {
+                                const index = window.globalImageQueue.pop();
+                                if (images[index] && !images[index].classList.contains('visible')) {
+                                    images[index].style.opacity = 1;
+                                    images[index].classList.add('visible');
+                                    localIndices.push(index);
+                                    break; // Показать одно изображение за раз
+                                }
+                            }
+                            window.imageStates[textId] = localIndices;
                         }
                     ">Використання АТБ при урологічних захворюваннях</p>
                 </div>
@@ -450,15 +733,50 @@ const numbers = `
                         <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
                     </div>
                     <p class="text" onclick="
-                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
-                            const images = this.previousElementSibling.querySelectorAll('.text-image');
-                            if (!window.imageIndex) window.imageIndex = 0;
-                            if (window.imageIndex < images.length) {
-                                images[window.imageIndex].style.opacity = 1;
-                                images[window.imageIndex].classList.add('visible');
-                                window.imageIndex++;
+                        const textElement = this;
+                        const imageGroup = this.previousElementSibling;
+                        const images = Array.from(imageGroup.querySelectorAll('.text-image'));
+
+                        if (!this.dataset.id) {
+                            this.dataset.id = Math.random().toString(36).substr(2, 9);
+                        }
+                        const textId = this.dataset.id;
+
+                        if (!window.globalImageQueue) {
+                            window.globalImageQueue = [];
+                        }
+
+                        if (!window.imageStates) {
+                            window.imageStates = {};
+                        }
+
+                        if (window.imageStates[textId]) {
+                            // Отмена выбора: убираем видимость
+                            window.imageStates[textId].forEach(index => {
+                                if (images[index]) {
+                                    images[index].style.opacity = 0;
+                                    images[index].classList.remove('visible');
+                                    window.globalImageQueue.push(index);
+                                    window.globalImageQueue.sort((a, b) => b - a)
+                                }
+                            });
+                            delete window.imageStates[textId];
+                        } else {
+                            // Новый выбор: показываем изображения
+                            if (window.globalImageQueue.length === 0) {
+                                window.globalImageQueue = images.map((_, i) => i).reverse(); // Инициализируем очередь
                             }
-                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                            let localIndices = [];
+                            while (window.globalImageQueue.length > 0) {
+                                const index = window.globalImageQueue.pop();
+                                if (images[index] && !images[index].classList.contains('visible')) {
+                                    images[index].style.opacity = 1;
+                                    images[index].classList.add('visible');
+                                    localIndices.push(index);
+                                    break; // Показать одно изображение за раз
+                                }
+                            }
+                            window.imageStates[textId] = localIndices;
                         }
                     ">Метаболічно асоційована стеатотична хвороба печінки</p>
                 </div>
@@ -477,15 +795,50 @@ const numbers = `
                         <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
                     </div>
                     <p class="text" onclick="
-                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
-                            const images = this.previousElementSibling.querySelectorAll('.text-image');
-                            if (!window.imageIndex) window.imageIndex = 0;
-                            if (window.imageIndex < images.length) {
-                                images[window.imageIndex].style.opacity = 1;
-                                images[window.imageIndex].classList.add('visible');
-                                window.imageIndex++;
+                        const textElement = this;
+                        const imageGroup = this.previousElementSibling;
+                        const images = Array.from(imageGroup.querySelectorAll('.text-image'));
+
+                        if (!this.dataset.id) {
+                            this.dataset.id = Math.random().toString(36).substr(2, 9);
+                        }
+                        const textId = this.dataset.id;
+
+                        if (!window.globalImageQueue) {
+                            window.globalImageQueue = [];
+                        }
+
+                        if (!window.imageStates) {
+                            window.imageStates = {};
+                        }
+
+                        if (window.imageStates[textId]) {
+                            // Отмена выбора: убираем видимость
+                            window.imageStates[textId].forEach(index => {
+                                if (images[index]) {
+                                    images[index].style.opacity = 0;
+                                    images[index].classList.remove('visible');
+                                    window.globalImageQueue.push(index);
+                                    window.globalImageQueue.sort((a, b) => b - a)
+                                }
+                            });
+                            delete window.imageStates[textId];
+                        } else {
+                            // Новый выбор: показываем изображения
+                            if (window.globalImageQueue.length === 0) {
+                                window.globalImageQueue = images.map((_, i) => i).reverse(); // Инициализируем очередь
                             }
-                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                            let localIndices = [];
+                            while (window.globalImageQueue.length > 0) {
+                                const index = window.globalImageQueue.pop();
+                                if (images[index] && !images[index].classList.contains('visible')) {
+                                    images[index].style.opacity = 1;
+                                    images[index].classList.add('visible');
+                                    localIndices.push(index);
+                                    break; // Показать одно изображение за раз
+                                }
+                            }
+                            window.imageStates[textId] = localIndices;
                         }
                     ">Хелікобактер пілорі інфекція</p>
                 </div>
@@ -504,15 +857,50 @@ const numbers = `
                         <img src="/Farmacology/slides/Enterol2560/E2/11.png" class="text-image">
                     </div>
                     <p class="text" onclick="
-                        if (!this.dataset.clicked) { // Проверяем, был ли клик по этой надписи
-                            const images = this.previousElementSibling.querySelectorAll('.text-image');
-                            if (!window.imageIndex) window.imageIndex = 0;
-                            if (window.imageIndex < images.length) {
-                                images[window.imageIndex].style.opacity = 1;
-                                images[window.imageIndex].classList.add('visible');
-                                window.imageIndex++;
+                        const textElement = this;
+                        const imageGroup = this.previousElementSibling;
+                        const images = Array.from(imageGroup.querySelectorAll('.text-image'));
+
+                        if (!this.dataset.id) {
+                            this.dataset.id = Math.random().toString(36).substr(2, 9);
+                        }
+                        const textId = this.dataset.id;
+
+                        if (!window.globalImageQueue) {
+                            window.globalImageQueue = [];
+                        }
+
+                        if (!window.imageStates) {
+                            window.imageStates = {};
+                        }
+
+                        if (window.imageStates[textId]) {
+                            // Отмена выбора: убираем видимость
+                            window.imageStates[textId].forEach(index => {
+                                if (images[index]) {
+                                    images[index].style.opacity = 0;
+                                    images[index].classList.remove('visible');
+                                    window.globalImageQueue.push(index);
+                                    window.globalImageQueue.sort((a, b) => b - a)
+                                }
+                            });
+                            delete window.imageStates[textId];
+                        } else {
+                            // Новый выбор: показываем изображения
+                            if (window.globalImageQueue.length === 0) {
+                                window.globalImageQueue = images.map((_, i) => i).reverse(); // Инициализируем очередь
                             }
-                            this.dataset.clicked = true; // Помечаем, что на надпись кликнули
+                            let localIndices = [];
+                            while (window.globalImageQueue.length > 0) {
+                                const index = window.globalImageQueue.pop();
+                                if (images[index] && !images[index].classList.contains('visible')) {
+                                    images[index].style.opacity = 1;
+                                    images[index].classList.add('visible');
+                                    localIndices.push(index);
+                                    break; // Показать одно изображение за раз
+                                }
+                            }
+                            window.imageStates[textId] = localIndices;
                         }
                     ">Інші …</p>
                 </div>

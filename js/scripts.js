@@ -142,9 +142,15 @@ function handleMouseMove(event) {
         const rect = human.getBoundingClientRect();
         if (event.clientX >= rect.left && event.clientX <= rect.right &&
             event.clientY >= rect.top && event.clientY <= rect.bottom) {
-            if (!human.classList.contains('painted')) {
-                human.classList.add('painted');
-                human.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
+            if (!human.classList.contains('processed')) {
+                if (!human.classList.contains('painted')) {
+                    human.classList.add('painted');
+                    human.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
+                } else {
+                    human.classList.remove('painted');
+                    human.style.backgroundImage = '';
+                }
+                human.classList.add('processed');
             }
         }
     });
@@ -156,6 +162,8 @@ function handleMouseMove(event) {
     if (paintedCount > 0) {
         percentageElement.style.display = 'block';
         percentageElement.textContent = `${percentage}%`;
+    } else {
+        percentageElement.style.display = 'none';
     }
 }
 
@@ -173,9 +181,15 @@ function handleTouchMove(event) {
         const rect = human.getBoundingClientRect();
         if (touch.clientX >= rect.left && touch.clientX <= rect.right &&
             touch.clientY >= rect.top && touch.clientY <= rect.bottom) {
-            if (!human.classList.contains('painted')) {
-                human.classList.add('painted');
-                human.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
+            if (!human.classList.contains('processed')) {
+                if (!human.classList.contains('painted')) {
+                    human.classList.add('painted');
+                    human.style.backgroundImage = 'url(/Farmacology/slides/Asacol/A1/231239.png)';
+                } else {
+                    human.classList.remove('painted');
+                    human.style.backgroundImage = '';
+                }
+                human.classList.add('processed');
             }
         }
     });
@@ -187,8 +201,21 @@ function handleTouchMove(event) {
     if (paintedCount > 0) {
         percentageElement.style.display = 'block';
         percentageElement.textContent = `${percentage}%`;
+    } else {
+        percentageElement.style.display = 'none';
     }
 }
+
+function resetProcessed() {
+    const humans = document.querySelectorAll('.human');
+    humans.forEach(human => {
+        human.classList.remove('processed');
+    });
+}
+
+document.addEventListener('mouseup', resetProcessed);
+document.addEventListener('touchend', resetProcessed);
+
 
  function disableRevealSwipe() {
         Reveal.configure({ touch: false });

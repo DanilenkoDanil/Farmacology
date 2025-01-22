@@ -475,7 +475,7 @@ const slideButtonConfig = {
     Enterol: [
         { id: 'btn-back', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle-1.svg', x: 4, y: 85, width: 5, height: 5, action: 'Reveal.prev();' },
         { id: 'btn-home', icon: '/Farmacology/slides/Enterol2560/1icons/svg/home-door.svg', x: 10, y:85, width: 5, height: 5, action: "Reveal.slide(1)" },
-        { id: 'btn-info', icon: '/Farmacology/slides/Enterol2560/1icons/svg/info.svg', x: 15, y: 85, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Enterol2560/E (Ssi).png', type: 'Enterol',});" },
+        { id: 'btn-info', icon: '/Farmacology/slides/Enterol2560/1icons/svg/info_new.svg', x: 15, y: 85, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Enterol2560/E (Ssi).png', type: 'Enterol',});" },
         { id: 'btn-settings', icon: '/Farmacology/slides/Enterol2560/1icons/svg/clip_path_group.svg', x: 20, y:85, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Enterol v3/Е30/E (30).png', type: 'EnterolV3', special_animation: 'Special', animation_text: e_30,});" },
         { id: 'btn-star', icon: '/Farmacology/slides/Enterol2560/1icons/svg/Shape.svg', x: 25, y: 85, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Enterol v3/Е42/Е (42).png', type: 'EnterolV3', special_animation: 'Special', animation_text: e_42,});" },
         { id: 'btn-next', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle.svg', x: 30, y: 85, width: 5, height: 5, action: 'Reveal.next();' },
@@ -483,7 +483,7 @@ const slideButtonConfig = {
     EnterolV3: [
         { id: 'btn-back', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle-1.svg', x: 34, y: 86, width: 5, height: 5, action: 'Reveal.prev();' },
         { id: 'btn-home', icon: '/Farmacology/slides/Enterol2560/1icons/svg/home-door.svg', x: 40, y:86, width: 5, height: 5, action:  "Reveal.slide(1)" },
-        { id: 'btn-info', icon: '/Farmacology/slides/Enterol2560/1icons/svg/info.svg', x: 46, y: 86, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Enterol2560/E (Ssi).png', type: 'Enterol',});" },
+        { id: 'btn-info', icon: '/Farmacology/slides/Enterol2560/1icons/svg/info_new.svg', x: 46, y: 86, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Enterol2560/E (Ssi).png', type: 'Enterol',});" },
         { id: 'btn-settings', icon: '/Farmacology/slides/Enterol2560/1icons/svg/clip_path_group.svg', x: 52, y:86, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Enterol v3/Е30/E (30).png', type: 'EnterolV3', special_animation: 'Special', animation_text: e_30,});" },
         { id: 'btn-star', icon: '/Farmacology/slides/Enterol2560/1icons/svg/Shape.svg', x: 58, y: 86, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Enterol v3/Е42/Е (42).png', type: 'EnterolV3', special_animation: 'Special', animation_text: e_42,});" },
         { id: 'btn-next', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle.svg', x: 64, y: 86, width: 5, height: 5, action: 'Reveal.next();' },
@@ -493,14 +493,28 @@ const slideButtonConfig = {
         { id: 'btn-star', icon: '/Farmacology/slides/Bebykol2560/icons/232324.png', x: 6, y: 85, width: 5, height: 5, action: 'Reveal.next();' },
         { id: 'btn-home', icon: '/Farmacology/slides/Bebykol2560/icons/323234.png', x: 10.8, y: 85, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Bebykol2560/Б (1).png', type: 'Bebykol',});" },
         { id: 'btn-info', icon: '/Farmacology/slides/Bebykol2560/icons/14.png', x: 14.8, y: 85, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Bebykol2560/Б (12).png', type: 'Bebykol',});" },
-        { id: 'btn-settings', icon: '/Farmacology/slides/Bebykol2560/icons/Bebykol_2560_1600_2024.png', x: 18.8, y: 85, width: 5, height: 5, action: '' },
     ],
     Stresam: [
         { id: 'btn-back', icon: '/Farmacology/slides/Bebykol2560/icons/545330_2024.png', x: 3, y: 85, width: 5, height: 5, action: 'Reveal.prev();' },
         { id: 'btn-star', icon: '/Farmacology/slides/Bebykol2560/icons/232324.png', x: 5.8, y: 85, width: 5, height: 5, action: 'Reveal.next();' },
         { id: 'btn-home', icon: '/Farmacology/slides/Bebykol2560/icons/323234.png', x: 9.8, y: 85, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Stresam2560/C (1).png', type: 'Stresam',});" },
         { id: 'btn-info', icon: '/Farmacology/slides/Bebykol2560/icons/14.png', x: 13.8, y: 85, width: 5, height: 5, action: "addTemporarySlide({image: '/slides/Stresam2560/C (13).png', type: 'Stresam',});" },
-        { id: 'btn-settings', icon: '/Farmacology/slides/Bebykol2560/icons/Bebykol_2560_1600_2024.png', x: 17.8, y: 85, width: 5, height: 5, action: '' },
+    ],
+    Marimer: [
+        { id: 'btn-back', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle-1.svg', x: 5, y: 86, width: 5, height: 5, action: 'Reveal.prev();' },
+        { id: 'btn-next', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle.svg', x: 10, y: 86, width: 5, height: 5, action: 'Reveal.next();' },
+    ],
+    Otipax: [
+        { id: 'btn-back', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle-1.svg', x: 5, y: 86, width: 5, height: 5, action: 'Reveal.prev();' },
+        { id: 'btn-next', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle.svg', x: 10, y: 86, width: 5, height: 5, action: 'Reveal.next();' },
+    ],
+    ACerumen: [
+        { id: 'btn-back', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle-1.svg', x: 5, y: 86, width: 5, height: 5, action: 'Reveal.prev();' },
+        { id: 'btn-next', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle.svg', x: 10, y: 86, width: 5, height: 5, action: 'Reveal.next();' },
+    ],
+    Asacol: [
+        { id: 'btn-back', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle-1.svg', x: 7, y: 83, width: 5, height: 5, action: 'Reveal.prev();' },
+        { id: 'btn-next', icon: '/Farmacology/slides/Enterol2560/1icons/svg/logout-circle.svg', x: 12, y: 83, width: 5, height: 5, action: 'Reveal.next();' },
     ],
 };
 

@@ -667,6 +667,8 @@ display: flex;
     background-image: url('/Farmacology/slides/Asacol/A1/21312009.png'); /* Серый человечек */
     transition: background-image 0.3s ease; /* Плавное закрашивание */
     z-index: 1414214151251525;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .cell-button {
