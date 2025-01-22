@@ -994,3 +994,11 @@ const m_16 = `
 <div id="m_16-5" class="m_16-buttons" onclick="addTemporarySlide({image: '/slides/Marimer2560/M (18).png', type: 'Marimer'});"></div>
 <div id="m_16-6" class="m_16-buttons" onclick="addTemporarySlide({image: '/slides/Marimer2560/M (17).png', type: 'Marimer'});"></div>
 `
+
+const o_2 = `
+<div id="o_2-1" class="o_2-buttons" onclick="addTemporarySlide({image: '/slides/Otipax2560/O (3).png', type: 'Otipax'});"></div>
+<div id="o_2-2" class="o_2-buttons" onclick="addTemporarySlide({image: '/slides/Otipax2560/O (7).png', type: 'Otipax'});"></div>
+<div id="o_2-3" class="o_2-buttons" onclick="addTemporarySlide({image: '/slides/Otipax2560/O (8).png', type: 'Otipax'});"></div>
+<div id="o_2-4" class="o_2-buttons" onclick="addTemporarySlide({image: '/slides/Otipax2560/O (6).png', type: 'Otipax'});"></div>
+<div id="o_2-5" class="o_2-buttons" onclick="addTemporarySlide({image: '/slides/Otipax2560/O (5).png', type: 'Otipax'});"></div>
+`

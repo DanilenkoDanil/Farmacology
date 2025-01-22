@@ -63,7 +63,8 @@ const mapping = {
         {
             image: "/slides/Otipax2560/O (2).png",
             type: "Otipax",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: o_2
         }
     ],
     gastro: [
@@ -447,7 +448,8 @@ const mapping = {
         {
             image: "/slides/Otipax2560/O (2).png",
             type: "Otipax",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: o_2
         },
         {
             image: "/slides/ACerumen2560/АЦ (1).png",

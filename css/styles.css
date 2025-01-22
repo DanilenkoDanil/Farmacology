@@ -1720,3 +1720,38 @@ display: flex;
     top: 22%;
     left: 3%;
 }
+
+.o_2-buttons {
+    width: 19%;
+    height: 33%;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999999999999999999999;
+}
+
+#o_2-1 {
+    position: absolute;
+    top: 48%;
+    left: 3%;
+}
+#o_2-2 {
+    position: absolute;
+    top: 27%;
+    left: 22%;
+}
+
+#o_2-3 {
+    position: absolute;
+    top: 48%;
+    left: 40%;
+}
+#o_2-4 {
+    position: absolute;
+    top: 27%;
+    left: 59%;
+}
+#o_2-5 {
+    position: absolute;
+    top: 48%;
+    left: 77%;
+}
