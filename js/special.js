@@ -57,26 +57,27 @@ const e_9 = `
 
 const c_2 = `
     <div class="stresam-buttons-container">
-        <img src="./slides/Stresam2560/C2/1.png" class="stresam-buttons" onclick="this.classList.add('active');
+        <button style="background-image: url('/Farmacology/slides/Stresam2560/C2/1.png');" class="stresam-buttons" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
             }, 1000);" />
-        <img src="./slides/Stresam2560/C2/2.png" class="stresam-buttons" onclick="this.classList.add('active');
+        <button style="background-image: url('/Farmacology/slides/Stresam2560/C2/2.png');" class="stresam-buttons" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
             }, 1000);" />
-        <img src="./slides/Stresam2560/C2/3.png" class="stresam-buttons" onclick="this.classList.add('active');
+        <button style="background-image: url('/Farmacology/slides/Stresam2560/C2/3.png');" class="stresam-buttons" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
             }, 1000);" />
-        <img src="./slides/Stresam2560/C2/4.png" class="stresam-buttons" onclick="this.classList.add('active');
+        <button style="background-image: url('/Farmacology/slides/Stresam2560/C2/4.png');" class="stresam-buttons" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
             }, 1000);" />
-        <img src="./slides/Stresam2560/C2/5.png" class="stresam-buttons" onclick="this.classList.add('active');
+        <button style="background-image: url('/Farmacology/slides/Stresam2560/C2/5.png');" class="stresam-buttons" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
             }, 1000);" />
+
     </div>
 `
 
@@ -92,19 +93,19 @@ const visit = `
 
 const c_14 = `
 <div class="stresam-buttons-container-c14">
-    <img src="./slides/Stresam2560/C14/1.png" class="stresam-buttons-c14" onclick="this.classList.add('active');
+    <button style="background-image: url('/Farmacology/slides/Stresam2560/C14/1.png');" class="stresam-buttons-c14" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
             }, 1000);" />
-    <img src="./slides/Stresam2560/C14/2.png" class="stresam-buttons-c14" onclick="this.classList.add('active');
+    <button style="background-image: url('/Farmacology/slides/Stresam2560/C14/2.png');" class="stresam-buttons-c14" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
             }, 1000);" />
-    <img src="./slides/Stresam2560/C14/3.png" class="stresam-buttons-c14" onclick="this.classList.add('active');
+    <button style="background-image: url('/Farmacology/slides/Stresam2560/C14/3.png');" class="stresam-buttons-c14" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
             }, 1000);" />
-    <img src="./slides/Stresam2560/C14/4.png" class="stresam-buttons-c14" onclick="this.classList.add('active');
+    <button style="background-image: url('/Farmacology/slides/Stresam2560/C14/4.png');" class="stresam-buttons-c14" onclick="this.classList.add('active');
             setTimeout(() => {
                 this.classList.remove('active');
             }, 1000);" />
