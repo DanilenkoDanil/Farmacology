@@ -112,11 +112,8 @@ function addButtonsToBackgroundContainer(slideId, buttons) {
 }
 
 Reveal.on('slidechanged', event => {
-    console.log('work it')
     const currentSlideId = event.currentSlide.id;
-    console.log(event.currentSlide.id);
     const slideType = event.currentSlide.dataset.type;
-    console.log(slideType);
     if (slideButtonConfig[slideType]) {
         addButtonsToBackgroundContainer(currentSlideId, slideButtonConfig[slideType]);
     }

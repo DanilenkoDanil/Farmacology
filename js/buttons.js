@@ -2,8 +2,6 @@ let temp_id = 1;
 let lastTempSlide = null;
 
 function generateTemporarySlide(slideData) {
-    console.log("generateTemporarySlide");
-    console.log("slideData", slideData);
 
     const animationText = checkSpecAnimation(slideData);
     const text = animationText !== null ? animationText : "";
@@ -59,27 +57,20 @@ function addTemporarySlide(slideData) {
     slidesContainer.insertBefore(tempSlide, currentSlide.nextSibling);
 
     Reveal.sync();
-    console.log('Слайд создан');
     Reveal.next()
 }
 
 
 function removeTempSlidesOnSlideChange() {
-    // Добавляем обработчик события slidechanged
     Reveal.on('slidechanged', () => {
-        // Найти все элементы с классом temp-slide
         const tempSlides = document.querySelectorAll('.temp-slide');
-        console.log('DELETE')
 
         tempSlides.forEach(slide => {
-            // Проверить, есть ли у элемента класс 'present'
             if (!slide.classList.contains('present')) {
-                // Удалить элемент
                 slide.remove();
             }
         });
     });
 }
 
-// Вызов функции для активации удаления
 removeTempSlidesOnSlideChange();
