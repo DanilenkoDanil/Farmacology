@@ -1873,3 +1873,25 @@ display: flex;
     cursor: pointer;
     z-index: 999999999999999999;
 }
+
+#c11-cell1 {
+    position: absolute;
+    width: 9%;
+    height: 5%;
+    opacity: 30%;
+    top: 38%;
+    left: 38.3%;
+    cursor: pointer;
+    z-index: 999999999999999999;
+}
+
+#c11-cell2 {
+    position: absolute;
+    width: 16%;
+    height: 5%;
+    opacity: 30%;
+    top: 34%;
+    left: 53.5%;
+    cursor: pointer;
+    z-index: 999999999999999999;
+}

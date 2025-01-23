@@ -1053,3 +1053,8 @@ const c_12 = `
     <div id="c12-cell1" onclick="addTemporarySlide({image: '/slides/Stresam2560/C (5).png', type: 'Stresam',});"></div>
     <div id="c12-cell2" onclick="addTemporarySlide({image: '/slides/Stresam2560/C (9).png', type: 'Stresam',});"></div>
 `
+
+const c_11 = `
+    <div id="c11-cell1" onclick="addTemporarySlide({image: '/slides/Stresam2560/C (5).png', type: 'Stresam',});"></div>
+    <div id="c11-cell2" onclick="addTemporarySlide({image: '/slides/Stresam2560/C (9).png', type: 'Stresam',});"></div>
+`
