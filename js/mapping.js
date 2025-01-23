@@ -165,7 +165,8 @@ const mapping = {
         {
             image: "/slides/Stresam2560/C (12).png",
             type: "Stresam",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: c_12
         },
         {
             image: "/slides/Stresam2560/C (1).png",

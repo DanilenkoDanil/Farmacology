@@ -1048,3 +1048,8 @@ const b_5 = `
     <div id="b5-title" onclick="addTemporarySlide({image: '/slides/Bebykol2560/Б (9).png', type: 'Bebykol',});"></div>
     <div id="b5-text" onclick="addTemporarySlide({image: '/slides/Bebykol2560/Б (6).png', type: 'Bebykol', special_animation: 'Special', animation_text: b_6});"></div>
 `
+
+const c_12 = `
+    <div id="c12-cell1" onclick="addTemporarySlide({image: '/slides/Stresam2560/C (5).png', type: 'Stresam',});"></div>
+    <div id="c12-cell2" onclick="addTemporarySlide({image: '/slides/Stresam2560/C (9).png', type: 'Stresam',});"></div>
+`
