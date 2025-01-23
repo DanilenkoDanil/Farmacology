@@ -1861,7 +1861,6 @@ display: flex;
     left: 35%;
     cursor: pointer;
     z-index: 999999999999999999;
-    background-color: #BA55D3;
 }
 
 #c12-cell2 {
@@ -1873,5 +1872,4 @@ display: flex;
     left: 53.5%;
     cursor: pointer;
     z-index: 999999999999999999;
-    background-color: #BA55D3;
 }
