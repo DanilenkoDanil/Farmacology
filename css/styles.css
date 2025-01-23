@@ -1821,7 +1821,6 @@ display: flex;
     position: absolute;
     width: 48%;
     height: 6%;
-    background-color: #BA55D3;
     opacity: 30%;
     top: 10.7%;
     left: 48.7%;
@@ -1831,12 +1830,11 @@ display: flex;
 
 #b5-text {
     position: absolute;
-    width: 18.7%;
+    width: 38.7%;
     height: 3%;
-    background-color: #BA55D3;
     opacity: 30%;
-    top: 46%;
-    left: 45.7%;
+    top: 43.2%;
+    left: 43%;
     cursor: pointer;
     z-index: 999999999999999999;
 }
