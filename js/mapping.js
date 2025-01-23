@@ -40,10 +40,35 @@ const mapping = {
             animation_text: e_26,
         },
         {
-            image: "/slides/Marimer2560/M (1).png",
+            image: "/slides/Marimer2560/M (15).png",
             type: "Marimer",
             special_animation: 'Special',
-            animation_text: m_1_1,
+            animation_text: m_15,
+        },
+        {
+            image: "/slides/Marimer2560/M (8).png",
+            type: "Marimer",
+            special_animation: 'Base'
+        },
+        {
+            image: "/slides/Marimer2560/M (9).png",
+            type: "Marimer",
+            special_animation: 'Base'
+        },
+        {
+            image: "/slides/Marimer2560/M (11).png",
+            type: "Marimer",
+            special_animation: 'Base'
+        },
+        {
+            image: "/slides/Marimer2560/M (13).png",
+            type: "Marimer",
+            special_animation: 'Base'
+        },
+        {
+            image: "/slides/Marimer2560/M (14).png",
+            type: "Marimer",
+            special_animation: 'Base'
         },
         {
             image: "/slides/Bebykol2560/Б (3).png",
