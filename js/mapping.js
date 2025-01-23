@@ -71,12 +71,18 @@ const mapping = {
             special_animation: 'Base'
         },
         {
-            image: "/slides/Bebykol2560/Б (3).png",
+            image: "/slides/Bebykol2560/Б (5).png",
+            type: "Bebykol",
+            special_animation: 'Special',
+            animation_text: b_5
+        },
+        {
+            image: "/slides/Bebykol2560/Б (11).png",
             type: "Bebykol",
             special_animation: 'Base'
         },
         {
-            image: "/slides/Bebykol2560/Б (4).png",
+            image: "/slides/Bebykol2560/Б (1).png",
             type: "Bebykol",
             special_animation: 'Base'
         },
@@ -159,7 +165,8 @@ const mapping = {
         {
             image: "/slides/Stresam2560/C (12).png",
             type: "Stresam",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: c_12
         },
         {
             image: "/slides/Stresam2560/C (1).png",
@@ -203,17 +210,18 @@ const mapping = {
             animation_text: e_26
         },
         {
-            image: "/slides/Bebykol2560/Б (4).png",
+            image: "/slides/Bebykol2560/Б (5).png",
+            type: "Bebykol",
+            special_animation: 'Special',
+            animation_text: b_5
+        },
+        {
+            image: "/slides/Bebykol2560/Б (11).png",
             type: "Bebykol",
             special_animation: 'Base'
         },
         {
-            image: "/slides/Bebykol2560/Б (6).png",
-            type: "Bebykol",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Bebykol2560/Б (8).png",
+            image: "/slides/Bebykol2560/Б (1).png",
             type: "Bebykol",
             special_animation: 'Base'
         },
@@ -278,7 +286,8 @@ const mapping = {
         {
             image: "/slides/Stresam2560/C (11).png",
             type: "Stresam",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: c_11
         },
         {
             image: "/slides/Stresam2560/C (1).png",
@@ -397,7 +406,8 @@ const mapping = {
         {
             image: "/slides/Stresam2560/C (11).png",
             type: "Stresam",
-            special_animation: 'Base'
+            special_animation: 'Special',
+            animation_text: c_11
         },
         {
             image: "/slides/Stresam2560/C (1).png",
@@ -450,10 +460,10 @@ const mapping = {
     ],
     ent: [
         {
-                image: "/slides/Marimer2560/M (1).png",
-                type: "Marimer",
-                special_animation: 'Special',
-                animation_text: m_1_2,
+            image: "/slides/Marimer2560/M (1).png",
+            type: "Marimer",
+            special_animation: 'Special',
+            animation_text: m_1_2,
         },
         {
             image: "/slides/Marimer2560/M (18).png",

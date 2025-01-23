@@ -1816,3 +1816,82 @@ display: flex;
     z-index: 51651515;
     cursor: pointer;
 }
+
+#b5-title {
+    position: absolute;
+    width: 48%;
+    height: 6%;
+    background-color: #BA55D3;
+    opacity: 30%;
+    top: 10.7%;
+    left: 48.7%;
+    cursor: pointer;
+    z-index: 999999999999999999;
+}
+
+#b5-text {
+    position: absolute;
+    width: 18.7%;
+    height: 3%;
+    background-color: #BA55D3;
+    opacity: 30%;
+    top: 46%;
+    left: 45.7%;
+    cursor: pointer;
+    z-index: 999999999999999999;
+}
+
+#b_6-cell {
+    position: absolute;
+    width: 11%;
+    height: 5%;
+    opacity: 30%;
+    top: 50%;
+    left: 4%;
+    cursor: pointer;
+    z-index: 999999999999999999;
+}
+
+#c12-cell1 {
+    position: absolute;
+    width: 9%;
+    height: 5%;
+    opacity: 30%;
+    top: 38%;
+    left: 35%;
+    cursor: pointer;
+    z-index: 999999999999999999;
+}
+
+#c12-cell2 {
+    position: absolute;
+    width: 16%;
+    height: 5%;
+    opacity: 30%;
+    top: 34%;
+    left: 53.5%;
+    cursor: pointer;
+    z-index: 999999999999999999;
+}
+
+#c11-cell1 {
+    position: absolute;
+    width: 9%;
+    height: 5%;
+    opacity: 30%;
+    top: 38%;
+    left: 38.3%;
+    cursor: pointer;
+    z-index: 999999999999999999;
+}
+
+#c11-cell2 {
+    position: absolute;
+    width: 16%;
+    height: 5%;
+    opacity: 30%;
+    top: 34%;
+    left: 53.5%;
+    cursor: pointer;
+    z-index: 999999999999999999;
+}
