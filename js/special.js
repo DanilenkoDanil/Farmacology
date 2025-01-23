@@ -981,13 +981,13 @@ const a_2 = `
         Your browser does not support the video tag.
     </video>
 
-    <div class="bottom-corner" style="position: absolute; top: 66.3%; left: -3%; width: 20%; height: 20%; z-index: 999;">
+    <div class="bottom-corner" style="position: absolute; top: 66.6%; left: -3%; width: 20%; height: 20%; z-index: 999;">
         <img src="/Farmacology/slides/Asacol/A2/bottom-corner.png" />
     </div>
-    <div class="top-corner" style="position: absolute; top: 19.8%; right: -3%; width: 20%; height: 20%; z-index: 999;">
+    <div class="top-corner" style="position: absolute; top: 19.9%; right: -3%; width: 20%; height: 20%; z-index: 999;">
         <img src="/Farmacology/slides/Asacol/A2/top-corner.png" />
     </div>
-    <div class="video-title" style="position: absolute; top: 11%; right: 0; width: 105%; height: fit-content; aspect-ratio: 1363 / 118; z-index: 999; margin: 0; left: -2.7%;">
+    <div class="video-title" style="position: absolute; top: 11%; right: 0; width: 106%; height: fit-content; aspect-ratio: 1363 / 118; z-index: 999; margin: 0; left: -2.7%;">
         <img src="/Farmacology/slides/Asacol/A2/title.png" style="margin: 0;"/>
     </div>
 `
@@ -1051,10 +1051,54 @@ const b_5 = `
 
 const c_12 = `
     <div id="c12-cell1" onclick="addTemporarySlide({image: '/slides/Stresam2560/C (5).png', type: 'Stresam',});"></div>
-    <div id="c12-cell2" onclick="addTemporarySlide({image: '/slides/Stresam2560/C (9).png', type: 'Stresam',});"></div>
+    <div id="c12-cell2" onclick="addTemporarySlide({image: '/slides/Stresam2560/C (9).png', type: 'Stresam', special_animation: 'Special', animation_text: c_9});"></div>
 `
 
 const c_11 = `
     <div id="c11-cell1" onclick="addTemporarySlide({image: '/slides/Stresam2560/C (5).png', type: 'Stresam',});"></div>
-    <div id="c11-cell2" onclick="addTemporarySlide({image: '/slides/Stresam2560/C (9).png', type: 'Stresam',});"></div>
+    <div id="c11-cell2" onclick="addTemporarySlide({image: '/slides/Stresam2560/C (9).png', type: 'Stresam', special_animation: 'Special', animation_text: c_9});"></div>
+`
+
+const c_9 = `
+    <button class="play-button-stresam"
+        onclick="
+            const video = document.querySelector('#hidden-video-stresam');
+            video.style.display = 'block';
+            video.play();
+            this.style.display = 'none';
+        "
+        style="
+            position: absolute;
+            width: 11%;
+            height: 15%;
+            border-radius: 50%;
+            top: 69%;
+            left: 91.3%;
+            transform: translate(-50%, -50%);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1001;
+        ">
+    </button>
+
+    <!-- Спрятанное видео -->
+    <video id="hidden-video-stresam"
+        style="
+            display: none;
+            position: absolute;
+            top: 58%;
+            border-radius: 20px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 85%;
+            height: auto;
+            z-index: 999;
+        "
+        controls
+        disablepictureinpicture
+        controlslist="nodownload noplaybackrate">
+        <source src="/Farmacology/slides/Stresam2560/stresam.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 `
