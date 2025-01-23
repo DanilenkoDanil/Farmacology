@@ -1039,3 +1039,12 @@ const m_15 = `
         onclick="addTemporarySlide({image: '/slides/Marimer2560/M (7).png', type: 'Marimer',})">
     </div>
 `
+
+const b_6 = `
+    <div id="b_6-cell" onclick="addTemporarySlide({image: '/slides/Bebykol2560/Б (4).png', type: 'Bebykol',})"></div>
+`
+
+const b_5 = `
+    <div id="b5-title" onclick="addTemporarySlide({image: '/slides/Bebykol2560/Б (9).png', type: 'Bebykol',});"></div>
+    <div id="b5-text" onclick="addTemporarySlide({image: '/slides/Bebykol2560/Б (6).png', type: 'Bebykol', special_animation: 'Special', animation_text: b_6});"></div>
+`

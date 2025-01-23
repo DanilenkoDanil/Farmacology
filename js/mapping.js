@@ -46,12 +46,18 @@ const mapping = {
             animation_text: m_1_1,
         },
         {
-            image: "/slides/Bebykol2560/Б (3).png",
+            image: "/slides/Bebykol2560/Б (5).png",
+            type: "Bebykol",
+            special_animation: 'Special',
+            animation_text: b_5
+        },
+        {
+            image: "/slides/Bebykol2560/Б (11).png",
             type: "Bebykol",
             special_animation: 'Base'
         },
         {
-            image: "/slides/Bebykol2560/Б (4).png",
+            image: "/slides/Bebykol2560/Б (1).png",
             type: "Bebykol",
             special_animation: 'Base'
         },
@@ -178,17 +184,18 @@ const mapping = {
             animation_text: e_26
         },
         {
-            image: "/slides/Bebykol2560/Б (4).png",
+            image: "/slides/Bebykol2560/Б (5).png",
+            type: "Bebykol",
+            special_animation: 'Special',
+            animation_text: b_5
+        },
+        {
+            image: "/slides/Bebykol2560/Б (11).png",
             type: "Bebykol",
             special_animation: 'Base'
         },
         {
-            image: "/slides/Bebykol2560/Б (6).png",
-            type: "Bebykol",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Bebykol2560/Б (8).png",
+            image: "/slides/Bebykol2560/Б (1).png",
             type: "Bebykol",
             special_animation: 'Base'
         },
@@ -425,10 +432,10 @@ const mapping = {
     ],
     ent: [
         {
-                image: "/slides/Marimer2560/M (1).png",
-                type: "Marimer",
-                special_animation: 'Special',
-                animation_text: m_1_2,
+            image: "/slides/Marimer2560/M (1).png",
+            type: "Marimer",
+            special_animation: 'Special',
+            animation_text: m_1_2,
         },
         {
             image: "/slides/Marimer2560/M (18).png",
