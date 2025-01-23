@@ -33,68 +33,6 @@
 						</div>
 					</div>
 				</section>
-
-				<section
-                style="
-                    display: flex !important;
-                    width: 100%;
-                    height: 100%;
-                    justify-content: center;
-                    align-items: center;
-                ">
-                <div class="background-container"
-                    style="
-                        background-image: url('/Farmacology/slides/Stresam2560/C (9).png');
-                        height: 100%;
-                        width: 100%;
-                    ">
-                    <button class="invisible-button" onclick="Reveal.slide(0);"></button>
-                    <button class="invisible-left-button" onclick="Reveal.prev();"></button>
-                    <button class="invisible-right-button" onclick="Reveal.next();"></button>
-                    <button class="play-button"
-						onclick="
-							const video = document.querySelector('#hidden-video');
-							video.style.display = 'block';
-							video.play();
-							this.style.display = 'none';
-						"
-						style="
-							position: absolute;
-							width: 11%;
-							height: 15%;
-							border-radius: 50%;
-							top: 69%;
-							left: 91.3%;
-							transform: translate(-50%, -50%);
-							background: transparent;
-							border: none;
-							cursor: pointer;
-							z-index: 1001;
-							border: 3px solid red;
-						">
-					</button>
-
-					<!-- Спрятанное видео -->
-					<video id="hidden-video"
-						style="
-							display: none;
-							position: absolute;
-							top: 58%;
-							border-radius: 20px;
-							left: 50%;
-							transform: translate(-50%, -50%);
-							width: 85%;
-							height: auto;
-							z-index: 999;
-						"
-						controls
-						disablepictureinpicture
-						controlslist="nodownload noplaybackrate">
-						<source src="/Farmacology/slides/Stresam2560/stresam.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-                </div>
-            </section>
 			</div>
 		</div>
 
