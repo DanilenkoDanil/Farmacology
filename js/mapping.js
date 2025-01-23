@@ -98,12 +98,6 @@ const mapping = {
             animation_text: o_2
         },
         {
-            image: "/slides/Otipax2560/O (7).png",
-            type: "Otipax",
-            special_animation: 'Special',
-            animation_text: o_2
-        },
-        {
             image: "/slides/Otipax2560/O (1).png",
             type: "Otipax",
             special_animation: 'Base'
@@ -306,21 +300,6 @@ const mapping = {
             animation_text: o_2
         },
         {
-            image: "/slides/Otipax2560/O (5).png",
-            type: "Otipax",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Otipax2560/O (6).png",
-            type: "Otipax",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Otipax2560/O (7).png",
-            type: "Otipax",
-            special_animation: 'Base'
-        },
-        {
             image: "/slides/Marimer2560/M (15).png",
             type: "Marimer",
             special_animation: 'Special',
@@ -426,21 +405,6 @@ const mapping = {
             animation_text: o_2
         },
         {
-            image: "/slides/Otipax2560/O (5).png",
-            type: "Otipax",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Otipax2560/O (6).png",
-            type: "Otipax",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Otipax2560/O (7).png",
-            type: "Otipax",
-            special_animation: 'Base'
-        },
-        {
             image: "/slides/Marimer2560/M (15).png",
             type: "Marimer",
             special_animation: 'Special',
@@ -483,21 +447,6 @@ const mapping = {
         },
         {
             image: "/slides/Otipax2560/O (4).png",
-            type: "Otipax",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Otipax2560/O (5).png",
-            type: "Otipax",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Otipax2560/O (6).png",
-            type: "Otipax",
-            special_animation: 'Base'
-        },
-        {
-            image: "/slides/Otipax2560/O (7).png",
             type: "Otipax",
             special_animation: 'Base'
         },
