@@ -442,11 +442,6 @@ const mapping = {
             animation_text: m_16
         },
         {
-            image: "/slides/Marimer2560/M (17).png",
-            type: "Marimer",
-            special_animation: 'Base'
-        },
-        {
             image: "/slides/Marimer2560/M (23).png",
             type: "Marimer",
             special_animation: 'Base'
