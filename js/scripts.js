@@ -231,52 +231,22 @@ Reveal.on('slidechanged', (event) => {
     }
 });
 
-
- // Проверяем размеры экрана и ориентацию
-if (window.innerWidth === 2304 && window.innerHeight === 1440) {
-    // Проверяем, что ориентация горизонтальная
-    if (window.innerWidth > window.innerHeight) {
-        // Применяем стиль
+// Функция для проверки размеров экрана и применения стилей
+function applyStyles() {
+    if ((window.innerWidth === 2304 && window.innerHeight === 1440 && window.innerWidth > window.innerHeight) ||
+        (window.innerWidth === 2000 && window.innerHeight === 1200 && window.innerWidth > window.innerHeight)) {
+        // Применяем стиль, если размеры соответствуют одному из условий и ориентация горизонтальная
         document.body.style.transform = "scale(1.14)";
         document.body.style.inset = "4% auto auto 0";
+    } else {
+        // Сбрасываем стиль, если размеры не соответствуют
+        document.body.style.transform = "";
+        document.body.style.inset = "";
     }
 }
 
-// Обрабатываем изменение размеров окна (например, при изменении размеров окна)
-window.addEventListener('resize', () => {
-    if (window.innerWidth === 2304 && window.innerHeight === 1440) {
-        if (window.innerWidth > window.innerHeight) {
-            document.body.style.transform = "scale(1.14)";
-            document.body.style.inset = "4% auto auto 0";
-        } else {
-            document.body.style.transform = ""; // Сброс стиля
-        }
-    } else {
-        document.body.style.transform = ""; // Сброс стиля
-    }
-});
+// Проверяем размеры экрана и ориентацию при загрузке страницы
+applyStyles();
 
-
- // Проверяем размеры экрана и ориентацию
-if (window.innerWidth === 2000 && window.innerHeight === 1200) {
-    // Проверяем, что ориентация горизонтальная
-    if (window.innerWidth > window.innerHeight) {
-        // Применяем стиль
-        document.body.style.transform = "scale(1.14)";
-        document.body.style.inset = "4% auto auto 0";
-    }
-}
-
-// Обрабатываем изменение размеров окна (например, при изменении размеров окна)
-window.addEventListener('resize', () => {
-    if (window.innerWidth === 2000 && window.innerHeight === 1200) {
-        if (window.innerWidth > window.innerHeight) {
-            document.body.style.transform = "scale(1.14)";
-            document.body.style.inset = "4% auto auto 0";
-        } else {
-            document.body.style.transform = ""; // Сброс стиля
-        }
-    } else {
-        document.body.style.transform = ""; // Сброс стиля
-    }
-});
+// Обрабатываем изменение размеров окна
+window.addEventListener('resize', applyStyles);

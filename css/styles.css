@@ -18,6 +18,10 @@
     font-style: normal;
 }
 
+body {
+    background-color: white;
+}
+
 .main-buttons-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 кнопки в строке */
