@@ -230,3 +230,53 @@ Reveal.on('slidechanged', (event) => {
         enableRevealSwipe();
     }
 });
+
+
+ // Проверяем размеры экрана и ориентацию
+if (window.innerWidth === 2304 && window.innerHeight === 1440) {
+    // Проверяем, что ориентация горизонтальная
+    if (window.innerWidth > window.innerHeight) {
+        // Применяем стиль
+        document.body.style.transform = "scale(1.14)";
+        document.body.style.inset = "4% auto auto 0";
+    }
+}
+
+// Обрабатываем изменение размеров окна (например, при изменении размеров окна)
+window.addEventListener('resize', () => {
+    if (window.innerWidth === 2304 && window.innerHeight === 1440) {
+        if (window.innerWidth > window.innerHeight) {
+            document.body.style.transform = "scale(1.14)";
+            document.body.style.inset = "4% auto auto 0";
+        } else {
+            document.body.style.transform = ""; // Сброс стиля
+        }
+    } else {
+        document.body.style.transform = ""; // Сброс стиля
+    }
+});
+
+
+ // Проверяем размеры экрана и ориентацию
+if (window.innerWidth === 2000 && window.innerHeight === 1200) {
+    // Проверяем, что ориентация горизонтальная
+    if (window.innerWidth > window.innerHeight) {
+        // Применяем стиль
+        document.body.style.transform = "scale(1.14)";
+        document.body.style.inset = "4% auto auto 0";
+    }
+}
+
+// Обрабатываем изменение размеров окна (например, при изменении размеров окна)
+window.addEventListener('resize', () => {
+    if (window.innerWidth === 2000 && window.innerHeight === 1200) {
+        if (window.innerWidth > window.innerHeight) {
+            document.body.style.transform = "scale(1.14)";
+            document.body.style.inset = "4% auto auto 0";
+        } else {
+            document.body.style.transform = ""; // Сброс стиля
+        }
+    } else {
+        document.body.style.transform = ""; // Сброс стиля
+    }
+});
