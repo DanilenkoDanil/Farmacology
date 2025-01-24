@@ -71,7 +71,7 @@ const mapping = {
             special_animation: 'Base'
         },
         {
-            image: "/slides/Bebykol2560/Б (5).png",
+            image: "/slides/Bebykol2560/Б (5) new.png",
             type: "Bebykol",
             special_animation: 'Special',
             animation_text: b_5
@@ -204,7 +204,7 @@ const mapping = {
             animation_text: e_26
         },
         {
-            image: "/slides/Bebykol2560/Б (5).png",
+            image: "/slides/Bebykol2560/Б (5) new.png",
             type: "Bebykol",
             special_animation: 'Special',
             animation_text: b_5
