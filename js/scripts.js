@@ -233,19 +233,28 @@ Reveal.on('slidechanged', (event) => {
 
 // Функция для проверки размеров экрана и применения стилей
 function applyStyles() {
-    if ((window.innerWidth === 2304 && window.innerHeight === 1440 && window.innerWidth > window.innerHeight) ||
-        (window.innerWidth === 2000 && window.innerHeight === 1200 && window.innerWidth > window.innerHeight)) {
-        // Применяем стиль, если размеры соответствуют одному из условий и ориентация горизонтальная
+    // Проверяем диапазон для разрешения 2304x1440
+    const isTablet2304x1440 =
+        window.innerWidth >= 2300 && window.innerWidth <= 2310 &&
+        window.innerHeight >= 1435 && window.innerHeight <= 1445;
+
+    // Проверяем диапазон для разрешения 2000x1200
+    const isTablet2000x1200 =
+        window.innerWidth >= 1995 && window.innerWidth <= 2005 &&
+        window.innerHeight >= 1195 && window.innerHeight <= 1205;
+
+    // Если одно из условий выполняется, применяем стиль
+    if ((isTablet2304x1440 || isTablet2000x1200) && window.innerWidth > window.innerHeight) {
         document.body.style.transform = "scale(1.14)";
         document.body.style.inset = "4% auto auto 0";
     } else {
-        // Сбрасываем стиль, если размеры не соответствуют
+        // Сбрасываем стили
         document.body.style.transform = "";
         document.body.style.inset = "";
     }
 }
 
-// Проверяем размеры экрана и ориентацию при загрузке страницы
+// Проверяем размеры экрана при загрузке страницы
 applyStyles();
 
 // Обрабатываем изменение размеров окна
