@@ -235,8 +235,12 @@ Reveal.on('slidechanged', (event) => {
 function applyStyles() {
     // Проверяем диапазон для разрешения 2304x1440
     const isTablet2304x1440 =
-        window.innerWidth >= 2300 && window.innerWidth <= 2310 &&
-        window.innerHeight >= 1435 && window.innerHeight <= 1445;
+        window.innerWidth >= 2100 && window.innerWidth <= 2510 &&
+        window.innerHeight >= 935 && window.innerHeight <= 1445;
+
+    const isTablet2304x1440_minni =
+        window.innerWidth >= 1100 && window.innerWidth <= 1500 &&
+        window.innerHeight >= 400 && window.innerHeight <= 800;
 
     // Проверяем диапазон для разрешения 2000x1200
     const isTablet2000x1200 =
@@ -244,7 +248,7 @@ function applyStyles() {
         window.innerHeight >= 1195 && window.innerHeight <= 1205;
 
     // Если одно из условий выполняется, применяем стиль
-    if ((isTablet2304x1440 || isTablet2000x1200) && window.innerWidth > window.innerHeight) {
+    if ((isTablet2304x1440 || isTablet2000x1200 || isTablet2304x1440_minni) && window.innerWidth > window.innerHeight) {
         document.body.style.transform = "scale(1.14)";
         document.body.style.inset = "4% auto auto 0";
     } else {
