@@ -249,8 +249,8 @@ function applyStyles() {
 
     // Если одно из условий выполняется, применяем стиль
     if ((isTablet2304x1440 || isTablet2000x1200 || isTablet2304x1440_minni) && window.innerWidth > window.innerHeight) {
-        document.body.style.transform = "scale(1.14)";
-        document.body.style.inset = "4% auto auto 0";
+        document.body.style.transform = "scale(1.24)";
+        document.body.style.inset = "6% auto auto 0";
     } else {
         // Сбрасываем стили
         document.body.style.transform = "";
