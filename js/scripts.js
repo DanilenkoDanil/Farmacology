@@ -232,6 +232,7 @@ Reveal.on('slidechanged', (event) => {
 });
 
 // Функция для проверки размеров экрана и применения стилей
+
 function applyStyles() {
     // Проверяем диапазон для разрешения 2304x1440
     const isTablet2304x1440 =
@@ -253,6 +254,9 @@ function applyStyles() {
         if (isTablet2304x1440) {
             document.body.style.transform = "scale(1.25)";
             document.body.style.inset = "6% auto auto 4%";
+        } else if (isTablet2304x1440_minni) {
+            document.body.style.transform = "scale(1.25)";
+            document.body.style.inset = "6% auto auto 4%";
         } else if (isTablet2000x1200) {
             document.body.style.transform = "scale(1.24)";
             document.body.style.inset = "3% auto auto 0";
@@ -267,7 +271,6 @@ function applyStyles() {
         document.body.style.inset = "";
     }
 }
-
 
 // Проверяем размеры экрана при загрузке страницы
 applyStyles();
