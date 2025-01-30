@@ -248,6 +248,9 @@ function applyStyles() {
         window.innerWidth >= 1995 && window.innerWidth <= 2005 &&
         window.innerHeight >= 1195 && window.innerHeight <= 1205;
 
+    const isTablet840x297 =
+        window.innerWidth >= 800 && window.innerWidth <= 900 &&
+        window.innerHeight >= 200 && window.innerHeight <= 350;
 
     // Если ширина больше высоты (ориентация landscape)
     if (window.innerWidth > window.innerHeight) {
@@ -260,6 +263,9 @@ function applyStyles() {
         } else if (isTablet2000x1200) {
             document.body.style.transform = "scale(1.21)";
             document.body.style.inset = "2% 2% auto 0";
+        } else if (isTablet840x297) {
+            document.body.style.transform = "scale(1.41)";
+            document.body.style.inset = "-15% auto auto 0";
         } else {
             // Сбрасываем стили, если ни одно из условий не выполняется
             document.body.style.transform = "";
@@ -277,3 +283,23 @@ applyStyles();
 
 // Обрабатываем изменение размеров окна
 window.addEventListener('resize', applyStyles);
+
+
+const displaySize = document.createElement('div');
+displaySize.style.position = 'fixed';
+displaySize.style.top = '10px';
+displaySize.style.left = '10px';
+displaySize.style.background = 'rgba(0, 0, 0, 0.7)';
+displaySize.style.color = 'white';
+displaySize.style.padding = '10px';
+displaySize.style.fontSize = '20px';
+displaySize.style.zIndex = '9999';
+displaySize.style.borderRadius = '5px';
+document.body.appendChild(displaySize);
+
+function updateSize() {
+    displaySize.textContent = `Width: ${window.innerWidth}px, Height: ${window.innerHeight}px`;
+}
+
+updateSize();
+window.addEventListener('resize', updateSize);
