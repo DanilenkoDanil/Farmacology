@@ -252,10 +252,10 @@ function applyStyles() {
     if (window.innerWidth > window.innerHeight) {
         if (isTablet2304x1440) {
             document.body.style.transform = "scale(1.41)";
-            document.body.style.inset = "5% auto auto 0";
+            document.body.style.inset = "0 auto auto 0";
         } else if (isTablet2304x1440_minni) {
             document.body.style.transform = "scale(1.41)";
-            document.body.style.inset = "5% auto auto 0";
+            document.body.style.inset = "0 auto auto 0";
         } else if (isTablet2000x1200) {
             document.body.style.transform = "scale(1.21)";
             document.body.style.inset = "2% 2% auto 0";
