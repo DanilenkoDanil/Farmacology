@@ -255,10 +255,10 @@ function applyStyles() {
     // Если ширина больше высоты (ориентация landscape)
     if (window.innerWidth > window.innerHeight) {
         if (isTablet2304x1440) {
-            document.body.style.transform = "scale(2.1)";
+            document.body.style.transform = "scale(2.5)";
             document.body.style.inset = "0 auto auto 0";
         } else if (isTablet2304x1440_minni) {
-            document.body.style.transform = "scale(2.1)";
+            document.body.style.transform = "scale(2.5)";
             document.body.style.inset = "0 auto auto 0";
         } else if (isTablet2000x1200) {
             document.body.style.transform = "scale(1.21)";
@@ -284,22 +284,22 @@ applyStyles();
 // Обрабатываем изменение размеров окна
 window.addEventListener('resize', applyStyles);
 
-
-const displaySize = document.createElement('div');
-displaySize.style.position = 'fixed';
-displaySize.style.top = '10px';
-displaySize.style.left = '10px';
-displaySize.style.background = 'rgba(0, 0, 0, 0.7)';
-displaySize.style.color = 'white';
-displaySize.style.padding = '10px';
-displaySize.style.fontSize = '20px';
-displaySize.style.zIndex = '9999';
-displaySize.style.borderRadius = '5px';
-document.body.appendChild(displaySize);
-
-function updateSize() {
-    displaySize.textContent = `Width: ${window.innerWidth}px, Height: ${window.innerHeight}px`;
-}
-
-updateSize();
-window.addEventListener('resize', updateSize);
+//
+// const displaySize = document.createElement('div');
+// displaySize.style.position = 'fixed';
+// displaySize.style.top = '10px';
+// displaySize.style.left = '10px';
+// displaySize.style.background = 'rgba(0, 0, 0, 0.7)';
+// displaySize.style.color = 'white';
+// displaySize.style.padding = '10px';
+// displaySize.style.fontSize = '20px';
+// displaySize.style.zIndex = '9999';
+// displaySize.style.borderRadius = '5px';
+// document.body.appendChild(displaySize);
+//
+// function updateSize() {
+//     displaySize.textContent = `Width: ${window.innerWidth}px, Height: ${window.innerHeight}px`;
+// }
+//
+// updateSize();
+// window.addEventListener('resize', updateSize);
