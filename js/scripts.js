@@ -284,22 +284,22 @@ applyStyles();
 // Обрабатываем изменение размеров окна
 window.addEventListener('resize', applyStyles);
 
-//
-// const displaySize = document.createElement('div');
-// displaySize.style.position = 'fixed';
-// displaySize.style.top = '10px';
-// displaySize.style.left = '10px';
-// displaySize.style.background = 'rgba(0, 0, 0, 0.7)';
-// displaySize.style.color = 'white';
-// displaySize.style.padding = '10px';
-// displaySize.style.fontSize = '20px';
-// displaySize.style.zIndex = '9999';
-// displaySize.style.borderRadius = '5px';
-// document.body.appendChild(displaySize);
-//
-// function updateSize() {
-//     displaySize.textContent = `Width: ${window.innerWidth}px, Height: ${window.innerHeight}px`;
-// }
-//
-// updateSize();
-// window.addEventListener('resize', updateSize);
+
+const displaySize = document.createElement('div');
+displaySize.style.position = 'fixed';
+displaySize.style.top = '10px';
+displaySize.style.left = '10px';
+displaySize.style.background = 'rgba(0, 0, 0, 0.7)';
+displaySize.style.color = 'white';
+displaySize.style.padding = '10px';
+displaySize.style.fontSize = '20px';
+displaySize.style.zIndex = '9999';
+displaySize.style.borderRadius = '5px';
+document.body.appendChild(displaySize);
+
+function updateSize() {
+    displaySize.textContent = `Width: ${window.innerWidth}px, Height: ${window.innerHeight}px`;
+}
+
+updateSize();
+window.addEventListener('resize', updateSize);
