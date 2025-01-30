@@ -235,7 +235,7 @@ Reveal.on('slidechanged', (event) => {
 function applyStyles() {
     // Проверяем диапазон для разрешения 2304x1440
     const isTablet2304x1440 =
-        window.innerWidth >= 2100 && window.innerWidth <= 2510 &&
+        window.innerWidth >= 2100 && window.innerWidth <= 2610 &&
         window.innerHeight >= 935 && window.innerHeight <= 1445;
 
     // Проверяем диапазон для разрешения 2304x1440 (мини)
@@ -247,6 +247,7 @@ function applyStyles() {
     const isTablet2000x1200 =
         window.innerWidth >= 1995 && window.innerWidth <= 2005 &&
         window.innerHeight >= 1195 && window.innerHeight <= 1205;
+
 
     // Если ширина больше высоты (ориентация landscape)
     if (window.innerWidth > window.innerHeight) {
