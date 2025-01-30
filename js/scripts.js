@@ -231,49 +231,42 @@ Reveal.on('slidechanged', (event) => {
     }
 });
 
-// Функция для проверки размеров экрана и применения стилей
 
-// function applyStyles() {
-//     // Проверяем диапазон для разрешения 2304x1440
-//     const isTablet2304x1440 =
-//         window.innerWidth >= 2100 && window.innerWidth <= 2510 &&
-//         window.innerHeight >= 935 && window.innerHeight <= 1445;
-//
-//     // Проверяем диапазон для разрешения 2304x1440 (мини)
-//     const isTablet2304x1440_minni =
-//         window.innerWidth >= 1100 && window.innerWidth <= 1500 &&
-//         window.innerHeight >= 400 && window.innerHeight <= 800;
-//
-//     // Проверяем диапазон для разрешения 2000x1200
-//     const isTablet2000x1200 =
-//         window.innerWidth >= 1995 && window.innerWidth <= 2005 &&
-//         window.innerHeight >= 1195 && window.innerHeight <= 1205;
-//
-//     // Если ширина больше высоты (ориентация landscape)
-//     if (window.innerWidth > window.innerHeight) {
-//         if (isTablet2304x1440) {
-//             document.body.style.transform = "scale(1.41)";
-//             document.body.style.inset = "2% auto auto 0";
-//         } else if (isTablet2304x1440_minni) {
-//             document.body.style.transform = "scale(1.41)";
-//             document.body.style.inset = "2% auto auto 0";
-//         } else if (isTablet2000x1200) {
-//             document.body.style.transform = "scale(1.21)";
-//             document.body.style.inset = "2% 2% auto 0";
-//         } else {
-//             // Сбрасываем стили, если ни одно из условий не выполняется
-//             document.body.style.transform = "";
-//             document.body.style.inset = "";
-//         }
-//     } else {
-//         // Сбрасываем стили, если ориентация не landscape
-//         document.body.style.transform = "";
-//         document.body.style.inset = "";
-//     }
-// }
-//
-// // Проверяем размеры экрана при загрузке страницы
-// applyStyles();
-//
-// // Обрабатываем изменение размеров окна
-// window.addEventListener('resize', applyStyles);
+function applyStyles() {
+    // Проверяем диапазон для разрешения 2304x1440
+    const isTablet2304x1440 =
+        window.innerWidth >= 2100 && window.innerWidth <= 2510 &&
+        window.innerHeight >= 935 && window.innerHeight <= 1445;
+
+    // Проверяем диапазон для разрешения 2304x1440 (мини)
+    const isTablet2304x1440_minni =
+        window.innerWidth >= 1100 && window.innerWidth <= 1500 &&
+        window.innerHeight >= 400 && window.innerHeight <= 800;
+
+    // Проверяем диапазон для разрешения 2000x1200
+    const isTablet2000x1200 =
+        window.innerWidth >= 1995 && window.innerWidth <= 2005 &&
+        window.innerHeight >= 1195 && window.innerHeight <= 1205;
+
+    // Если ширина больше высоты (ориентация landscape)
+    if (window.innerWidth > window.innerHeight) {
+        if (isTablet2304x1440) {
+            document.body.style.transform = "scale(1.41)";
+            document.body.style.inset = "2% auto auto 0";
+        } else {
+            // Сбрасываем стили, если ни одно из условий не выполняется
+            document.body.style.transform = "";
+            document.body.style.inset = "";
+        }
+    } else {
+        // Сбрасываем стили, если ориентация не landscape
+        document.body.style.transform = "";
+        document.body.style.inset = "";
+    }
+}
+
+// Проверяем размеры экрана при загрузке страницы
+applyStyles();
+
+// Обрабатываем изменение размеров окна
+window.addEventListener('resize', applyStyles);
